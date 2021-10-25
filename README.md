@@ -52,9 +52,10 @@ Ornek
 
 
 
-Bu kitabi 
-programimiza tanimlamak icin kitap isminde bir sinif olustururuz. 
-parcalarini tanimlamak icin nesne degiskenleri olustururuz. 
+Bu kitabi programimiza tanimlamak icin
+
+	- kitap isminde bir sinif olustururuz
+	- parcalarini tanimlamak icin nesne degiskenleri olustururuz. 
 
 
 
