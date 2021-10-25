@@ -33,19 +33,22 @@ Bir sinif icerisinde tanimlanir ve sinifin tum nesneleri, ornekleri icin farkli 
 
 
 Peki Sinif nedir? 
+
 	Soyut veya somut kavramlari karsilayacagimiz programlarimizin ana bilesenleridir.
 
 
 
 Ornek 
-  Elimizde bir kitabimiz olsun. 
-  Kitabin var olmasini saglayan parcalara bakalim;
-   - yazar
-   - adi
-   - tur
-   - renk
-   - sayfa sayisi 
-   - basilan matbaa
+
+	  Elimizde bir kitabimiz olsun. 
+	  Kitabin var olmasini saglayan parcalara bakalim;
+	   
+	   - yazar
+	   - adi
+	   - tur
+	   - renk
+	   - sayfa sayisi 
+	   - basilan matbaa
 
 
 
@@ -61,6 +64,7 @@ Nesne degiskenleri, onune static anahtar kelimesi alarak, ayni siniftan olusturu
 
 
 Ornek
+
 	Elimizdeki kitap sinifindan 5 tane kitap olusturduk ve gerekli bilgileri doldurduk.
 	Eger yazar bilgisi static olarak tanimlanmis ise yazarin bilgisi tanimlandiginda 
 	tum kitaplarin yazari ayni olacaktir. Cunku static olarak tanimlandiginda tum kitap 
@@ -73,16 +77,16 @@ Ornek
 Siniflarin icindeki metotlarin iclerinde tanimlanir.
 
 Peki Metot nedir ?
-Bir isme sahip, yapilmasini istedigimiz bir veya birkac islemin blok halinde cagrilabilir halidir.
-Metodu cagirarak o islemlerin yapilmasini saglariz.
 
-Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler.
+	Bir isme sahip, yapilmasini istedigimiz bir veya birkac islemin blok halinde cagrilabilir halidir.
+	Metodu cagirarak o islemlerin yapilmasini saglariz.
+
+Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler ve ulasilamazlar.
 
 
 ### Parametre degiskenleri
 
 Siniflarin icindeki metotlarin iclerinde kullanilmak uzere gecici olarak aldigi degerlerdir.
-
 
 
 
