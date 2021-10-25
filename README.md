@@ -1,5 +1,6 @@
 # java101
 
+
 ## Java Tarihçesi
 
 ## Java Nedir
@@ -89,6 +90,11 @@ Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler
 
 Siniflarin icindeki metotlarin iclerinde kullanilmak uzere gecici olarak aldigi degerlerdir.
 
+
+https://github.com/keramiozsoy/java101/find/main/VariableExample.java
+
+
+https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attribute-and-property-in-java/
 
 
 ## Veri Tipleri
