@@ -99,12 +99,53 @@ https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attr
 
 ## Veri Tipleri
 
+
 Yazdigimiz programlarin kullanmasini istedigimiz bilgileri, veri tipleri ile siniflandirabiliyoruz.
 
 Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler araciligi ile programimiza tanititabiliyoruz.
 
 Java tip-guvenli (type-safe) bir dildir. Bu durum, degisken tanimlamak istedigimizde mutlaka veri tipinin ne oldugunu tanimlamak zorunda 
 oldugumuzu ifade eder.
+
+
+### Ilkel Veri Tipleri
+
+
+
+
+#### Tamsayilar
+
+
+	- byte
+	- short
+	- int 
+	- long 
+
+
+
+#### Ondalik Sayilar
+
+
+	- float
+	- double
+
+
+#### Karakterler
+
+
+	- char
+
+
+#### Mantiksal Tipler
+
+
+
+
+
+### Referans Veri Tipleri
+
+
+
 
 
 ## Operatörler
