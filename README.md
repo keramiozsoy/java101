@@ -94,9 +94,6 @@ Calistirma Islemi ( Run Time )
 
 
 
-## Java Nasil Calisir?
-
-
 
 
 ## Değişkenler
@@ -200,12 +197,12 @@ https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attr
 ## Depolanan veriler nerede tutulur ?
 
 
-EKSIK
-EKSIK
-EKSIK
-EKSIK
-EKSIK
-EKSIK
+	EKSIK
+	EKSIK
+	EKSIK
+	EKSIK
+	EKSIK
+	EKSIK
 
 STACK VE HEAP
 
@@ -348,20 +345,83 @@ Peki bu calisir mi?
 
 
 
-
-
 ### Referans Veri Tipleri
 
 
+Yukaridaki Ilkel veri tiplerinin gelistirilmis sinif mantigina dayanan halleri vardir.
+Ayni degerleri siniflar yardimi ile olusturabiliyoruz.
+
+Character
+Long
+Integer
+Short
+Byte
+Double
+Float	
+Boolean
+
+Peki ama neden bu siniflara ihtiyacimiz var ?
+
+Bu soruların cevabını verebilmek için int ve Integer arasındaki farkı anlatarak cevaplamaya çalışayım. 
 
 
+	int primitiveNumber = 5;
+
+	Integer objectNumber = new Integer(5);
 
 
-## Stack Ve Heap nedir?
+Yukaridaki tanimlamalarin farklina bakalim.
+
+
+	-	int bir primitive veri tipidir Integer ise bir nesnedir
+
+	-	Integer bir nesne değişkeni olduğu için null değeri alabilir fakat int veri tipi null değeri alamaz. Herhangi bir değer ataması yapılmadığında ilgili veri tipinin default değerini alır. Integer nesne değişkenine herhangi bir değer ataması yapılmadığında null değeri alır.
+
+	-	Integer tipinde bir değişken java.lang.Integer sınıfında ki metotları kullanabilir, int veri tipi ise kullanamaz.
+
+	-	Integer tipinde ki değişkenleri bir vektör ya da koleksiyon içerisinde tutabiliriz fakat int veri tipi ile bunu yapamayız.
+
+	-	Primitif veri tipleri (byte, short, int, double, float, double, char, boolean) bir nesne olmadığı için serialize(serileştirme) işlemine tutamayız. ( 
+	Serileştirme nedir, nerelerde kullanılır, ne zaman kullanılır gibi soruları lütfen araştırınız. )
+
+	-	Integer gibi sınıflar immutable (değişmez) özelliğe sahiptirler, sıradan nesneler gibi davranmazlar.
+
+Bununla birlikte ek bir not olarak;  Java derleyicisi gerektiğinde tanımlanan her ilkel veriyi ait olduğu sınıfa otomatik olarak gömer buna kutulama (boxing) denilir ya da derleyici gerektiğinde bir sınıf nesnesini ilkel veri tipine döndürür buna da kutu açma (unboxing) denilir. Her iki işlemi de Java derleyicisi kendiliğinden otomatik yapar.
 
 
 
 ## Operatörler
+
+	- Operatörler ilsem ozelligi olan simgelerdir. 
+
+	- En basit toplama + cikarma - carpma * bolme / birer operatordur.
+
+Java’da operatörleri yaptıkları işe göre sınıflandırabiliriz.
+
+	-	Atama Operatörleri
+
+	-	Aritmetik Operatörler
+
+	-	Karşılaştırma Operatörler
+
+	-	Mantıksal Operatörler
+
+	-	Bit Tabanlı Operatörler
+
+
+
+
+### Atama Operatorleri 
+
+
+	=	Sağdaki değeri soldaki değere atar.
+	+=	Soldaki sağdakine ekler, sonucu soldakine atar.
+	-=	Soldakini sağdakinden çıkarır, sonucu soldakine atar.
+	*=	Soldakini sağdaki ile çarpar, sonucu soldakine atar.
+	/=	Soldakini sağdakine böler, sonucu soldakine atar.
+	%=	Soldaki ile sağdakinin modunu alır, sonucu soldakine atar.
+
+
 
 ## Kontrol İfadeleri
 
