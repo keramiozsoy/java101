@@ -17,7 +17,8 @@ public class VariableExample {
     }
 
     void calculateCalender(Calendar parameterCalender){
-        // we can use only here value of parameterCalender
+        // we use parameterCalender only here.
+        // wen can't account out of this scope.
     }
 
 

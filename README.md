@@ -3,18 +3,33 @@
 
 ## Java Tarihçesi
 
+
 Javanin yillara gore gelisim evrelerini goruntuleyebilecegimiz bir link ekleyecegim.
 
-## Java Nedir
+
+## Java Nedir ?
+
+
+Java hem bir dil hem de bir ortam olarak dusunebilirsiniz.
+
+ - Web uygulamalari
+ 
+ - Masaustu uygulamalari
+
+ - Oyunlar 
+ 
+ - Android gibi temel gucu buyuk oranda java tarafindan gelen mobil uygulamalar gelisitirebilirsiniz.
 
 
 ## Java Dilinin Basarisi Nedir ?
 
- -  Bellek problemlerini cozmesidir.
+
+ - Bellek problemlerini cozmesidir.
 
  - Nesneye yonelik progamalamaya uygun olmasi programlarimizi yazarken daha uygun gelistirmeler yapmamizi sagliyor.
 
  - Cok uzun yillardan beri sagladigi "bir kez yaz her yerde calistir" olanagini saglamasidir.
+
 
 ## Cop Toplayici Nedir?
 
@@ -27,10 +42,65 @@ Javanin yillara gore gelisim evrelerini goruntuleyebilecegimiz bir link ekleyece
 
 - Cunku gereksiz ve kullanilmayan bellek alanlarini cop toplayici (garbage collector) mekanizmasi ile temizlemesidir.
 
+- Cop toplayici temizleme islemleri yaparken kullanilan java versiyonlara gore yillar icinde degiserek farkli yontemler ile isini halleder.
+	* referans sayma yontemi
+	* kopyalama yontemi
+	* isaretle ve supur yontemi
+	* artan(sira) yontemi
+	* vb.
+
+
+
+## Java Nasil Calisir?
+
+ Bit nedir?
+  0 veya 1 ile bilginin bellekte olmasi veya olamamasi durumunu karsiyalan terimdir.
+
+ Bayt (Byte) ise 8 haneli bit ten olusan terimdir.
+
+
+Derleme Islemi ( Compile Time )
+
+	Kaynak Kod       Javac Komutu              Bayt	Kod
+	==================================================================
+	Hello.java       javac Hello.java          Hello.class
+
+
+Calistirma Islemi ( Run Time )
+
+
+	Java Komutu
+	==================================================================
+	java Hello      Yorumlayici ( interpreter ) hersey yolunda gitti ise mutlu son :)
+
+
+
 
 ## JDK JRE JVM Kavramları
 
+	JVM - Java Sanal Makinasi ( Java Virtual Machine)
+
+		- JVM isletim sistemi ile java kodumuz arasinda kopru gorevindedir. Bu nedenle yazilan kod herhangi bir degisiklik yapilmadan bir kere yazip her yerde calistirabiliriz.
+
+   JRE - Java Calistirma Ortami ( Java Runtime Environment )
+
+    	- Java uygulamalarinin calismasi icin gereken kutuphanleri barindirir.
+
+	JDK - Java Gelistirebilme Ortami ( Java Development Environment )
+
+    	- Yazilimcilarin programlama yapabilmesi ve calistirabilmesine olanak saglar (JRE icindedir.)
+
+    	JDK = JRE + JVM
+
+
+
+## Java Nasil Calisir?
+
+
+
+
 ## Değişkenler
+
 
 En temel bilgi depolacagimiz birime DEGISKEN denir. Degiskenler RAM uzerinde saklanir. Program uzerinde tanimlandiklari yere gore etki 
 alanlarina sahiptirler. Etki alanlarini kaybettiklerinde RAM uzerinden silinirler. 
@@ -52,6 +122,7 @@ Degisken Tipleri;
 
 
 ### Nesne Degiskenleri
+
 
 Bir sinif icerisinde tanimlanir ve sinifin tum nesneleri, ornekleri icin farkli degerler icerebilir.
 
@@ -76,7 +147,9 @@ Ornek
 
 
 
-Bu kitabi programimiza tanimlamak icin
+Bu kitaba ait kalibimiz olsa, kolayca kitap uretebiliriz. 
+
+Peki program yaziyoruz programimiza tanimlamak icin ne yapariz?
 
 	- kitap isminde bir sinif olustururuz
 	- parcalarini tanimlamak icin nesne degiskenleri olustururuz. 
@@ -99,6 +172,7 @@ Ornek
 
 ### Yerel degiskenler
 
+
 Siniflarin icindeki metotlarin iclerinde tanimlanir.
 
 Peki Metot nedir ?
@@ -110,6 +184,7 @@ Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler
 
 
 ### Parametre degiskenleri
+
 
 Siniflarin icindeki metotlarin iclerinde kullanilmak uzere gecici olarak aldigi degerlerdir.
 
@@ -127,8 +202,8 @@ Yazdigimiz programlarin kullanmasini istedigimiz bilgileri, veri tipleri ile sin
 
 Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler araciligi ile programimiza tanititabiliyoruz.
 
-Java tip-guvenli (type-safe) bir dildir. Bu durum, degisken tanimlamak istedigimizde mutlaka veri tipinin ne oldugunu tanimlamak zorunda 
-oldugumuzu ifade eder.
+	- Java tip-guvenli (type-safe) bir dildir. Bu durum, degisken tanimlamak istedigimizde mutlaka veri tipinin ne oldugunu tanimlamak zorunda 
+	oldugumuzu ifade eder.
 
 
 ### Ilkel Veri Tipleri
