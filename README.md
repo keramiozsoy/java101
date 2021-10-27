@@ -443,6 +443,24 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 	--	Bir eksiltme
 	++	Bir arttırma
 
+Ornek
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ArithmeticOperators.java
+
+
+
+###	Karşılaştırma Operatörler
+
+
+	==	Eşittir
+	<	Küçüktür
+	>	Büyüktür
+	<=	Küçük Eşittir
+	>=	Büyük Eşittir
+	!=	Eşit Değildir
+
+
+
 
 
 
