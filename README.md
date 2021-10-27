@@ -257,11 +257,20 @@ Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler 
 
 		byte b = 65;
 
+
 	- short
+
+		short s = 65;
 
 
 	- int 
+
+		int i = 65;
+
+
 	- long 
+
+		long l = 65L;
 
 
 
@@ -269,7 +278,23 @@ Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler 
 
 
 	- float
+
+		float f = 65f;
+
+		float f = 65F;
+
+
 	- double
+
+		double d = 65.55d;
+
+		double d = 65.55D;
+
+
+Peki bu calisir mi ? 
+
+		double example = 127.00F;
+
 
 
 #### Karakterler
@@ -277,8 +302,39 @@ Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler 
 
 	- char
 
+		char c = 'A';
+		
+		char c = 65; // Buyuk A harfinin ascii tablosundaki karsiligidir.
+
+
+
+Peki bu calisir mi?
+
+		char c = "A"; 
+
+<details>
+<summary> click show answer </summary>
+<p>
+	
+```bash
+		// Boyle tanimalama yapamazsiniz. Bu farkli birsey demektir. (String)
+```
+
+</p>
+</details>
+
+
+
+
+
 
 #### Mantiksal Tipler
+
+	-
+
+
+
+
 
 
 
