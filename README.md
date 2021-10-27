@@ -460,7 +460,9 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 	!=	Eşit Değildir
 
 
+Ornek
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CompareOperators.java
 
 
 
