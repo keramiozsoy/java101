@@ -480,8 +480,92 @@ Degiskenleri karsilastirip, sonuc olarak boolean tipinde veri donmesini istedigi
 	NOT	!=	Kendisinden sonra gelen ifadenin değerinin tersini alır.
 
 
+Ornek
 
-LogicalOperators
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LogicalOperators.java
+
+
+###	Bit Tabanlı Operatörler
+
+
+	AND			&	
+					İki sayının ikilik tabanda birbirine karşılık düşen her bitini "ve"  işlemine sokarak bir sonuç elde eder.
+
+					Ve islemi nedir ? 
+					Basamaklar karsilastirilirken 
+					her ikisi 1 ise 1 diger durumlarda 0 olarak islemin sonucu her basamak icin ayri ayri yazilir.
+
+	
+	OR			|	
+					İki sayının ikilik tabanda birbirine karşılık düşen her bitini "veya"  işlemine sokarak  bir sonuç elde eder.
+
+					Veya islemi nedir ?
+					Basamaklar karsilastirilirken 
+					en az biri 1 ise 1 diger durumlarda 0 islemin sonucu her basamak icin ayri ayri yazilir.
+
+	
+	XOR			^	İki sayının ikilik tabanda birbirine karşılık düşen her bitini "özel veya" işlemine sokarak bir sonuç elde eder.
+					Ozel veya nedir ?
+					Basamaklar karsilastirilirken
+					birbirinden farkli ise 1  diger durumlarda 0 islemin sonucu her basamak icin ayri ayri yazilir.
+
+
+	
+	Right Shift	>>	Bir sayının ikilik tabandaki karşılığını bir basamak sağa kaydırır. İkilik tabanda 2 ile "bölme" olarak da adlandırılabilir.
+					Isaret biti  nedir ?
+					Sayi negatif ise 1, pozitif ise 0 dir.
+
+					Bu islem nasil yapilir?
+					Sayiyi binary olarak yaz. Sayının bitlerini sağa kaydırır ve kalan soldaki boşlukları işaret biti ile doldurur. 
+
+
+	
+	Left Shift	<<	Bir sayının ikilik tabandaki karşılığını bir basamak sağa kaydırır. İkilik tabanda 2 ile "çarpma" olarak da adlandırılabilir
+					Isaret biti  nedir ?
+					Sayi negatif ise 1, pozitif ise 0 dir.
+
+					Bu islem nasil yapilir?
+					Sayiyi binary olarak yaz. Sayının bitlerini sola kaydırır ve kalan sagdaki boşlukları işaret biti ile doldurur. 
+
+
+
+	Unsigned Right Shift	>>> Ayrintiya girmeyelim.
+
+	Unsigned Left Shift		<<< Ayrintiya girmeyelim.
+
+	
+	Ters		~	Bir sayının ikilik tabandaki karşılığındaki her bitini "tersler". Yani 1 olan bitleri 0, 0 olan bitleri 1 yapar.
+
+	
+	Ternary 	?	3 argüman alan tek operatördür ve bir değişkene şartlı atama yapılmasını sağlar. 
+
+					a == b ? "esit" : "degil"
+
+
+
+Ornek ekle
+
+
+## Kontrol Ifadeleri
+
+- if else
+- switch case
+- donguler 
+		- for
+		- while
+		- do/while
+
+SORULAR
+
+- Disaridan 3 parametre alan ve ekrana yazan uygulamayi yaziniz. (args)
+
+- MaviTelefon ve KirmiziTelefon olacak sekilde iki sinif olusturunuz. MaviTelefon sinifinda
+static olmayan bir metot tanimlayin. Metot ile " mavi telefondan mesaj var " seklinde bir mesaj tanimlayip geri dondurelim.
+KirmiziTelefon icerisinden yazdigimiz onceki metodu cagiralim.
+
+- 1 den 100 e kadar ielrkeyen dongu icerisinde her 100 adimda ekrana dongunun kacinci adiminda oldugunu yazan bir uygulama yazalim
+
+- 5 dan 50 ye kadar olan sayilari ekrana yazarken sadece 5 ve 5in katlarini ekrana yazmayan uygulama yaziniz.
 
 
 
