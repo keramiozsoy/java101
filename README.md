@@ -195,6 +195,25 @@ https://github.com/keramiozsoy/java101/tree/main/java101/src/main/java/examples/
 https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attribute-and-property-in-java/
 
 
+
+
+## Depolanan veriler nerede tutulur ?
+
+
+EKSIK
+EKSIK
+EKSIK
+EKSIK
+EKSIK
+EKSIK
+
+STACK VE HEAP
+
+Java Memory Management isimli linkedin egitiminin aynisi zaten anlatilmis oradan kopyala
+
+
+
+
 ## Veri Tipleri
 
 
@@ -210,12 +229,37 @@ Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler 
 
 
 
+	Primitive Tip	Uzunluk	Minimum Değer	Maksimum Değer	Varsayılan Değer 	Sinif-Nesne Tipi
+
+	char			16 Bit	Unicode 0		Unicode 2^16-1	‘\u0000’			Character
+
+	long			64 Bit	-2^63			2^63-1			 0L					Long
+
+	int				32 Bit	-2^31			231-1			 0 					Integer
+
+	short			16 Bit	-2^15			215-1			 0 					Short
+
+	byte			8 Bit	-2^7			2^7-1			 0 					Byte
+
+	double			64 Bit	-3.4*10^38		3.4*10^38		 0.0d 				Double
+
+	float			32 Bit	– 1.7*1038		1.7*1038		 0.0f				Float	
+
+	boolean			1 Bit									 false				Boolean
+
+
+
 
 #### Tamsayilar
 
 
 	- byte
+
+		byte b = 65;
+
 	- short
+
+
 	- int 
 	- long 
 
@@ -243,6 +287,11 @@ Harf, kelime, cumle veya bircok farkli sayi gosterim seklini farkli veri tipler 
 ### Referans Veri Tipleri
 
 
+
+
+
+
+## Stack Ve Heap nedir?
 
 
 
