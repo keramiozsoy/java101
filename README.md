@@ -466,7 +466,24 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-## Kontrol İfadeleri
+###	Mantıksal Operatörler
+
+Degiskenleri karsilastirip, sonuc olarak boolean tipinde veri donmesini istedigimiz durumlarda operatorler kullaniriz.
+
+
+	AND	&&	Sağındaki ve solundaki ifadelerin ikisi de doğru ise “true” sonuç döndürür diğer durumlarda “false” döner
+
+	OR	||	Sağındaki ya da solundaki herhangi birisi doğru ise “true” sonuç döner diğer durumlarda “false” döner.
+
+	XOR	^	Sağ yada soldaki her iki ifade de aynı ise yani ( true –  true) yada (false – false) gibi . sonuç “false” olarak döner diğer durumlarda “true” döner.
+
+	NOT	!=	Kendisinden sonra gelen ifadenin değerinin tersini alır.
+
+
+
+LogicalOperators
+
+
 
 ## Fonksiyonlar
 
