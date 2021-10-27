@@ -296,6 +296,18 @@ Peki bu calisir mi ?
 		double example = 127.00F;
 
 
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+		Evet. Aslinda burada double olusturulur.
+```
+
+</p>
+</details>
+
+
 
 #### Karakterler
 
@@ -313,7 +325,7 @@ Peki bu calisir mi?
 		char c = "A"; 
 
 <details>
-<summary> click show answer </summary>
+<summary> Sorunun Cevabi Icin Tikla</summary>
 <p>
 	
 ```bash
@@ -330,11 +342,9 @@ Peki bu calisir mi?
 
 #### Mantiksal Tipler
 
-	-
+	- boolean
 
-
-
-
+	 boolean b = true;
 
 
 
