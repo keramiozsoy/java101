@@ -422,7 +422,26 @@ Java’da operatörleri yaptıkları işe göre sınıflandırabiliriz.
 	%=	Soldaki ile sağdakinin modunu alır, sonucu soldakine atar.
 
 
+Ornek
+
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ValueAssignToVariable.java
+
+
+Ornek
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/AssingmentOperators.java
+
+
+
+### Aritmetik Operatörler
+
+	+	Toplama İşlemi
+	-	Çıkarma İşlemi
+	*	Çarpma İşlemi
+	/	Bölme İşlemi
+	%	Mod alma  ( iki sayiyi birbirine bol kalani cevap olarak don)
+	--	Bir eksiltme
+	++	Bir arttırma
 
 
 

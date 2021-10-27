@@ -11,6 +11,9 @@ public class ValueAssignToVariable {
     public static int b;
 
     public static void main(String[] args) {
+        // Variable was initialized by default value
+        System.out.println(b);
+
         // Assignment variable
         b = 7;
 
