@@ -3,7 +3,30 @@
 
 ## Java Tarihçesi
 
+Javanin yillara gore gelisim evrelerini goruntuleyebilecegimiz bir link ekleyecegim.
+
 ## Java Nedir
+
+
+## Java Dilinin Basarisi Nedir ?
+
+ -  Bellek problemlerini cozmesidir.
+
+ - Nesneye yonelik progamalamaya uygun olmasi programlarimizi yazarken daha uygun gelistirmeler yapmamizi sagliyor.
+
+ - Cok uzun yillardan beri sagladigi "bir kez yaz her yerde calistir" olanagini saglamasidir.
+
+## Cop Toplayici Nedir?
+
+
+- Programlarimizin calisma suresi boyunca ortaya cikan ve sonradan kullanilmayan gereksiz nesneleri bulur ve onlari temizler.  
+
+- Mekanizmanin adi cop toplayici ( garbage collector ) olarak bilinir. 
+
+- C++ gibi dillerde bellekte yer kaplayan bilgilerin temizlenmesi sorumlulugu, java dilinde kodlama yapan kisiye ait degildir.
+
+- Cunku gereksiz ve kullanilmayan bellek alanlarini cop toplayici (garbage collector) mekanizmasi ile temizlemesidir.
+
 
 ## JDK JRE JVM Kavramları
 
@@ -67,11 +90,11 @@ Nesne degiskenleri, onune static anahtar kelimesi alarak, ayni siniftan olusturu
 
 Ornek
 
-	Elimizdeki kitap sinifindan 5 tane kitap olusturduk ve gerekli bilgileri doldurduk.
-	Eger yazar bilgisi static olarak tanimlanmis ise yazarin bilgisi tanimlandiginda 
-	tum kitaplarin yazari ayni olacaktir. Cunku static olarak tanimlandiginda tum kitap 
-	nesneleri bellekte ayni yerden okuyacaktir.
+	- Elimizdeki kitap sinifindan 5 tane kitap olusturduk ve gerekli bilgileri doldurduk.  
+	
+	- Eger yazar bilgisi static olarak tanimlanmis ise yazarin bilgisi tanimlandiginda tum kitaplarin yazari ayni olacaktir. 
 
+	- Cunku static olarak tanimlandiginda tum kitap nesneleri bellekte ayni yerden okuyacaktir.
 
 
 ### Yerel degiskenler
