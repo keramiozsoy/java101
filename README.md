@@ -566,10 +566,24 @@ Ornek ekle
 
 ### if else
 
+
 Kosullara gore programlarimin akisini yonlendirebilecegimiz yapilardir.
 
 Ornek 
 	Sinav sonucuna gore alinan harf notunu gosteren bir program yazabiliriz.
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingIfElse.java
+
+
+Ornek 
+	18 yasindan kucukler ehliyet alamaz, 18 yasindan buyukseniz ehliyet alabilirsiniz. Ayni zamanda eger 
+	paraniz yetiyorsa araba alabilirsiniz yetmiyorsa alamazsiniz.
+
+
+
+
+### switch case
+
 
 
 
