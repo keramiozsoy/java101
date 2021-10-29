@@ -548,12 +548,32 @@ Ornek ekle
 
 ## Kontrol Ifadeleri
 
-- if else
-- switch case
-- donguler 
-		- for
-		- while
-		- do/while
+- karsilastirma
+	- if else
+	- switch case
+
+- dongu 
+	- while
+	- do while
+	- for 
+
+- dallanma
+	- break
+	- continue
+	- label:
+	- return
+
+
+### if else
+
+Kosullara gore programlarimin akisini yonlendirebilecegimiz yapilardir.
+
+Ornek 
+	Sinav sonucuna gore alinan harf notunu gosteren bir program yazabiliriz.
+
+
+
+
 
 SORULAR
 
