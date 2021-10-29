@@ -580,11 +580,23 @@ Ornek
 	paraniz yetiyorsa araba alabilirsiniz yetmiyorsa alamazsiniz.
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingIfElseIncludeIfElse.java
 
 
 ### switch case
 
 
+Tamsayilarin karsilastirilip dogru kosullarin else edilmesini saglayan mekanizmadir. 
+
+Java 7 ile birlikte switch icerisinde secimi belirleyn ifade artik tamsayi olmak zorunda degildir!!!
+
+If else yapisi ile neredeyse islem mantigi aynidir. 
+
+Fakat break, ve default anahtar kelimeleri ile islem akisini yonlendirmek icin ayricaligi vardir.
+
+
+Ornek
+	Girilen sayiya gore aylari getiren uygulamayi yazalim
 
 
 
