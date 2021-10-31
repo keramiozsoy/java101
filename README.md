@@ -657,6 +657,9 @@ Ornek
 	- Yil olarak eski calisanlarin yeni calisanlara gore daha cok etki alanina sahip olmasi isteniyor.
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCaseWithoutBreakShop.java
+
+
 Odev
 
 	Bu ornegi ic ice if else yazarak hangi kullanim seklinin size gore daha temiz oldugunu karsilastirabilirsiz.
@@ -678,6 +681,9 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
+
+
+### while dongusu
 
 
 
