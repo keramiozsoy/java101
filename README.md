@@ -423,19 +423,16 @@ tempValue ve newValue alanları stackten silinir ve artık main method scopuna g
 
 Stack kavramından bahsederken, stack üzerinde local değişkenlerin tutulduğundan bahsetmiştik. 
 
-Heap dediğimiz şey ise esasen Java tarafından nesnelerin tutulduğu yerdir. 
+- Heap dediğimiz şey ise aslinda Java tarafından nesnelerin tutulduğu yerdir. 
 
 Java’da new anahtarı ile oluşturulan tüm nesneler memory de Heap denilen  
 ve JVM tarafından yönetilen yerde saklanır.
 
 Yani javadaki tüm Objeler Heap üstünde tutulur. 
 
-
-
-
 Aslinda bu bölgeler öyle gözle görünüp fark edeceğimiz şeyler değildir. 
 
-Siz bir java uygulamasını çalıştırdığınızda, 
+- Siz bir java uygulamasını çalıştırdığınızda, 
 
 JVM sizin için memory de bellek tahsis(allocation) yapar ve
 bu yapılan tahsis içerisinde de bu bölümleri ayırır. 
@@ -454,7 +451,7 @@ Aşağıdaki örnekte, iki farklı değişken hafızada nasıl tutulduğunu gör
 
 Şimdi objelerin heap üstünde nasıl tutulduğuna daha iyi anlamak için aşağıda kodu inceleyelim.
 
-![Resim 3](https://github.com/keramiozsoy/java101/blob/main/images/2string-list-on-heap.png)
+![Resim 3](https://github.com/keramiozsoy/java101/blob/main/images/3string-list-on-heap.png)
 
 
 Yukarıda main metod içerisinde bir String Listesi oluşturuluyor. 
