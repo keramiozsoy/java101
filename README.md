@@ -674,6 +674,9 @@ Ornek
 	- Fakat secmedikleri durumda onlari spor dalina yonlendirecek programi yazalim.
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCaseBreakDefaultSchool.java
+
+
 
 
 
