@@ -20,11 +20,18 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 
 ## Java Tarihçesi
 
-	1995 yilinda James Gosling tarafindan tasarlanarak baslanan bu java projesi zamanla farkli tarihsel surecler gecirdi.
+	1995 yilinda James Gosling tarafindan tasarlanarak
+	baslanan bu java projesi zamanla farkli tarihsel surecler gecirdi.
 
-	Java dilini dunyaya tanitan ve daha hizli yayilmasini saglayan Sun Microsystems isimli firmadir.
 
-	Uzun yillardan sonra Oracle firmasi bu firmayi satin aldigi icin Java diline ait tum haklar el degistirmis oldu.
+
+	Java dilini dunyaya tanitan ve daha hizli yayilmasini 
+	saglayan Sun Microsystems isimli firmadir.
+
+
+
+	Uzun yillardan sonra Oracle firmasi bu firmayi satin aldigi 
+	icin Java diline ait tum haklar el degistirmis oldu.
 
 
 
