@@ -3,6 +3,9 @@
 
 # BIRINCI BOLUM
 
+https://github.com/keramiozsoy/java101/find/main
+
+
 ## Java Nedir ?
 
 
@@ -668,7 +671,7 @@ Ornek
 	int tipindeki bir degeri short tipine cevirebiliriz. Fakat veri kaybi olur.
 	int tipindeki bir degeri long tipine cevirebiliriz. Veri kaybi olmaz.
 
-
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/VariableTypeConvertion.java
 
 
 ### Referans Veri Tipleri
