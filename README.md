@@ -1,9 +1,8 @@
 # java101
 
+https://github.com/keramiozsoy/java101/find/main
 
 # BIRINCI BOLUM
-
-https://github.com/keramiozsoy/java101/find/main
 
 
 ## Java Nedir ?
@@ -668,8 +667,10 @@ Peki bu calisir mi?
 ##### Ilkel Veri Tipleri arasinda tip donusum islemleri
 
 Ornek 
+
 	int tipindeki bir degeri short tipine cevirebiliriz. Fakat veri kaybi olur.
 	int tipindeki bir degeri long tipine cevirebiliriz. Veri kaybi olmaz.
+
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/VariableTypeConvertion.java
 
@@ -716,6 +717,20 @@ Yukaridaki tanimlamalarin farklina bakalim.
 	-	Integer gibi sınıflar immutable (değişmez) özelliğe sahiptirler, sıradan nesneler gibi davranmazlar.
 
 Bununla birlikte ek bir not olarak;  Java derleyicisi gerektiğinde tanımlanan her ilkel veriyi ait olduğu sınıfa otomatik olarak gömer buna kutulama (boxing) denilir ya da derleyici gerektiğinde bir sınıf nesnesini ilkel veri tipine döndürür buna da kutu açma (unboxing) denilir. Her iki işlemi de Java derleyicisi kendiliğinden otomatik yapar.
+
+
+
+##### Referans Veri Tipleri ayni objeyi gostermesi
+
+Ornek 
+	Iki adet obje tanimlayip ayni referansa baglayalim.
+	Ayrıca bir referans değişkeninde saklanan bir nesnenin 
+	referansını başka bir referans değişkenine atayabilirsiniz. 
+	Bu gibi durumlarda, her iki referans değişkeni de bellekteki aynı nesneye atıfta bulunacaktır.
+
+
+VariableAssignSameObject
+
 
 
 # IKINCI BOLUM YARIN DEVAM EDELIM
