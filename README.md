@@ -1,16 +1,12 @@
 # java101
 
 
-## Java Tarihçesi
-
-
-Javanin yillara gore gelisim evrelerini goruntuleyebilecegimiz bir link ekleyecegim.
-
-
 ## Java Nedir ?
 
 
 Java hem bir dil hem de bir ortam olarak dusunebilirsiniz.
+
+Dilin kullanildigi yerlere birkac ornek verelim.
 
  - Web uygulamalari
  
@@ -19,6 +15,41 @@ Java hem bir dil hem de bir ortam olarak dusunebilirsiniz.
  - Oyunlar 
  
  - Android gibi temel gucu buyuk oranda java tarafindan gelen mobil uygulamalar gelisitirebilirsiniz.
+
+
+
+## Java Tarihçesi
+
+	1995 yilinda James Gosling tarafindan tasarlanarak baslanan bu java projesi zamanla farkli tarihsel surecler gecirdi.
+
+	Java dilini dunyaya tanitan ve daha hizli yayilmasini saglayan Sun Microsystems isimli firmadir.
+
+	Uzun yillardan sonra Oracle firmasi bu firmayi satin aldigi icin Java diline ait tum haklar el degistirmis oldu.
+
+
+
+	JDK Beta				1995
+	JDK1.0					1996
+	JDK 1.1					1997
+	J2SE 1.2				1998
+	J2SE 1.3				2000
+	J2SE 1.4				2002
+	J2SE 5.0				2004
+	Java SE 6				2006
+	Java SE 7				2011
+	Java SE 8 (LTS)		Mart 2014
+	Java SE 9			Eylul 2017
+	Java SE 10			Mart 2018
+	Java SE 11 (LTS)	Eylul 2018
+	Java SE 12			Mart 2019
+	Java SE 13			Eylul 2019
+	Java SE 14			Mart  2020
+	Java SE 15			Eylul 2020
+	Java SE 16			Mart 2021
+	Java SE 17 (LTS)	Eylul 2021
+	Java SE 18			Mart 2022
+
+
 
 
 ## Java Dilinin Basarisi Nedir ?
@@ -686,6 +717,16 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 ### while dongusu
+
+
+### do while dongusu
+
+
+### for dongusu
+
+bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya calisalim.
+
+
 
 
 
