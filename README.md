@@ -152,9 +152,10 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 
 - Mekanizmanin adi cop toplayici ( garbage collector ) olarak bilinir. 
 
-- C++ gibi dillerde bellekte yer kaplayan bilgilerin temizlenmesi sorumlulugu, java dilinde kodlama yapan kisiye ait degildir.
+- C++ gibi dillerde bellekte yer kaplayan bilgilerin temizlenmesi sorumlulugu
+kodlama yapana ait iken , java dilinde kodlama yapan kisiye ait degildir.
 
-- Cunku gereksiz ve kullanilmayan bellek alanlarini cop toplayici (garbage collector) mekanizmasi ile temizlemesidir.
+- Cunku gereksiz ve kullanilmayan bellek alanlarini cop toplayici (garbage collector) temizlemektedir.
 
 - Cop toplayici temizleme islemleri yaparken kullanilan java versiyonlara gore yillar icinde degiserek farkli yontemler ile isini halleder.
 	* referans sayma yontemi
@@ -167,8 +168,14 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 
 ## Java Nasil Calisir?
 
+Bit kavramini ogrendikten sonra nasil calistirigina bakabiliriz.
+
  Bit nedir?
-  0 veya 1 ile bilginin bellekte olmasi veya olamamasi durumunu karsiyalan terimdir.
+
+
+  0 veya 1 ile bilginin bellekte olmasi veya olmamasi durumunu karsiyalan terimdir.
+
+ 
 
  Bayt (Byte) ise 8 haneli bit ten olusan terimdir.
 
@@ -194,18 +201,41 @@ Calistirma Islemi ( Run Time )
 
 	JVM - Java Sanal Makinasi ( Java Virtual Machine)
 
-		- JVM isletim sistemi ile java kodumuz arasinda kopru gorevindedir. Bu nedenle yazilan kod herhangi bir degisiklik yapilmadan bir kere yazip her yerde calistirabiliriz.
+		- JVM isletim sistemi ile java kodumuz arasinda kopru gorevindedir. 
 
-   JRE - Java Calistirma Ortami ( Java Runtime Environment )
+		- Bu nedenle yazilan kod herhangi bir degisiklik yapilmadan bir kere yazip her yerde calistirabiliriz.
+
+	JRE - Java Calistirma Ortami ( Java Runtime Environment )
 
     	- Java uygulamalarinin calismasi icin gereken kutuphanleri barindirir.
 
 	JDK - Java Gelistirebilme Ortami ( Java Development Environment )
 
-    	- Yazilimcilarin programlama yapabilmesi ve calistirabilmesine olanak saglar (JRE icindedir.)
+    	- Yazilimcilarin programlama yapabilmesi ve calistirabilmesine
+    	 olanak saglar (JRE icindedir.)
 
     	JDK = JRE + JVM
 
+
+Farkli JVM versiyonlari var
+
+- HotSpot JVM Oracle
+- Eclipse OpenJ9
+- GraalVM
+
+Farkli JDK versiyonlari var. 
+  
+- Oracle JDK
+- Open JDK
+	-> Amazon Correto 
+	-> SapMachine (SAP JDK)
+	-> Azul
+	-> Red Hat OpenJDK
+	-> IBM OpenJDK
+
+
+Proje baslangicida bir jdk/jvm secilerek kodlamaya baslanir.
+Neden farkli versiyonlar oldugunu arastirabilirsiniz ?
 
 
 
