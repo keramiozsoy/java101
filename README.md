@@ -352,12 +352,9 @@ https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attr
 		Peki farklari nedir?
 		PermGen sinifli bir boyutu var, Metaspace otomatik olarak boyutu artabilir.
 
-
 - Stack  ( RAM )
 - Heap   ( RAM )
-- Kaydedilen dosyalar  ( Hard Disk )
-
-
+- Kaydedilen dosyalar ( Hard Disk )
 
 
 ## Stack Kavramı
