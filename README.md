@@ -661,20 +661,30 @@ Peki bu calisir mi?
 
 
 
+
+##### Ilkel Veri Tipleri arasinda tip donusum islemleri
+
+Ornek 
+	int tipindeki bir degeri short tipine cevirebiliriz. Fakat veri kaybi olur.
+	int tipindeki bir degeri long tipine cevirebiliriz. Veri kaybi olmaz.
+
+
+
+
 ### Referans Veri Tipleri
 
 
 Yukaridaki Ilkel veri tiplerinin gelistirilmis sinif mantigina dayanan halleri vardir.
 Ayni degerleri siniflar yardimi ile olusturabiliyoruz.
 
-Character
-Long
-Integer
-Short
-Byte
-Double
-Float	
-Boolean
+- Character
+- Long
+- Integer
+- Short
+- Byte
+- Double
+- Float	
+- Boolean
 
 Peki ama neden bu siniflara ihtiyacimiz var ?
 
