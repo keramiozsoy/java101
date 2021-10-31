@@ -1,6 +1,8 @@
 # java101
 
 
+# BIRINCI BOLUM
+
 ## Java Nedir ?
 
 
@@ -36,14 +38,88 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 
 
 	JDK Beta				1995
-	JDK1.0					1996
+	JDK1.0					1996   
 	JDK 1.1					1997
+
+
+	(
+
+	Java Database Connectivity - JDBC 
+		
+	Java dili kullarak veritabanlarina erismek ve
+	islemler yapmak istedigimizde bize yardimci olan kutuphane gibi dusunebiliriz.
+
+
+	JDBC Yazdigimiz kod ile vertabana ozel yazilmis kutuphaneler
+	arasindaki bir noktayi temsil eder. Farkli varitabanlarina
+	baglanmak icin ek olarak farkli kutuphanelere ihtiyacimiz var.
+
+	Veritabani kutuphanelerini Java yi gelistirenler gelistirmiyorlar.
+
+
+	JAVA PROGRAMI 
+	------>  JDBC 
+	------>------>------>  JDBC DRIVER MySQL 
+	------>------>------>  JDBC DRIVER SQL Server
+	------>------>------>  JDBC DRIVER Oracle
+	------>------>------>  JDBC DRIVER PosgtreSQL 
+	------>------>------>  JDBC DRIVER SQLite
+	------>------>------>  JDBC DRIVER Microsoft Access 
+	------>------>------>  JDBC DRIVER Mongo
+		
+	)
+
+
+
+
+
 	J2SE 1.2				1998
+
+
+	(
+
+		Java Swing
+
+		- Java dili kullanarak masaustu uygulamalar yazilmasinin onu acilmis oldu.
+
+		Java Server Pages
+
+		- HTML icinde Java kodlari calistirilabilir hale geldiginden
+		internet siteleri JSP kullanarak kodlanmaya baslandi.
+
+		- ASP ve PHP ye cok benzer fakat java kullanilan halidir.
+
+	)
+
+
+
+
+
 	J2SE 1.3				2000
+
+	(
+		XML teknolojisi ile java artik iletisim kurabilecek duruma gelmis bulunuyor.
+	)
+
+
+
+
 	J2SE 1.4				2002
 	J2SE 5.0				2004
+
+	(
+		Enum, For each gibi yapilar java ya eklendi.
+	)
+
+
+
 	Java SE 6				2006
-	Java SE 7				2011
+	Java SE 7				2011 
+
+	( 
+		Switch icerisinde String kullanma ozelligi geldi.
+	)
+
 	Java SE 8 (LTS)		Mart 2014
 	Java SE 9			Eylul 2017
 	Java SE 10			Mart 2018
@@ -427,6 +503,8 @@ Yukaridaki tanimlamalarin farklina bakalim.
 Bununla birlikte ek bir not olarak;  Java derleyicisi gerektiğinde tanımlanan her ilkel veriyi ait olduğu sınıfa otomatik olarak gömer buna kutulama (boxing) denilir ya da derleyici gerektiğinde bir sınıf nesnesini ilkel veri tipine döndürür buna da kutu açma (unboxing) denilir. Her iki işlemi de Java derleyicisi kendiliğinden otomatik yapar.
 
 
+# IKINCI BOLUM YARIN DEVAM EDELIM
+
 
 ## Operatörler
 
@@ -581,7 +659,12 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-Ornek ekle
+Bu konu cok karsilasacaginiz bir konu degil.
+
+
+# UCUNCU BOLUM YARIN DEVAM EDELIM
+
+
 
 
 ## Kontrol Ifadeleri
@@ -593,7 +676,8 @@ Ornek ekle
 - dongu 
 	- while
 	- do while
-	- for 
+	- for
+	- for each 
 
 - dallanma
 	- break
@@ -723,6 +807,10 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
+
+# DORDUNCU BOLUM YARIN DEVAM EDELIM
+
+
 ### while dongusu
 
 
@@ -734,6 +822,9 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya calisalim.
 
 
+
+
+# BESINCI BOLUM YARIN DEVAM EDELIM
 
 
 
