@@ -594,9 +594,34 @@ Tamsayilarin karsilastirilip dogru kosullarin else edilmesini saglayan mekanizma
 
 Java 7 ile birlikte switch icerisinde secimi belirleyn ifade artik tamsayi olmak zorunda degildir!!!
 
+
+
+
+Desteklenen tipler asagidadir.
+
+Ilkel tipler
+
+	- byte
+	- short
+	- char
+	- int
+
+sarmalayici siniflar
+
+	- Byte
+	- Short
+	- Character
+	- Integer
+
+isimler ile numaralandirma yaptigimiz 
+
+	- enum
+
+
+
 If else yapisi ile neredeyse islem mantigi aynidir. 
 
-Fakat break, ve default anahtar kelimeleri ile islem akisini yonlendirmek icin ayricaligi vardir.
+Fakat break ve default anahtar kelimeleri ile islem akisini yonlendirmek kabiliyetinden dolayi ekstra ayricaligi vardir.
 
 
 
@@ -608,8 +633,65 @@ Ornek
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCaseBreak.java
 
 	
+Ornek 
 
 	Onceki uygulamada bulunan break komutlarini silerek uygulamayi tekrar calistirdigimizda herhangi bir fark olur mu ?
+
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCaseWithoutBreak.java
+
+
+Ornek 
+	
+	Break kullanmayacagim ve bu durum ile bir problemi cozecegim.
+
+
+
+
+	Bir zincir market dusunelim. Kendisinin satin aldigi urunler ile ilgili tum operasyonu yonetmek istiyor.
+
+	Bunun icin bize kendi istekleri dogrultusunda basvuru yapti.
+
+	- Farkli kisilerin farkli islemleri yapabilmesi isteniyor.
+
+	- Yil olarak eski calisanlarin yeni calisanlara gore daha cok etki alanina sahip olmasi isteniyor.
+
+
+Odev
+
+	Bu ornegi ic ice if else yazarak hangi kullanim seklinin size gore daha temiz oldugunu karsilastirabilirsiz.
+
+
+
+Ornek 
+	
+	Switch case, break ve default kullanilan senaryoya bakalim.
+
+	- Bir okul yonetimi verilecek dersleri onceden acikliyor. 
+
+	- Ogrencilerin sectigi derslere gore ogrenciler dersleri alacak. 
+	
+	- Fakat secmedikleri durumda onlari spor dalina yonlendirecek programi yazalim.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
 
 
 
