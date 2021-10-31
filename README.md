@@ -346,7 +346,173 @@ https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attr
 
 Javada kullanılan primitif ve yerel değişkenler ile objelerin referanslarının tutulduğu hafıza bölgesine stack diyoruz. Bununla birlikte, java memory management için Stack yığın yapısının Last In First Out ( LIFO - Son giren ilk çıkar ) türünü  kullanmaktadır. 
 
-![Test Image 1]()
+![Resim 1](https://github.com/keramiozsoy/java101/blob/main/images/1stack.png)
+
+
+Sırası ile adımları inceleyip anlamaya çalışalım. 
+
+1
+- Görüldüğü üzere main metodumuz ve main metodumuz içerisinde
+ calculate isimli başka bir metod çağırma işlemi yapılmaktadır.
+
+
+
+2
+- Java’da bir method çağırımı yapıldığında, ilgili değişkenler Stack’e sırası ile eklenmeye başlar. 
+Bunun için öncelikle memory de boş bir stack yaratılır. 
+
+
+
+3
+- args = empty args main metoduna gönderilen parametre için stack üzerinde bir array tutar.
+
+
+
+4
+- int value = 7 satırı için value = 7 olarak bir değer tutar.
+
+
+
+5
+- value = calculate(value) methodu ile artık calculate metod çağırımı yapılır, 
+bunun için calculate metodu içerisinde kullanılacak veri için stack’e bir değer daha eklenir.
+
+	Burada dikkat edilmesi gereken iki husus vardır. 
+
+	- --> value değişkeninin değeri pass by value şeklinde aktarılır. 
+	Yani ilgili değişkenin değerinin bir kopyası methoda argümen olarak gönderilir.
+
+	- --> calculate methoduna geçildiği anda artık main metod out-ouf-scope durumuan gelir. 
+	Bu aşamadan sonra main metodu içerisindeki value değerlerine erişim yapılamaz. 
+
+
+6
+- int = tempValue satırında tempValue için stack’e bir değer daha eklenir.
+
+
+7
+- int = newValue satırında newValue için stack’e bir değer daha eklenir. 
+
+8 
+- return olduğu andan itibaren stack üstünde bulunan veri, 
+tempValue ve newValue alanları stackten silinir ve artık main method scopuna geri dönülmüş olur.
+
+9
+- artık value değişkeninin değeri 20 olacaktır.
+
+10
+- Kodumuzda bu aşamadan sonra işletilecek bir kod satırı kalmadığı için JVM tarafından ilgili stack boşaltılır.
+
+11
+- Eğer stack üzerinde herhangi bir değer kalmadığında, JVM tarafından ilgili stack hafızadan silinir. 
+
+
+
+
+		Java’da bütün lokal değişkenler stacklerde tutulur,
+		method çağırımı sonra erdiğinde jvm tüm değerleri sileceği için stack boş kalacaktır, böylelikle bu değişkenler hafızada yer kaplamaz. 
+
+		
+
+		Ek bilgi : Java’da her bir thread ın kendisine ait bir yığını bulunur. Bu da sizin oluşturduğunuz her thread in hafızada yer kaplayacağı anlamına gelir. ( Thread kavramı ve memory management nasıl olur bir araştırma konusu olsun lütfen. )
+
+
+
+
+## Heap Kavramı
+
+Stack kavramından bahsederken, stack üzerinde local değişkenlerin tutulduğundan bahsetmiştik. 
+
+Heap dediğimiz şey ise esasen Java tarafından nesnelerin tutulduğu yerdir. 
+
+Java’da new anahtarı ile oluşturulan tüm nesneler memory de Heap denilen  
+ve JVM tarafından yönetilen yerde saklanır.
+
+Yani javadaki tüm Objeler Heap üstünde tutulur. 
+
+
+
+
+Aslinda bu bölgeler öyle gözle görünüp fark edeceğimiz şeyler değildir. 
+
+Siz bir java uygulamasını çalıştırdığınızda, 
+
+JVM sizin için memory de bellek tahsis(allocation) yapar ve
+bu yapılan tahsis içerisinde de bu bölümleri ayırır. 
+
+(Bir java uygulaması için minimum bellek ihtiyacı ne kadardır? Çok fazla bellek ihtiyacımız varsa bunu nasıl yapabiliriz? ) 
+
+
+
+
+Aşağıdaki örnekte, iki farklı değişken hafızada nasıl tutulduğunu görebiliyoruz. 
+
+
+![Resim 2](https://github.com/keramiozsoy/java101/blob/main/images/2stack-vs-heap.png)
+
+
+
+Şimdi objelerin heap üstünde nasıl tutulduğuna daha iyi anlamak için aşağıda kodu inceleyelim.
+
+![Resim 3](https://github.com/keramiozsoy/java101/blob/main/images/2string-list-on-heap.png)
+
+
+Yukarıda main metod içerisinde bir String Listesi oluşturuluyor. 
+
+Oluşturulan String listesine 3 eleman ekleniyor ve eklenen elemanlar, 
+
+printList metoduna gönderilerek her eleman yazdırılıyor. 
+
+Şimdi bu program parçasının hafızada JVM tarafından nasıl tutulduğuna bakalım.
+
+
+![Resim 4](https://github.com/keramiozsoy/java101/blob/main/images/4string-list-on-heap-detail.png)
+
+
+1
+- List<String> myList = new ArrayList<>() satırı ile Heap bölgesinde bir list objesi tutuluyor.
+
+
+2
+- myList.add(“One”) komutu ile yine Heap bölgesinde String verisi taşıyan ve
+ değeri One olan bir obje daha tutuluyor. 
+ ( not, burada new String(“One”) olarak düşünelim, daha anlaşılır olur.
+
+
+3
+- Diger eleman ekleme işlemleri için de aynı adımlar uygulanıyor ve
+ artık List objesi üzerinde tutulan String objelerinin
+  heap bölgesinde referansları tutuluyor.
+
+
+
+
+
+
+Örneğimize printList methodunu değiştirerek farklı bir açıdan bakalım. 
+
+![Resim 5](https://github.com/keramiozsoy/java101/blob/main/images/5printlist-method-change.png)
+
+
+
+1
+- String value = data.get(1) dediğimizde, listenin birinci elemanındaki değeri yeni bir değişkene atıyoruz. value isimli bir değişkenin stack üzerinde String objesinin referansını tuttuğunu görüyoruz. Dikkat ederseniz, burada aynı objeye iki farklı referans veriyoruz. Liste içerisinde bulunan List objesi içerisinde birinci String içerisindeki eleman ile Stack üzerinde bulunan value değişkeninin referansı aynı yere bakıyor. İşte bu da Java’da Pass by Reference olarak nitelendiriliyor. 
+
+
+
+2
+- Stack üzerinde bulunan myList objesi artık out-of-scope durumundadır ve biz bu değişkene erişim yapamıyoruz, erişebildiğimiz değişkenler data ve value değişkenleridir. 
+
+
+3
+- data.add(“Four”) ile liste objesine artık yeni bir string değer daha ekliyoruz. 
+
+
+4
+-Listenin tüm elemanları yazdırıyoruz ve sonrasında value ve data değişkenleri stack üzerinden siliniyor çünkü metodumuz bitti. 
+
+
+
 
 
 ## Veri Tipleri
