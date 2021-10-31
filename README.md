@@ -729,7 +729,12 @@ Ornek
 	Bu gibi durumlarda, her iki referans değişkeni de bellekteki aynı nesneye atıfta bulunacaktır.
 
 
-VariableAssignSameObject
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/VariableAssignSameObject.java
+
+
+VisualVM aracini heap alanindaki bilgilere bakmak icin inceleyebilirsiniz.
+
+https://www.youtube.com/watch?v=Bu-P0aZyOfE
 
 
 
