@@ -342,18 +342,11 @@ https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attr
 ## Depolanan veriler nerede tutulur ?
 
 
-	EKSIK
-	EKSIK
-	EKSIK
-	EKSIK
-	EKSIK
-	EKSIK
+## Stack Kavramı
 
-STACK VE HEAP
+Javada kullanılan primitif ve yerel değişkenler ile objelerin referanslarının tutulduğu hafıza bölgesine stack diyoruz. Bununla birlikte, java memory management için Stack yığın yapısının Last In First Out ( LIFO - Son giren ilk çıkar ) türünü  kullanmaktadır. 
 
-Java Memory Management isimli linkedin egitiminin aynisi zaten anlatilmis oradan kopyala
-
-
+![Test Image 1]()
 
 
 ## Veri Tipleri
