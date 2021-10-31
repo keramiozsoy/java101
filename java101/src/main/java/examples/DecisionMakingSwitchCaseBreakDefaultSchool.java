@@ -1,6 +1,6 @@
 package examples;
 
-public class DecisionMakingSwitchCaseBreakDefault {
+public class DecisionMakingSwitchCaseBreakDefaultSchool {
 
     public static void main(String[] args) {
 
