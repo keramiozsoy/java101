@@ -569,10 +569,13 @@ Ornek ekle
 
 Kosullara gore programlarimin akisini yonlendirebilecegimiz yapilardir.
 
+
 Ornek 
+	
 	Sinav sonucuna gore alinan harf notunu gosteren bir program yazabiliriz.
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingIfElse.java
+
 
 
 Ornek 
@@ -596,11 +599,19 @@ If else yapisi ile neredeyse islem mantigi aynidir.
 Fakat break, ve default anahtar kelimeleri ile islem akisini yonlendirmek icin ayricaligi vardir.
 
 
+
+
 Ornek
 
 	Girilen sayiya gore aylari getiren uygulamayi yazalim
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCaseBreak.java
+
+	
+
+	Onceki uygulamada bulunan break komutlarini silerek uygulamayi tekrar calistirdigimizda herhangi bir fark olur mu ?
+
+
 
 
 
