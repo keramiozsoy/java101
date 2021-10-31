@@ -648,7 +648,9 @@ Ornek
 
 
 
-	Bir zincir market dusunelim. Kendisinin satin aldigi urunler ile ilgili tum operasyonu yonetmek istiyor.
+	Bir zincir market dusunelim. 
+
+	Kendisinin satin aldigi urunler ile ilgili tum operasyonu yonetmek istiyor.
 
 	Bunun icin bize kendi istekleri dogrultusunda basvuru yapti.
 
