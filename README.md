@@ -342,6 +342,24 @@ https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attr
 ## Depolanan veriler nerede tutulur ?
 
 
+- Static alan ( RAM )
+		
+		Static degisken ya da metotlar RAM uzerindeki heap alaninda tutulurlar.
+		
+		Java 8 den once PermGen(Permenant Generation), 
+		sonra ise Metaspace isimli kalici bolgede konumlanirlar.
+
+		Peki farklari nedir?
+		PermGen sinifli bir boyutu var, Metaspace otomatik olarak boyutu artabilir.
+
+
+- Stack  ( RAM )
+- Heap   ( RAM )
+- Kaydedilen dosyalar  ( Hard Disk )
+
+
+
+
 ## Stack Kavramı
 
 Javada kullanılan primitif ve yerel değişkenler ile objelerin referanslarının tutulduğu hafıza bölgesine stack diyoruz. Bununla birlikte, java memory management için Stack yığın yapısının Last In First Out ( LIFO - Son giren ilk çıkar ) türünü  kullanmaktadır. 
