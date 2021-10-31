@@ -222,17 +222,18 @@ Farkli JVM versiyonlari var
 - HotSpot JVM Oracle
 - Eclipse OpenJ9
 - GraalVM
+- vb.
 
 Farkli JDK versiyonlari var. 
   
 - Oracle JDK
 - Open JDK
-	-> Amazon Correto 
-	-> SapMachine (SAP JDK)
-	-> Azul
-	-> Red Hat OpenJDK
-	-> IBM OpenJDK
-
+	- -> Amazon Correto 
+	- -> SapMachine (SAP JDK)
+	- -> Azul
+	- -> Red Hat OpenJDK
+	- -> IBM OpenJDK
+- vb.
 
 Proje baslangicida bir jdk/jvm secilerek kodlamaya baslanir.
 Neden farkli versiyonlar oldugunu arastirabilirsiniz ?
