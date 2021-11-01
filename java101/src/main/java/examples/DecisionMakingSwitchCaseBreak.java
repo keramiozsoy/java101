@@ -4,6 +4,9 @@ public class DecisionMakingSwitchCaseBreak {
     public static void main(String[] args) {
         int month = 3;
 
+        // Defult Value
+        // int month = 13;
+
 
         switch (month){
             case 1: System.out.println("January"); break;
@@ -29,6 +32,9 @@ public class DecisionMakingSwitchCaseBreak {
             case 11: System.out.println("November"); break;
 
             case 12: System.out.println("December"); break;
+
+            default:
+                System.out.println(" Try again later ");
 
         }
     }
