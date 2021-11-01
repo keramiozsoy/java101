@@ -817,6 +817,15 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
+Ornek 
+
+	Buyuk Integer isimli siniftan olusturulan iki farkli degiskeni karsilasitralim. 
+
+
+CompareOperatorsWrapperClassEquals
+
+
+
 ###	Mantıksal Operatörler
 
 Degiskenleri karsilastirip, sonuc olarak boolean tipinde veri donmesini istedigimiz durumlarda operatorler kullaniriz.
@@ -1188,7 +1197,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 Ornek 
 
-LoopBranchingContinueWithJump
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopBranchingContinueWithJump.java
 
 
 
@@ -1197,6 +1206,8 @@ bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya ca
 
 
 # BESINCI BOLUM YARIN DEVAM EDELIM
+
+## String Operations
 
 
 

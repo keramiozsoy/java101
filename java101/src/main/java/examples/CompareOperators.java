@@ -10,7 +10,7 @@ public class CompareOperators {
         System.out.println("numSecond " + numSecond);
         System.out.println("-----------------------");
 
-        System.out.println("numFirst = numSecond");
+        System.out.println("numFirst == numSecond");
         System.out.println(numFirst == numSecond);
         System.out.println("numFirst < numSecond");
         System.out.println(numFirst < numSecond);
