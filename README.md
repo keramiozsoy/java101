@@ -1014,7 +1014,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 Soru
 
 
-	break kullanmamamak sizce her zaman problem midir ?
+	break kullanmamak sizce her zaman problem midir ?
 
 
 
@@ -1028,7 +1028,7 @@ Ornek
 
 	Kendisinin satin aldigi urunler ile ilgili tum operasyonu yonetmek istiyor.
 
-	Bunun icin bize kendi istekleri dogrultusunda basvuru yapti.
+	Bunun icin bize kendi istekleri dogrultusunda calisanlara goreveler veriyor.
 
 	- Farkli kisilerin farkli islemleri yapabilmesi isteniyor.
 
@@ -1063,6 +1063,19 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 # DORDUNCU BOLUM YARIN DEVAM EDELIM
+
+## Donguler
+
+- Donguler tekrarli islemleri yapmamizi sagliyor.
+
+- Donguleri olusturan 3 baslik mevcuttur.
+
+		Kac kez donecegini belirtecegimiz degisken olusturulur ve ilk deger atanir.
+
+		Dongunun sonlandirilmasi veya devam etmesi icin bir kosul cumlesi belirtilir.
+
+		Ilk maddedeki tanimlanan degiskenin ne kadar artip azalacagi belirlenir. 
+
 
 
 ### while dongusu
@@ -1107,8 +1120,30 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-
 ### for dongusu
+
+
+onceki dongulere benzeyen fakat tum kosul ve durumlari tek bir satirda gosterebilecegimiz bir yapidir.
+
+
+
+
+
+
+
+
+### Continue anahtar kelimesi kullanimi
+
+
+Ornek
+
+- 5000 e kadar olan tum 5 e bolunebilen sayilari ekrana yazdiran programi yazalim.
+
+LoopBranchingContinue
+
+
+
+
 
 bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya calisalim.
 
