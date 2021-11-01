@@ -1267,7 +1267,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - Sadece basindaki ve sonundaki bosluklari siler
 
-StringTrim
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringTrim.java
 
 
 
