@@ -1068,6 +1068,14 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 ### while dongusu
 
 
+While dongusu, kosulu sagladigi surece bitmeyen donguler olusturmayi saglar.
+
+Ornek 
+	
+	
+
+
+
 ### do while dongusu
 
 
