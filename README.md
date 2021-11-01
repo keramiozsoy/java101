@@ -1127,6 +1127,8 @@ onceki dongulere benzeyen fakat tum kosul ve durumlari tek bir satirda gosterebi
 
 
 
+LoopFor
+
 
 
 
@@ -1139,14 +1141,14 @@ Ornek
 
 - 5000 e kadar olan tum 5 e bolunebilen sayilari ekrana yazdiran programi yazalim.
 
-LoopBranchingContinue
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopBranchingContinue.java
 
 
 
 
 
 bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya calisalim.
-
 
 
 
