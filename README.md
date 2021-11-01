@@ -822,7 +822,7 @@ Ornek
 	Buyuk Integer isimli siniftan olusturulan iki farkli degiskeni karsilasitralim. 
 
 
-CompareOperatorsWrapperClassEquals
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CompareOperatorsWrapperClassEquals.java
 
 
 
@@ -850,6 +850,19 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 	AND			&	
 					İki sayının ikilik tabanda birbirine karşılık düşen her bitini "ve"  işlemine sokarak bir sonuç elde eder.
+
+					2 uzeri 0  = 1
+					2 uzeri 1  = 2
+					2 uzeri 2  = 4
+
+					a = 5 = 0101 (In Binary)
+					b = 7 = 0111 (In Binary)
+
+					Bitwise AND Operation of 5 and 7
+					  0101
+					& 0111
+					 ________
+					  0101  = 5 (In decimal) 
 
 					Ve islemi nedir ? 
 					Basamaklar karsilastirilirken 
@@ -1209,6 +1222,25 @@ bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya ca
 
 ## String Operations
 
+	String s = “Hello”;
+
+	String s = new String(“Hello”);
+
+
+- Yukaridaki tanimalamlar ile String  değişmez ve sabit olduğundan, string manipülasyonu yapmamız gerektiğinde yeni bir string oluşturmamız gerekiyor.
+
+- Yukaridaki tanim sekli var olan string uzerinde islem yapmamiza izin vermiyor her seferinde yenisini olusturarak islem yapabiliyoruz.
+
+
+Eger tanimladigimiz String operasyonlari uzerinde ayni referansi gosteren degerler uzerinde degisiklikler,guncelemeler yapmak istiyorsak
+
+StringBuffer veya StringBuilder adlandirilan String olusturma kutuphaneleri kullanilir.
+
+
+
+
+
+### String Length
 
 
 
