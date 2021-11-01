@@ -1227,14 +1227,17 @@ bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya ca
 
 # BESINCI BOLUM YARIN DEVAM EDELIM
 
-## String Length
+
+## String Operations
+
+### String Length
 
 - Yazinin boyutunu alma islemi
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringLength.java
 
 
-## String Upper Case & Lower Case
+### String Upper Case & Lower Case
 
 - Harfleri buyutme, harfleri kucultme
 
@@ -1243,7 +1246,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-## String Index Of 
+### String Index Of 
 
 - Istenilen bilginin hangi indeks degerinde oldugunu yazar. Index terimi 0 dan baslar.
 
@@ -1251,14 +1254,24 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringFindingIndexGivenString.java
 
 
-##  String Concatenation
+###  String Concatenation
 
 - Java da + operatoru ile iki String ifadeyi birlestirebiliriz.
 
 
-StringConcatenation
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringConcatenation.java
 
-## String Operations
+
+
+###  String Trim
+
+- Sadece basindaki ve sonundaki bosluklari siler
+
+StringTrim
+
+
+
+### String Manupilation
 
 	String s = “Hello”;
 
