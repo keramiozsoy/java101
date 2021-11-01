@@ -1141,9 +1141,18 @@ Ornek
 
 	Carpim tablosunu ekrarn yazdiran donguyu yazalim. Ic ice iki dongu kullanalim.
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopForInFor.java
 
 
-LoopForInFor
+
+Ornek 
+
+	10 dan geriye dogru sayilari yazdiran donguyu yazalim.
+
+
+LoopForDecrement
+
+
 
 
 Ornek 
@@ -1153,6 +1162,10 @@ Ornek
 
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopForInfinitive.java
+
+
+
+### for each 
 
 
 
