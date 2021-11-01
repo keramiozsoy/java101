@@ -1232,6 +1232,17 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 - Harfleri buyutme, harfleri kucultme
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringUpperCaseAndLowerCase.java
+
+
+
+## String Index Of 
+
+- Istenilen bilginin hangi indeks degerinde oldugunu yazar. Index terimi 0 dan baslar.
+
+
+
+StringFindingIndexGivenString
 
 
 ## String Operations
