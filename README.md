@@ -1224,7 +1224,14 @@ bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya ca
 
 - Yazinin boyutunu alma islemi
 
-StringLength
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringLength.java
+
+
+## String Upper Case & Lower Case
+
+- Harfleri buyutme, harfleri kucultme
+
+
 
 
 ## String Operations
