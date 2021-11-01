@@ -4,16 +4,15 @@ public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
     public static void main(String[] args) {
 
-        // The value of the case section have to Value. ( final )
+        // The value of the case section have to non-changeable. ( final )
         byte switchByte = 20;
         final byte firstByte = 10;
         final byte secondByte = 20;
 
         switch (switchByte){
             case firstByte: System.out.println("first");
-            break;
+
             case secondByte: System.out.println("second");
-            break;
         }
 
 
@@ -27,18 +26,16 @@ public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
         switch (switchShort){
             case firstShort: System.out.println("first");
-                break;
+
             case secondShort: System.out.println("second");
-                break;
         }
         // It is same example like above, but
         // we have used directly numbers (30,40)
         // Switch will understand automatically
         switch (switchShort){
             case 30: System.out.println("first");
-                break;
+
             case 40: System.out.println("second");
-                break;
         }
 
 
@@ -49,9 +46,8 @@ public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
         switch (switchChar){
             case 'A': System.out.println("first");
-                break;
+
             case 'B': System.out.println("second");
-                break;
         }
 
 
@@ -62,9 +58,8 @@ public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
         switch (switchInt){
             case 10: System.out.println("first");
-                break;
+
             case 20: System.out.println("second");
-                break;
         }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,9 +69,8 @@ public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
         switch (switchIntegerWrapper){
             case 10: System.out.println("first");
-                break;
+
             case 20: System.out.println("second");
-                break;
         }
 
 
@@ -86,14 +80,10 @@ public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
         switch(selectedPizzaSize) {
             case SMALL:
-                System.out.println("I ordered a small size pizza.");
-                break;
+                System.out.println("first - I ordered a small size pizza.");
+
             case MEDIUM:
-                System.out.println("I ordered a medium size pizza.");
-                break;
-            default:
-                System.out.println("I don't know which one to order.");
-                break;
+                System.out.println("second - I ordered a medium size pizza.");
         }
 
 

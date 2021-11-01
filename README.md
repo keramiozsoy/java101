@@ -979,14 +979,19 @@ isimler ile numaralandirma yaptigimiz
 	- enum
 
 
+Ornek
 
-DecisionMakingSwitchCasePrimitiveAndWrapperTypes
+	Yukaridaki tipler ile ilgili ornek yapalim.
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCasePrimitiveAndWrapperTypes.java
 
 
-If else yapisi ile neredeyse islem mantigi aynidir. 
 
-Fakat break ve default anahtar kelimeleri ile islem akisini yonlendirmek kabiliyetinden dolayi ekstra ayricaligi vardir.
+	Switch case 
 
+	If else yapisi ile neredeyse islem mantigi aynidir. 
+
+	Fakat break ve default anahtar kelimeleri ile islem akisini yonlendirmek kabiliyetinden dolayi ekstra ayricaligi vardir.
 
 
 
