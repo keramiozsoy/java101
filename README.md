@@ -826,6 +826,13 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
+Javascript dilinde farkli bir sekilde karsilasitiriliyor.
+
+- (==) operatörü ile  değişkenin değerlerine bakılırken ( === ) operatörü ile değişkenlerin referans değerlerine bakılır. 
+
+
+
+
 ###	Mantıksal Operatörler
 
 Degiskenleri karsilastirip, sonuc olarak boolean tipinde veri donmesini istedigimiz durumlarda operatorler kullaniriz.
@@ -1241,9 +1248,15 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 - Istenilen bilginin hangi indeks degerinde oldugunu yazar. Index terimi 0 dan baslar.
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringFindingIndexGivenString.java
 
-StringFindingIndexGivenString
 
+##  String Concatenation
+
+- Java da + operatoru ile iki String ifadeyi birlestirebiliriz.
+
+
+StringConcatenation
 
 ## String Operations
 
