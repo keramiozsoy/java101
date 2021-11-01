@@ -1220,6 +1220,13 @@ bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya ca
 
 # BESINCI BOLUM YARIN DEVAM EDELIM
 
+## String Length
+
+- Yazinin boyutunu alma islemi
+
+StringLength
+
+
 ## String Operations
 
 	String s = “Hello”;
@@ -1236,11 +1243,11 @@ Eger tanimladigimiz String operasyonlari uzerinde ayni referansi gosteren degerl
 
 StringBuffer veya StringBuilder adlandirilan String olusturma kutuphaneleri kullanilir.
 
+https://www.educba.com/string-manipulation-in-java/
 
 
 
 
-### String Length
 
 
 
