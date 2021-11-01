@@ -1150,7 +1150,7 @@ Ornek
 	10 dan geriye dogru sayilari yazdiran donguyu yazalim.
 
 
-LoopForDecrement
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopForDecrement.java
 
 
 
@@ -1167,6 +1167,10 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 ### for each 
 
+Genellikler elimizdeki listelerin elemanlarini tektek gezerken bu yapiyi kullanabiliriz.
+
+
+LoopForEach
 
 
 
