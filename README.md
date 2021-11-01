@@ -1139,10 +1139,20 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 Ornek 
 
+	Carpim tablosunu ekrarn yazdiran donguyu yazalim. Ic ice iki dongu kullanalim.
+
+
+
+LoopForInFor
+
+
+Ornek 
+
 	for dongusunde sonsuz dongu olusturalim.
 
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopForInfinitive.java
 
 
 
