@@ -1010,10 +1010,17 @@ Ornek
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/DecisionMakingSwitchCaseWithoutBreak.java
 
 
+
+Soru
+
+
+	break kullanmamamak sizce her zaman problem midir ?
+
+
+
 Ornek 
 	
 	Break kullanmayacagim ve bu durum ile bir problemi cozecegim.
-
 
 
 
