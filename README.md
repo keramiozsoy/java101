@@ -1112,7 +1112,9 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-- Sonsuz dongu ornek 
+Ornek 
+	
+	do while Sonsuz dongu 
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopInfinitive.java
 
@@ -1126,8 +1128,19 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 onceki dongulere benzeyen fakat tum kosul ve durumlari tek bir satirda gosterebilecegimiz bir yapidir.
 
 
+Ornek 
 
-LoopFor
+	Sayilari ikiser ikiser arttirarak yazan programi kodlayalim.
+
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopFor.java
+
+
+
+Ornek 
+
+	for dongusunde sonsuz dongu olusturalim.
+
 
 
 
