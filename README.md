@@ -970,10 +970,17 @@ sarmalayici siniflar
 	- Character
 	- Integer
 
+sarmalayici siniflar
+
+	- String
+
 isimler ile numaralandirma yaptigimiz 
 
 	- enum
 
+
+
+DecisionMakingSwitchCasePrimitiveAndWrapperTypes
 
 
 If else yapisi ile neredeyse islem mantigi aynidir. 

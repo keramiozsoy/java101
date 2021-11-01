@@ -1,6 +1,6 @@
 package examples;
 
-public class DecisionMakingSwitchCasePrimitiveTypes {
+public class DecisionMakingSwitchCasePrimitiveAndWrapperTypes {
 
     public static void main(String[] args) {
 
@@ -67,12 +67,34 @@ public class DecisionMakingSwitchCasePrimitiveTypes {
                 break;
         }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // wrapper
+        Integer switchIntegerWrapper = 20;
+
+        switch (switchIntegerWrapper){
+            case 10: System.out.println("first");
+                break;
+            case 20: System.out.println("second");
+                break;
+        }
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        PizzaSizeEnum selectedPizzaSize = PizzaSizeEnum.MEDIUM;
 
-
-
+        switch(selectedPizzaSize) {
+            case SMALL:
+                System.out.println("I ordered a small size pizza.");
+                break;
+            case MEDIUM:
+                System.out.println("I ordered a medium size pizza.");
+                break;
+            default:
+                System.out.println("I don't know which one to order.");
+                break;
+        }
 
 
     }
