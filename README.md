@@ -1170,7 +1170,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 Genellikler elimizdeki listelerin elemanlarini tektek gezerken bu yapiyi kullanabiliriz.
 
 
-LoopForEach
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopForEach.java
 
 
 
@@ -1185,6 +1185,10 @@ Ornek
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopBranchingContinue.java
 
 
+
+Ornek 
+
+LoopBranchingContinueWithJump
 
 
 
