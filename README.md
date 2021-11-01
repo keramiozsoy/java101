@@ -1072,7 +1072,21 @@ While dongusu, kosulu sagladigi surece bitmeyen donguler olusturmayi saglar.
 
 Ornek 
 	
+	5 e kadar olan sayilari yazdiran while dongusunu yazalim.
+
 	
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopWhile.java
+
+
+Ornek
+
+	1 ile 5 arasindaki rasgele secilen bir sayinin bulunmasi istenilen  programi yazmak icin while kullanabiliriz.
+
+
+
+LoopWhileRandomNumber
+
+
 
 
 
