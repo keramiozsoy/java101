@@ -1068,7 +1068,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 ### while dongusu
 
 
-While dongusu, kosulu sagladigi surece bitmeyen donguler olusturmayi saglar.
+-  While dongusu, kosulu sagladigi surece bitmeyen donguler olusturmayi saglar.
 
 Ornek 
 	
@@ -1083,14 +1083,23 @@ Ornek
 	1 ile 5 arasindaki rasgele secilen bir sayinin bulunmasi istenilen  programi yazmak icin while kullanabiliriz.
 
 
-
-LoopWhileRandomNumber
-
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopWhileRandomNumber.java
 
 
 
 
 ### do while dongusu
+
+
+- Do while dongusu, en 1 kez bekledigiim bir islem calissin ve ardindan kosuluma gore programim calismaya devam etsin.
+
+
+LoopDoWhile
+
+
+LoopInfinitive
+
+
 
 
 ### for dongusu
