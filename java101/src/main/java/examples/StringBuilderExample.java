@@ -1,17 +1,17 @@
 package examples;
 
-public class StringBufferExample {
+public class StringBuilderExample {
     public static void main(String[] args) {
 
         // it reserve empty content which is 16 characters
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         System.out.println("capacity " +  sb.capacity());
 
-        StringBuffer sbFifty = new StringBuffer(50);
+        StringBuilder sbFifty = new StringBuilder(50);
         System.out.println("capacity " +  sbFifty.capacity());
 
 
-        StringBuffer sBHelloWorld = new StringBuffer("Hello World");
+        StringBuilder sBHelloWorld = new StringBuilder("Hello World");
         System.out.println("capacity " +  sBHelloWorld.capacity());
 
         // length
@@ -21,7 +21,7 @@ public class StringBufferExample {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
         // Append method provide to add String at the end of the exising String Buffer
-        StringBuffer sbAp = new StringBuffer("   Hello  ");
+        StringBuilder sbAp = new StringBuilder("   Hello  ");
 
         sbAp.append("   World   ");
         sbAp.append(2021);
@@ -31,7 +31,7 @@ public class StringBufferExample {
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-        StringBuffer sbIns = new StringBuffer("HelloWorld ");
+        StringBuilder sbIns = new StringBuilder("HelloWorld ");
 
         // first param is index (int)
         // second param will add String
@@ -45,7 +45,7 @@ public class StringBufferExample {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 
-        StringBuffer sbRev = new StringBuffer("Hello World");
+        StringBuilder sbRev = new StringBuilder("Hello World");
 
         System.out.println("Reversed word: " + sbRev.reverse());
 
@@ -68,7 +68,7 @@ public class StringBufferExample {
 
 
 
-        StringBuffer sbDelete = new StringBuffer("Hello World");
+        StringBuilder sbDelete = new StringBuilder("Hello World");
 
         // it will delete by given start and end index.
         System.out.println(sbDelete.delete(5,11)); // Print Hello
@@ -78,7 +78,7 @@ public class StringBufferExample {
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-        StringBuffer sbRep = new StringBuffer("Hello World!");
+        StringBuilder sbRep = new StringBuilder("Hello World!");
 
         System.out.println(sbRep.replace(0,5,"Bye Bye"));
 
