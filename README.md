@@ -1230,6 +1230,36 @@ bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya ca
 
 ## String Operations
 
+
+Soru
+
+String in primitive tipi nedir ?
+
+
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+		
+		- String aslinda,  
+
+		- char tipindeki verilerin bir listeye/diziye atilip gosterildigi hal oldugundan 
+		
+		- en kucuk yapi tasi char tipindeki veridir.
+
+```
+
+</p>
+</details>
+
+
+Ornek
+
+StringPrimitive
+
+
+
 ### String Length
 
 - Yazinin boyutunu alma islemi
@@ -1275,27 +1305,20 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - Elimizdeki yazi icersidinden istedigimiz parcayi almamizi saglar.
 
-StringSubString
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringSubString.java
 
 
 
 ### String Manupilation
 
-	String s = “Hello”;
+- String yapisi geregi olusturulup bir referansa atandiktan sonra tekrar degistirilemezler.
 
-	String s = new String(“Hello”);
-
-
-- Yukaridaki tanimalamlar ile String  değişmez ve sabit olduğundan, string manipülasyonu yapmamız gerektiğinde yeni bir string oluşturmamız gerekiyor.
-
-- Yukaridaki tanim sekli var olan string uzerinde islem yapmamiza izin vermiyor her seferinde yenisini olusturarak islem yapabiliyoruz.
+- String manipülasyonu yapmamız gerektiğinde sonucu yeni bir String degiskenine atamak zorunada kaliyoruz.   
 
 
-Eger tanimladigimiz String operasyonlari uzerinde ayni referansi gosteren degerler uzerinde degisiklikler,guncelemeler yapmak istiyorsak
+Eger tanimladigimiz String degiskenin referansinin gosterdigi degerler uzerinde degisiklikler,guncelemeler yapmak istiyorsak
 
-StringBuffer veya StringBuilder adlandirilan String olusturma kutuphaneleri kullanilir.
-
-https://www.educba.com/string-manipulation-in-java/
+StringBuffer veya StringBuilder adlandirilan diger String olusturma kutuphaneleri kullanilir.
 
 
 ## Math Operations

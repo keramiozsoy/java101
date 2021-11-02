@@ -15,14 +15,14 @@ public class CompareOperatorsWrapperClassEquals {
 
         // Sinif tipindeki degiskenler == ile karsilastirilmaz.
         // == referanslarin karsilastirilmasi islemidir.
-        // equals degerlerin karsilasitirlmasidir.
+        // equals degerlerin karsilastirilmasidir.
         System.out.println(numFirst == numSecond);
         System.out.println(numFirst.equals(numSecond));
 
 
         // Sinif tipindeki degiskenler == ile karsilastirilmaz.
         // == referanslarin karsilastirilmasi islemidir.
-        // equals degerlerin karsilasitirlmasidir.
+        // equals degerlerin karsilasitirilmasidir.
         System.out.println(numSecond == numThird);
         System.out.println(numSecond.equals(numThird));
 
