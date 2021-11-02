@@ -1256,8 +1256,13 @@ String in primitive tipi nedir ?
 
 Ornek
 
-StringPrimitive
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringPrimitive.java
 
+
+## String CompareTo 
+
+String tipindeki bilgilerin bir de compareTo metodu ile karsilasitirlmasi islemi vardir.
+Arastirip inceleyebilirsiniz.
 
 
 ### String Length
@@ -1276,12 +1281,19 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-### String Index Of 
+### String indexOf 
 
 - Istenilen bilginin hangi indeks degerinde oldugunu yazar. Index terimi 0 dan baslar.
 
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringFindingIndexGivenString.java
+
+
+### String charAt
+
+- Verilen index degerindeki karakteri geriye doner.
+
+StringCharAt
 
 
 ###  String Concatenation
@@ -1313,13 +1325,44 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - String yapisi geregi olusturulup bir referansa atandiktan sonra tekrar degistirilemezler.
 
-- String manipülasyonu yapmamız gerektiğinde sonucu yeni bir String degiskenine atamak zorunada kaliyoruz.   
+- String manipülasyonu yapmamız gerektiğinde sonucu yeni bir String degiskenine atamak zorunada kaliyoruz. 
+
+- Yani aslinda String referans tipi oldugu icin HEAP te yeni bir kaplanmaya basliyor.
 
 
 Eger tanimladigimiz String degiskenin referansinin gosterdigi degerler uzerinde degisiklikler,guncelemeler yapmak istiyorsak
 
-StringBuffer veya StringBuilder adlandirilan diger String olusturma kutuphaneleri kullanilir.
+StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari kullanilir.
 
+
+	StringBuilder
+
+	Olumlu 
+	- Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
+	- Diger tipe gore daha hizlidir
+
+	Olumsuz
+	- Thread(Is yapan parca) islemelrine karsi korumasi yoktur. (Not tread-safe ). ( synchonized kod blogu icermememektedir. )
+	- Yani iki farkli Thread ayni StringBuilder degiskeni uzerinde islem yaparsa birbirini ezmis olurlar.
+
+
+
+	StringBuffer
+	
+	Olumlu 
+	- Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
+
+	- Thread(Is yapan parca) islemlerine karsi korumasi vardir. (tread-safe ). ( synchonized kod blogu var. )
+
+	Olumsuz
+	-  Yani iki farkli Thread ayni StringBuffer degiskeni uzerinde islem yapilmasi otomatik engellenir.
+	-  Diger tipe gore daha yavastir.
+
+
+
+
+StringBufferExample
+	
 
 ## Math Operations
 
