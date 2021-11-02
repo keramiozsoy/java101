@@ -4,7 +4,7 @@ public class CompareOperatorsWrapperClassEquals {
 
     public static void main(String[] args) {
 
-        Integer numFirst = new Integer(10);
+        Integer numFirst = Integer.valueOf(10);
         Integer numSecond = new Integer(10);
         Integer numThird = numSecond;
 
