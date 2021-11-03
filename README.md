@@ -1397,6 +1397,41 @@ en yakin olan int degerine yuvarlanmasi saglanir.
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsFloorDiv.java
 
 
+### Math.round
+
+- Matematiksel olarak hangi sayiya daha yakin ise o yonde yukari veya asagi yuvarlama yapar
+
+MathOperationsRound
+
+### Math.min
+
+- Verilen parametrelerden kucuk olani bulmamizi saglar.
+
+
+MathOperationsMin
+
+### Math.max
+
+- Verilen parametrelerden buyuk olani bulmamizi saglar.
+
+MathOperationsMax
+
+### Math.pow
+
+- Verilen parametrelere gore ust alma islemi yapar.
+
+MathOperationsPow
+
+
+### Math.sqrt
+
+- Verilen parametrenin kok alma islemini yapar.
+
+
+MathOperationsSqrt
+
+
+
 
 
 
