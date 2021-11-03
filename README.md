@@ -1375,28 +1375,26 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - Verilen parametrenin mutlak degerini alir. Sayinin pozitif degerini yazdirir.
 
-MathOperationsAbs
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsAbs.java
 
 ### Math.ceil 
 
 - Verilen parametrenin yukari yonde en yakin olan int degerine yuvarlanmasi saglanir.
 
-MathOperationsCeil
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsCeil.java
 
 ### Math.floor
 
 - Verilen parametrenin asagi yonde en yakin olan int degerine yuvarlanmasi saglanir.
 
-MathOperationsFloor
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsFloor.java
 
 ### Math.floorDiv
 
 - Verilen parametrelerde verilen int veya long degerlerini birbirine boler 
 en yakin olan int degerine yuvarlanmasi saglanir.
 
-MathOperationsFloorDiv
-
-
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsFloorDiv.java
 
 
 
