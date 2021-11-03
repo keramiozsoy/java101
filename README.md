@@ -1372,9 +1372,6 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 ## Math Operations
 
 
-
-
-
 ### IEEE-754 Virgullu Sayi Gosterimi
 
 
@@ -1436,13 +1433,13 @@ Ornek
 
 - Maasimizin 3 te birini yatirim yapacagiz. Ve 3 ay sonra ne kadarlik para biriktigine bakalim.
 
-MathOperationsFloatingPointProblem
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsFloatingPointProblem.java
 
 
 - Yukaridaki problemin BigDecimal sinif ile cozumu
 
 
-MathOperationsBigDecimal
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsBigDecimal.java
 
 
 
@@ -1450,15 +1447,15 @@ MathOperationsBigDecimal
 
 -  int bir sayinin sifira bolunebilmesi 
 
-MathOperationsIntValueDivideByZero
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsIntValueDivideByZero.java
 
 -  float bir sayinin sifira bolunebilmesi 
 
-MathOperationsFloatValueDivideByZero
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsFloatValueDivideByZero.java
 
 - sifirin sifira bolunmesi 
 
-MathOperationsFloatZeroDivideByZero
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsFloatZeroDivideByZero.java
 
 
 
@@ -1521,29 +1518,6 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsSqrt.java
-
-
-
-
-
-
-
-
-
-
-
-SORULAR
-
-- Disaridan 3 parametre alan ve ekrana yazan uygulamayi yaziniz. (args)
-
-- MaviTelefon ve KirmiziTelefon olacak sekilde iki sinif olusturunuz. MaviTelefon sinifinda
-static olmayan bir metot tanimlayin. Metot ile " mavi telefondan mesaj var " seklinde bir mesaj tanimlayip geri dondurelim.
-KirmiziTelefon icerisinden yazdigimiz onceki metodu cagiralim.
-
-- 1 den 100 e kadar ielrkeyen dongu icerisinde her 100 adimda ekrana dongunun kacinci adiminda oldugunu yazan bir uygulama yazalim
-
-- 5 dan 50 ye kadar olan sayilari ekrana yazarken sadece 5 ve 5in katlarini ekrana yazmayan uygulama yaziniz.
-
 
 
 ## Fonksiyonlar
