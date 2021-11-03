@@ -1377,10 +1377,24 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 MathOperationsAbs
 
+### Math.ceil 
 
+- Verilen parametrenin yukari yonde en yakin olan int degerine yuvarlanmasi saglanir.
 
+MathOperationsCeil
 
+### Math.floor
 
+- Verilen parametrenin asagi yonde en yakin olan int degerine yuvarlanmasi saglanir.
+
+MathOperationsFloor
+
+### Math.floorDiv
+
+- Verilen parametrelerde verilen int veya long degerlerini birbirine boler 
+en yakin olan int degerine yuvarlanmasi saglanir.
+
+MathOperationsFloorDiv
 
 
 
