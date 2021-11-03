@@ -1360,11 +1360,22 @@ StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari k
 
 
 
+- Asagidaki ornekler birbirinin aynisi sadece siniflar farkli. Thread islemlerini ogrendikten sonra buraya 
+thread ile olan karsilastirayi ekleyebiliriz.
+
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringBufferExample.java
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringBuilderExample.java
 
 
 ## Math Operations
+
+
+
+### Math.abs
+
+- Verilen parametrenin mutlak degerini alir. Sayinin pozitif degerini yazdirir.
+
+MathOperationsAbs
 
 
 
