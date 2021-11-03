@@ -1259,9 +1259,11 @@ Ornek
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringPrimitive.java
 
 
-## String CompareTo 
+### String Karsilastirma
 
-String tipindeki bilgilerin bir de compareTo metodu ile karsilasitirlmasi islemi vardir.
+== veya equals() metotlari ile hangi bilgilerin karsilastirildigini daha once gormustuk.
+
+String tipindeki bilgilerin ek olarak compareTo() metodu ile karsilasitirlmasi islemi vardir.
 Arastirip inceleyebilirsiniz.
 
 
@@ -1371,6 +1373,95 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
+
+
+### IEEE-754 Virgullu Sayi Gosterimi
+
+
+	a = 5 = 0101 (In Binary)
+
+	Elimizde sayi gosterebilmek icin sadece 4 hane oldugunu varsayalim.
+
+	Gosterilecek en buyuk sayi 
+
+	1111
+
+	Gosterilecek en kucuk sayi 
+
+	0000
+
+
+	Virgullu sayilar icin virgulun bir yerde oldugunu varsayarak gostermeliyiz.
+
+	11,11  
+
+	00,01
+	00,00
+
+
+	Elimizdeki hane sayisina gore sayinin alacagi degerin buyuk olmasi veya 
+	virgulden sonra kac basamak detayli/hassas sayiyi gostermek istiyoruz bilgisine gore 
+	karar vermemiz gerekiyor.
+
+
+	111,1
+
+	1,111
+	0,001
+
+
+	Bir şeyi elde etmek için başka bir şeyden vazgeçmek zorunda olmak 
+	durumuna Trade Off kavrami deniliyor. Yukaridaki ornek bu kavrami desteklemis oluyor.
+
+	IEEE denilen kurum yani Amerika Elektrik Muhendisligi Odasi yukaridaki durumun 
+	gosterilmesi icin bir standart ortaya koymuslar.
+
+	Sebebi bir yerde gosterilen sayi ile farkli yerde gosterilen sayilarin formati 
+	ayni olsun ki tek bir noktada anlasilabilsin.
+
+	Hatta bununla ilgili cok meshur bir hikaye var 
+
+	Intel islemci firmasi bu standarti kabul etmeden once kendi standartini kullaniyor.
+
+	Intel Pentium isimli islemci (1994) kullanilan bilgisayarlarda farkli programlar IEEE kullanirken islemci operasyonlari
+	kendi standartini kullandigi icin cevirme islemlerini dogru yapamadigi icin
+	
+	Windows 1 sene boyunca hatali bir sekilde bilgisayarlardaki hesap makinelerinin 
+	yanlis calismasi problemi ile karsi karsiya kalmis. Daha sonra bunu yazilim guncellemesi ile duzeltiyorlar.
+
+
+
+
+Ornek 
+
+- Maasimizin 3 te birini yatirim yapacagiz. Ve 3 ay sonra ne kadarlik para biriktigine bakalim.
+
+MathOperationsFloatingPointProblem
+
+
+- Yukaridaki problemin BigDecimal sinif ile cozumu
+
+
+MathOperationsBigDecimal
+
+
+
+### Bir kac farkli durum icin java derleyicisinin nasil ciktilar verdigine bakalim.
+
+-  int bir sayinin sifira bolunebilmesi 
+
+MathOperationsIntValueDivideByZero
+
+-  float bir sayinin sifira bolunebilmesi 
+
+MathOperationsFloatValueDivideByZero
+
+- sifirin sifira bolunmesi 
+
+MathOperationsFloatZeroDivideByZero
+
+
+
 ### Math.abs
 
 - Verilen parametrenin mutlak degerini alir. Sayinin pozitif degerini yazdirir.
@@ -1401,26 +1492,27 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - Matematiksel olarak hangi sayiya daha yakin ise o yonde yukari veya asagi yuvarlama yapar
 
-MathOperationsRound
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsRound.java
 
 ### Math.min
 
 - Verilen parametrelerden kucuk olani bulmamizi saglar.
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsMin.java
 
-MathOperationsMin
 
 ### Math.max
 
 - Verilen parametrelerden buyuk olani bulmamizi saglar.
 
-MathOperationsMax
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsMax.java
+
 
 ### Math.pow
 
 - Verilen parametrelere gore ust alma islemi yapar.
 
-MathOperationsPow
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsPow.java
 
 
 ### Math.sqrt
@@ -1428,16 +1520,9 @@ MathOperationsPow
 - Verilen parametrenin kok alma islemini yapar.
 
 
-MathOperationsSqrt
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsSqrt.java
 
 
-
-
-
-
-
-
-	
 
 
 
