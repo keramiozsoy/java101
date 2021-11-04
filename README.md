@@ -1246,7 +1246,10 @@ String in primitive tipi nedir ?
 
 		- char tipindeki verilerin bir listeye/diziye atilip gosterildigi hal oldugundan 
 		
-		- en kucuk yapi tasi char tipindeki veridir.
+		- en kucuk yapi tasi 
+
+				java 8 ve oncesi char tipinde,
+				java 11 de byte sekilinde tutuluyor.
 
 ```
 
