@@ -29,7 +29,7 @@ public class CaseStudySumOfBetweenNumbers {
             toplam += i;
         }
 
-        toplam -=  ( veri1  + veri2);
+        toplam -=  ( veri1  + veri2 );
 
         System.out.println("Sayıların toplamı: " + toplam);
         System.exit(0);
