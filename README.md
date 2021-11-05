@@ -1559,6 +1559,13 @@ Bir sinifin ornekleri/elimizdeki kaliptan bir kopya olusturmanin farkli yollari 
 		Yani onbellege(cache) alma islemi yapmaya calisir. 
 
 
+
+
+
+String icin bir string havuzu kavrami var bunu arastirabilirsiniz .
+
+
+
 ### Integer Sinif
 
 
