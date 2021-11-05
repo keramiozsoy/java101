@@ -1523,6 +1523,116 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/MathOperationsSqrt.java
 
 
+
+
+## Wrapper Classes Cache Mechanism
+
+
+Java da new anahtar kelimesi ile nesneleri nasil olusturacagimiz biliyoruz.
+
+Bir sinifin ornekleri/elimizdeki kaliptan bir kopya olusturmanin farkli yollari var.
+
+- Class.forName() ve Class.newInstance()
+- ClassLoader loadClass()
+- Object.clone()
+- Serialization Deserialization
+- Reflection mekanizmasi kullanarak 
+
+
+		Java da olusturulan yeni bir ornek, heap alaninda hafiza alani kaplayacaktir
+		bu nedenle yeni nesneler olusturmak her zaman pahali bir islemdir.
+
+		Bu pahali nesne olusturma surecinden kacinmak, 
+		elimizdeki kaynaklari dogru yonetmek icin
+		zamanla bazi yapilar gelistirildi.
+
+
+		Java da sarmalayici(wrapper) siniflar degerleri degismez(immutable) demistik.
+
+		Ornegimiz String ti. 
+
+		JDK tarafından sağlanan sarmalayıcı sınıfları, yani her bir sarmalayıcı sınıfı, 
+		kendi türünde yaygın olarak kullanılan örneklerin bir listesini önbellek biçiminde saklar 
+		ve gerektiğinde bunları kodunuzda kullanabilirsiniz. 
+
+		Program çalışma zamanınızda çok sayıda byte alani kazanmamiza yani az alan tutmaya yardımcı olur.
+		Yani onbellege(cache) alma islemi yapmaya calisir. 
+
+
+### Integer Sinif
+
+
+Integer tanimalamak icin bildigimiz yontemler
+
+
+		// Integer i = 10; // Buna emin degilim.
+		Integer i = Integer.valueOf(10);
+
+
+Yukaridaki iki yontemden birini yaptiginizda sonraki adimlar icin
+Onceden olusturulmus bir Tamsayi referansi olacagindan yeniden olusturmak yerine i degeri donulur.
+
+		Integer i = new Integer(10);
+
+Eger new anahtar kelimesini kullanirsak onbellege alma islemi yapmayacak.
+
+
+
+
+Integer sinifinin icinde IntegerCache denilen bir sinif var.
+
+Ve deger atamasi yapildiginda onbellege yazma islemini sinif icinde bir degiskene atarak yonetmeye calisiyor
+
+
+	private static class IntegerCache
+	{
+	    private IntegerCache(){}
+	    static final Integer cache[] = new Integer[-(-128) + 127 + 1];
+	    static {
+	        for(int i = 0; i < cache.length; i++)
+	            cache[i] = new Integer(i - 128);
+	    }
+	}
+
+
+	public static Integer valueOf(int i)
+	{
+	    final int offset = 128;
+	    if (i >= -128 && i <= 127) // must cache
+	        return IntegerCache.cache[i + offset];
+	    }
+	    return new Integer(i);
+	}
+
+
+
+Yukaridaki onbellege olusturma adimini nedeniyle sure biraz dah uzun olabilir. Fakat 
+eger tekrar tekrar kullanacaksak cagirdigimizda normal durumdan daha hizli ericegiz.
+
+Buradaki asil fayda ayni hafiza alanini tekrar tekrar kullanmak.
+
+
+Ornek
+
+		Asagidaki durumda ilk karsilastirma true,
+		ikinci karsilastirma false alacak. Cunku 
+		new Integer() digerlerinden ayri sekilde alan ayrilip verisi yazilmis oldu.
+
+
+Sonuc 
+
+		On bellegi kullanmak istiyorsak ya 
+		- ilk deger atamasi yaparken ilkel tip atayacagiz,
+		- valueOf() kullanacagiz.
+
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CacheIntegerDemo.java
+
+
+
+
+
+
 ## Fonksiyonlar
 
 ## Diziler
