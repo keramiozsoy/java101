@@ -1,4 +1,4 @@
-package examples.concurrency;
+package examples;
 
 public class ConcurrencyThreadWorker extends Thread {
     @Override

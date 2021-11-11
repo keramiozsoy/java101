@@ -1,4 +1,4 @@
-package examples.concurrency;
+package examples;
 
 public class ConcurrencyThreadMain {
     public static void main(String[] args) {
