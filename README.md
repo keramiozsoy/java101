@@ -1853,19 +1853,24 @@ farkli is parcalarinda islemler yapildi.
 ### Thread sinifi veya Runnable  arayuzu nasil kullanilir ?
 
 Ornek 
+	
 
+	
 	Elimizdeki 100 bardagi iki calisan sayacaktir. Programi yazalim.
 
+	Sirkette 1 sene calisan 1 er 1 er sayabiliyor.
+	Sirkette 2 sene calisan 2 er 2 er sayabiliyor.
 
-https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
-https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorker.java
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorker.java
 
 
-	Thread sinifini kullanarak is parcacigi olusturdugumuz icin 
-	
-	is parcacigini hazir duruma getirmek icin start() fakat calismasi icin run() metodu kullanildi. 
+		Thread sinifini kullanarak is parcacigi olusturdugumuz icin 
+		
+		is parcacigini hazir duruma getirmek icin start() fakat calismasi icin run() metodu kullanildi. 
 
-	Yukarida 1 parent, 2 child olacak sekilde is paarcaciklari olusturuldu ve calisti
+		Yukarida 1 parent, 2 child olacak sekilde is paarcaciklari olusturuldu ve calisti
 
 
 Yukaridaki isciler isi tamamladilar ve birer birer saydilar.
@@ -1884,10 +1889,17 @@ Yukaridaki isciler isi tamamladilar ve birer birer saydilar.
 
 Cozum icin denemeler 
 
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMainWithSenior.java
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSeniorWorker.java
 
 
 
 
+Yukaridaki problem yuzunden Runnable arayuzunu kullanabiliriz. Bir ortak nokta bulmak yerine 
+interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasindan
+yararlaniyoruz.
 
 
+ConcurrencyThreadMainWithRunnable
 

@@ -13,7 +13,7 @@ public class ConcurrencyThreadSeniorWorker extends ConcurrencyThreadWorker {
     public void run() {
         super.run();
 
-        for(int i = 1; i <= 50; i = i + 2){
+        for(int i = 0; i <= 50; i = i + 2){
 
             System.out.println(
                      "PID - " + this.getId() + " - " + this.getName() + " - "  + i
