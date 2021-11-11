@@ -1857,5 +1857,37 @@ Ornek
 	Elimizdeki 100 bardagi iki calisan sayacaktir. Programi yazalim.
 
 
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorker.java
+
+
+	Thread sinifini kullanarak is parcacigi olusturdugumuz icin 
+	
+	is parcacigini hazir duruma getirmek icin start() fakat calismasi icin run() metodu kullanildi. 
+
+	Yukarida 1 parent, 2 child olacak sekilde is paarcaciklari olusturuldu ve calisti
+
+
+Yukaridaki isciler isi tamamladilar ve birer birer saydilar.
+
+	- Olumlu 
+	- yani cok basit sekilde extend yaziyoruz run() metodunu dolduruyoruz calisiyor
+	- itersek kimin hangi anda calistigina hemen ulasabiliyoruz. getName()
+
+	- Olumsuz
+	- Toplam isin suresini belli. Iscilerden birini dinlendirip. Sayima aslinda 2 kat daha
+	hizli sayim yapan birini aliyorum. 
+	 
+	 Tamam ama kodu nasil yazacagim cunku yazacagim sinif hem Worker sinifindan turemeli,
+	 hem de Thread. Java da coklu kalitim var mi ? Nasil cozerim ?
+
+
+Cozum icin denemeler 
+
+
+
+
+
+
 
 

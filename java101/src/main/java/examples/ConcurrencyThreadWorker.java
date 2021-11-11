@@ -10,6 +10,9 @@ public class ConcurrencyThreadWorker extends Thread {
             System.out.println(
                      "PID - " + this.getId() + " - " + this.getName() + " - "  + i
             );
+            if (i == 50){
+                System.out.println("==============================================");
+            }
 
         }
 
