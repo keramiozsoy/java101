@@ -1727,6 +1727,7 @@ veya
 	Hesap makinesinde islem yapabilmek icin dosya aramasini bitmesine gerek yok.
 
 
+
 ### Thread nedir ?
 
 Az onceki orneklerin hepsi birer birbirinden bagimsiz olay/is parcasidir.
@@ -1769,6 +1770,75 @@ Peki ama neden sayilar bu sekilde ?
 	Her fiziksel cekirdegin ikiye bolunerek, cekirdek basina iki is parcasi calistirma islemi yapabiliyor.
 	Yukarida bahsedilen hizli calisma beklentisi teknolojini el verdigi olcude karsilaniyor.
 	Kavram olarak buna Multithreading denir.
+
+
+Bir ornek ile konuyu genisletelim
+
+	Bir program yazilmasi isteniyor. Elimizdeki dosyalar icin;
+	Bir kaynaktan alinan dosyanin icerisindeki kolonlarin alfabetik siraya gore 
+	duzenlenip icinde bulundugumuz bilgisayara yazma islemi yapilmasi bekleniyor
+
+		Dosya.txt Dosya2.txt Dosya3.txt Dosya4.txt
+		
+		C, A, B kolonlari mevcut 
+
+		A, B, C kolonlarina cevir
+
+
+	 - T1 dk zamaninda;  Bize dosya gonderiliyor biz bunu okuyoruz.
+	 - T2 dk zamaninda;  Kaydedilen dosyaya cevirme islemi yap
+	 - T3 dk zamaninda;  Okudugumuz dosyayi bilgisayara kaydediyoruz.
+	
+
+Yukaridaki 4 dosya icin ortalama olarak tum islemlerin gerceklesme suresi 
+
+	 ( T1 + T2 + T3  ) * DOSYA_SAYISI  ~ = Toplam gecen yaklasik sure
+
+
+CPU nun verimsiz kullanilmasi diye bir durum var. 
+
+	Eger bir uygulama okuma
+	veya yazma islemi yaparken aslinda CPU komutu vermis ve o islemin okumasini
+	veya yazmasini bekliyor ve islem suresince bosta bekliyor. 
+	Bu verimsiz bir yontem neden beklesin ki ? Calistiralim :)
+
+
+Yukaridaki gibi tek bir is parcacigi icinde islemleri yaptigimizda gecmesi gereken sureyi hesapladik.
+
+Peki 3 adim icin tek bir is parcasi yerine, 3 ayri is parcasi kullansak sonuc nasil degisir?
+
+	OKUMA islemlerinin hepsi bir is parcasinda olsun,
+
+	HESAPLAMA islemlerinin hepsi hesaplama bir is parcasinda olsun,
+
+	YAZMA islemlerinin baska bir is parcasinda olsun,
+
+
+Her islem icin 1 dk sure harcadigini dusunelim.
+
+	Hepsini okumasi     4 dosya icin 4 kez bu islem olacak 4dk gececek
+	
+	Hepsini hesaplamasi 4 dosya icin 4 kez bu islem olacak 4dk gececek
+	
+	Hepsini yazmasi     4 dosya icin 4 kez bu islem olacak 4dk gececek
+
+
+	Dosya.txt
+
+	====  T1 ( OKUMA ) + T2 ( HESAPLAMA ) +  T3 ( YAZMA )
+
+	==================== Dosya2.txt
+
+	==================== T1 ( OKUMA )     +  T2 ( HESAPLAMA )  +  T3 ( YAZMA )
+
+	=======================================  Dosya3.txt
+
+	=============================================================================  T1 ( OKUMA )      +  T2 ( HESAPLAMA ) +  T3 ( YAZMA )
+
+	==================================================================================================  Dosya3.txt
+
+
+Yukaridaki tasarimda 
 
 
 ### Thread ve Runnable siniflari kullanilir ?
