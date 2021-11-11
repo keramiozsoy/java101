@@ -1637,7 +1637,55 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
+## Case Study
 
+Buraya kadar olan konular ile ilgili sorulari inceleyelim.
+
+
+		Disaridan girilen iki tam sayi (pozitif veya negatif) arasindaki sayilarin toplamini hesaplayan
+        programi yazalim. Girilen sayilar toplama dahil edilmeyecektir.
+
+        Kurallar:
+        iki sayi da 0 olamaz
+        iki sayi arasindaki fark 1 olamaz.
+        her durum icin programin kullaniciyi uyarmasina gerek yok, calissin yeter.
+
+
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudySwapValuesWithoutTemporaryValue.java
+
+
+		Iki tane integer sayi tanimlayiniz ve ilk degerlerini atayiniz.
+		Ucuncu bir degisken tanimlamadan, iki degiskenin degerlerini degistirip yazdiriniz.
+
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudySumOfBetweenNumbers.java
+
+        
+        Tekrar eden sayiyi ekrana yazan kod parcasini ekleyiniz.
+        
+        7, 9, 5, 5, 1, 3 
+
+        Kurallar
+        Sadece verilen patterne uygun calismasi yeterli
+        bulduktan sonra dizinin devamini kontrol etmeye gerek yok
+
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudyOneForFindDuplicationValue.java
+
+	
+
+Asagidaki sekli ekrana yazdiran programi yaziniz
+
+
+		      #
+		    # #
+		  # # #
+		# # # #
+
+
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudyShapeTriangle.java
 
 
 ## Fonksiyonlar
