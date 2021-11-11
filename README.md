@@ -1646,8 +1646,81 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 ## Concurrency
 
+Onceki bolumlerde gordugumuz uygulamalar hep siraliydi;
+
+- Program baslar 
+- Kurallara gore calisiyor
+- Tum islemler tamamlaninca program sonra eriyor.
+
+Ornek 
+
+		public class Hey {
+			public static void main (String args[]){
+				System.out.println (" Hey Hey Hey !!!! ");
+			}
+		}
+
+
+Bazi durumlarda ayni anda birden fazla isi yapma istegi olusabilir.
+
+Ornek 
+	
+	Tarayicilari dusunelim.
+	Bir yandan bir yaziyi okumak icin size sunarken, 
+	diger yandan dinlediginiz bir sarkiyi bilgisayariniza indirmenize yardimci olabilir
+
+veya
+
+	Bilgisayarinizda bir dosya aramak istediniz arama bolumune 
+	ismini yazdiniz ve butun bilgisayarinizdaki dosyalari  incelemeye basladi. 
+	Siz bu aramanin bitmesini beklemeden 
+	hesap makinesi uygulamasindan islemler yapabiliyoruz. 
+
+	Hesap makinesinde islem yapabilmek icin dosya aramasini bitmesine gerek yok.
+
+
 ### Thread nedir ?
 
+Az onceki orneklerin hepsi birer birbirinden bagimsiz olay/is parcasidir.
+
+Is parcalarini biz aslinda Thread olarak isimlendiriyoruz.
+	
+#### Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?
+
+	Merkezi Islem Birimi( Central Process Unit ) CPU isimlendirmesinin kisaltmasidir yani islemci degidigimiz kavramin kendisidir.
+
+	Bilgisayardaki tum islemleri, isletim sistemini ve altinda calisan programlari yoneten birimdir.
+
+	Bu islemleri yonetmek icin islemciler fiziksel olarak var olan cekirdek ( core ) denilen yapilara ihtiyac duyar.
+
+	- Dual core ( 2 )
+	- Quad core ( 4 )
+	- Octa core ( 8 )
+
+
+Peki neden farkli sayilarda cekirdek sayisina sahip yapilar var ?
+
+	Genel olarak bir islemcide cekirdek sayisi ne kadar fazlaysa 
+	islemcinin calisma kapasitesi de o kadar hizli olur.
+	Asil amac hiz :)
+
+
+Is parcacigi (Thread) aslinda fizilsel cekirdeklerden olusturulan sanal cekirdeklerdir.
+
+Detaylandiralim;
+	
+		8 cekirdekli bir islmecide 8 adet fiziksel cekirdek mevcutken, 
+							 	   16 adet is parcacigi yer alir.
+
+Peki ama neden sayilar bu sekilde ?
+
+	Her cekirdek farkli gorevleri yerine getirebildigi gibi, birden fazla cekirdek ayni gorevi yerine getirmek icin 
+	paralel olarak kullanilabilir.
+
+
+	Her fiziksel cekirdegin ikiye bolunerek, cekirdek basina iki is parcasi calistirma islemi yapabiliyor.
+	Yukarida bahsedilen hizli calisma beklentisi teknolojini el verdigi olcude karsilaniyor.
+	Kavram olarak buna Multithreading denir.
 
 
 ### Thread ve Runnable siniflari kullanilir ?
