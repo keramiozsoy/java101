@@ -1814,13 +1814,7 @@ Peki 3 adim icin tek bir is parcasi yerine, 3 ayri is parcasi kullansak sonuc na
 	YAZMA islemlerinin baska bir is parcasinda olsun,
 
 
-Her islem icin 1 dk sure harcadigini dusunelim.
-
-	Hepsini okumasi     4 dosya icin 4 kez bu islem olacak 4dk gececek
-	
-	Hepsini hesaplamasi 4 dosya icin 4 kez bu islem olacak 4dk gececek
-	
-	Hepsini yazmasi     4 dosya icin 4 kez bu islem olacak 4dk gececek
+Her T ani icin 1 dk sure harcadigini dusunelim.
 
 
 	Dosya.txt
@@ -1833,12 +1827,35 @@ Her islem icin 1 dk sure harcadigini dusunelim.
 
 	=======================================  Dosya3.txt
 
-	=============================================================================  T1 ( OKUMA )      +  T2 ( HESAPLAMA ) +  T3 ( YAZMA )
 
-	==================================================================================================  Dosya3.txt
+- Yukaridaki tasarimda HESAPLAMA is parcacigi OKUMA is parcaciginin dogru bir okuma gerceklestirip
+gerceklestirmedigini kontrol etmesi lazim. 
+
+- Yani bittigini kontrol ettmesi lazim. Cunku birbirinden bagimiz sekilde 
+farkli is parcalarinda islemler yapildi.
+
+- Benzer sekilde YAZMA is parcacigi HESAPLAMA is parcaciginin isini dogru yaptigindan hatta bittiginden emin olmasi lazim.
+
+- Kisaca birbirinden haberleri olmasi lazim. Bu tasarim bize problem olusturdu.
 
 
-Yukaridaki tasarimda 
+		Bunun yerine OKUMA HESAPLAMA YAZMA islemi icin bir is parcacigi olsun fakat
+		
+		dosya basina ayri is parcacigi uretilebilsin. O zaman ayni anda farkli dosyalar
+		
+		icin islemler yapilabilir. Bu tasarimda dikkat edilmesi gereken nokta 
+		
+		birinin okudugunu digeri okumayacak veya birinin hesapladigi anda digeri
+		
+		de ayni dosyayi hesaplamamasi lazim.
 
 
-### Thread ve Runnable siniflari kullanilir ?
+### Thread sinifi veya Runnable  arayuzu nasil kullanilir ?
+
+Ornek 
+
+	Elimizdeki 100 bardagi iki calisan sayacaktir. Programi yazalim.
+
+
+
+
