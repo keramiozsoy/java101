@@ -1721,6 +1721,10 @@ Siniflarin birbirinden veya arayuzlerin (interface) birinden kalitilmasi islemid
 	Elma bir Meyvedir
 
 
+InheritanceClassOfAppleYellow
+InheritanceClassOfAppleRed
+InheritanceClassOfFruit
+
 
 	interface Car extend Vehicle {
 
