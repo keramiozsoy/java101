@@ -1693,7 +1693,7 @@ Asagidaki sekli ekrana yazdiran programi yaziniz
 ## Diziler
 
 
-## Kalitim 
+## Kalitim ve Komposizyon
 
 Nesne yonelimli programlama dili kullanma amaclarindan biri yazdigimiz kodu yeniden kullanmaktir.
 
@@ -1707,36 +1707,86 @@ Kodu yeniden kullanak icin iki farkli yontem var.
 		( super metotlarinin otomatik cagrilmasi gibi )
 	kompozisyon kullandığınızda mirasın işlevselliğine de ulaşabilirsiniz.
 
-KALITIM
+
+### KALITIM
 
 Siniflarin birbirinden veya arayuzlerin (interface) birinden kalitilmasi islemidir.
 	
 	A IS-A B type of thing 
 
-	
-	class Apple extend Fruit {
-
-	}
-
-	Elma bir Meyvedir
 
 
-InheritanceClassOfAppleYellow
-InheritanceClassOfAppleRed
-InheritanceClassOfFruit
+		class Apple extend Fruit {
+
+		}
+
+		Elma bir Meyvedir. Kalitim tek yonlu oldugu icin her elma bir meyvedir fakat her meyve elma degildir.
 
 
-	interface Car extend Vehicle {
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceClassOfAppleYellow.java
 
-	}
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceClassOfAppleRed.java
 
-	Araba bir Aractir.
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceClassOfFruit.java
+
+
+		interface Car extend Vehicle {
+
+		}
+
+		Araba bir Aractir. Kalitim tek yonlu oldugu icin her araba bir aractir fakat her arac bir araba degildir.
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceCarIsAVehicleOfThingClassOfRedCar.java
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceInterfaceCar.java
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceInterfaceVehicle.java
+
+
+### KOMPOZISYON
+
+Basitce objelerin referans nesnelerini kullanmak.
+
+	A HAS-A B variable
+
+	class Classroom {
+
+	}
+
+	class University {
+
+		This class HAS-A list of classrooms
+
+	}
+
+
+	Derslik tanimlanmis. Universite de dersliklere sahiptir. 
+	Dersligi olmayan universite olamaz. Bu nedenle HAS-A iliskisi tutulmustur.
+
+CompositionMain
+
+CompositionUniversity
+
+CompositionClassroom
+
+### POLIMORFIZM
+
+https://omerozkan.net/oop-polimorfizm/
+
+
+Soru 
+
+	Ne zaman hangisini kullanalim ?
+
+	Kalıtımı yalnızca kodu yeniden kullanmak için kullanmayın
+	Eğer gerçekten istediğiniz tek şey kodu yeniden kullanmaksa ve görünürde bir ilişki yoksa, kompozisyonu kullanın.
+
+	Kalıtımı sadece polimorfizme ulaşmak için kullanmayın
+	Eğer gerçekten istediğiniz tek şey bir polimorfizmse, ancak doğal bir IS-A ilişkisi yoksa, arayüzlü kompozisyon kullanın.
+
+	Aralarinda iliski oldugunda kalitim kullanin.
+
+
 
 
 
@@ -1988,7 +2038,9 @@ Bu kavramin ne anlama geldigini bilen var mi?
 <p>
 	
 ```bash
-		
+		Java 8 ile gelen Lambda ifadelerini kullanmak icin 
+		arayuzun (interface) isaretlenmesi ve 
+		icinde sadece abstract olacak sekilde tek metot tutmasidir.
 ```
 
 </p>
@@ -2001,24 +2053,18 @@ Bu kavramin ne anlama geldigini bilen var mi?
 ### Thread Genel Konu sonu cikarimlari
 
 
-	 
-	 - Thread sinifini extend ettigimizde tum metotlari ezmek ( override ) yerine bir tane metot kullaniyoruz.
+	- Thread sinifini extends kullarak kalitim yapmaya calisiyoruz. Ama aslinda 
+		Thread sinifinin kendisi Runnable arayuzu ile genisletilgidinden
+		Runnable icindeki run metodunu kullaniyor. Baska birsey yapmiyoruz.
 
-	 Daha once de anlatilan IS-A iliskisinde olan IS - A - Thread presibini ihlal ediyor. Bu nedenle Runnable kullanmak daha iyi.
+		Kalitim aslinda aralarinda IS-A iliskisi oldugunda kullanilmasi gereken durumdur.
+		Biz aradaki sinifi hic kullanmiyoruz. Bu temiz bir kullanim olmuyor. 
+		( IS - A ve HAS - A ilisikisi icin kalitim konularina bakilabilir)
 
-	 - Runnable uygulanalarak olusturalan tasaarimi Thread sinifina parametre vererek komposizyon(Composition) yonteminden yararlanmis oluruz.
+
+	 - Runnable uygulanarak olusturalan tasaarimi Thread sinifina parametre vererek komposizyon(Composition) yonteminden yararlanmis oluruz.
 
 	 - Runnable ile Java 8 tarafindan saglanan alt yapi yani lambda ifadeleri kullanilabiliyor.
-	
-
-
-
-
-
-
-
-
-
 
 
 ### Thread yasam dongusunun ogrenelim
