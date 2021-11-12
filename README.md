@@ -1692,6 +1692,43 @@ Asagidaki sekli ekrana yazdiran programi yaziniz
 
 ## Diziler
 
+
+## Kalitim 
+
+Nesne yonelimli programlama dili kullanma amaclarindan biri yazdigimiz kodu yeniden kullanmaktir.
+
+Kodu yeniden kullanak icin iki farkli yontem var.
+	
+	- KALITIM 	   ( Inheritance ) (IS-A)
+	- KOMPOZISYON  ( Composition ) (HAS-A)
+
+
+	Kalıtım kullandığınızda derleyici ve Java sanal makinesi (JVM) sizin için çok iş yapacak olsa da,
+		( super metotlarinin otomatik cagrilmasi gibi )
+	kompozisyon kullandığınızda mirasın işlevselliğine de ulaşabilirsiniz.
+
+KALITIM
+
+Siniflarin birbirinden veya arayuzlerin (interface) birinden kalitilmasi islemidir.
+	
+	A IS-A B type of thing 
+
+	
+	class Apple extend Fruit {
+
+	}
+
+	Elma bir Meyvedir
+
+	interface Car extend Vehicle {
+		
+	}
+
+	Araba bir Aractir.
+
+
+
+
 ## Concurrency
 
 Onceki bolumlerde gordugumuz uygulamalar hep siraliydi;
@@ -1850,7 +1887,7 @@ farkli is parcalarinda islemler yapildi.
 		de ayni dosyayi hesaplamamasi lazim.
 
 
-### Thread sinifi veya Runnable  arayuzu nasil kullanilir ?
+### Thread sinifi veya Runnable arayuzu nasil kullanilir ?
 
 Ornek 
 	
@@ -1863,6 +1900,7 @@ Ornek
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
+
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorker.java
 
 
@@ -1924,15 +1962,6 @@ yararlaniyoruz.
 			Thread isimlendirmesi manuel ve ulasmasi icin farkli siniflara tekrar ihtiyac duyuyoruz.
 
 
-Runnable ne zaman kullanilammamali bu eksik arastir ?
-
-
-
-
-
-
-
-
 
 Runnable interface sadece tek metoda sahiptir. Java 8 ile gelen asagidaki tanimlamanin bir anlami var.
 
@@ -1954,13 +1983,28 @@ Bu kavramin ne anlama geldigini bilen var mi?
 </details>
 
 
-Konu sonu cikarimlari;
+###  ExecutorService kullanarak Thread olusturma ?
+
+
+### Thread Genel Konu sonu cikarimlari
+
 
 	 
 	 - Thread sinifini extend ettigimizde tum metotlari ezmek ( override ) yerine bir tane metot kullaniyoruz.
-	 Daha once de anlatilan 
+
+	 Daha once de anlatilan IS-A iliskisinde olan IS - A - Thread presibini ihlal ediyor. Bu nedenle Runnable kullanmak daha iyi.
+
+	 - Runnable uygulanalarak olusturalan tasaarimi Thread sinifina parametre vererek komposizyon(Composition) yonteminden yararlanmis oluruz.
+
+	 - Runnable ile Java 8 tarafindan saglanan alt yapi yani lambda ifadeleri kullanilabiliyor.
 	
-		Inheritance (IS-A) vs. Composition (HAS-A) Relationship
+
+
+
+
+
+
+
 
 
 
