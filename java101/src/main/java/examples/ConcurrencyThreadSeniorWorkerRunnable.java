@@ -1,6 +1,6 @@
 package examples;
 
-public class ConcurrencyThreadSeniorWorkerRunnable  extends ConcurrencyThreadWorkerRunnableBase implements Runnable {
+public class ConcurrencyThreadSeniorWorkerRunnable extends ConcurrencyThreadWorkerRunnableBase implements Runnable {
 
     @Override
     void work() {

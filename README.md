@@ -1908,17 +1908,29 @@ yararlaniyoruz.
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMainWithRunnable.java
 
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnable.java
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnableBase.java
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSeniorWorkerRunnable.java
+
 
 
 `		- Olumlu
 			Yukaridaki probleme cozum uretiyor.`
 
 		- Olumsuz
-			Interface sadece tek metoda sahip ve @FunctionalInterface. Bu kavramin ne oldugunu arastirabilirsiniz?
+			Interface sadece tek metoda sahiptir. @FunctionalInterface. Bu kavramin ne oldugunu arastirabilirsiniz?
 			Thread isimlendirmesi manuel ve ulasmasi icin farkli siniflara tekrar ihtiyac duyuyoruz.
 
 
 
-Runnabkle ne zaman kullanilammamali bu eksik arastir.
+Runnabkle ne zaman kullanilammamali bu eksik arastir ?
+
+
+
+Java 
+
+
 
 
