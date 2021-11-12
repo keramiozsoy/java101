@@ -1915,21 +1915,71 @@ yararlaniyoruz.
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSeniorWorkerRunnable.java
 
 
-
 `		- Olumlu
 			Yukaridaki probleme cozum uretiyor.`
 
 		- Olumsuz
-			Interface sadece tek metoda sahiptir. @FunctionalInterface. Bu kavramin ne oldugunu arastirabilirsiniz?
+			Runnable interface sadece tek metoda sahiptir ve diger metotlara dogrudan ulasamiyorum. 
+			Bu nedenle
 			Thread isimlendirmesi manuel ve ulasmasi icin farkli siniflara tekrar ihtiyac duyuyoruz.
 
 
-
-Runnabkle ne zaman kullanilammamali bu eksik arastir ?
-
+Runnable ne zaman kullanilammamali bu eksik arastir ?
 
 
-Java 
+
+
+
+
+
+
+
+Runnable interface sadece tek metoda sahiptir. Java 8 ile gelen asagidaki tanimlamanin bir anlami var.
+
+	@FunctionalInterface 
+
+Soru
+
+Bu kavramin ne anlama geldigini bilen var mi?
+
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+		
+```
+
+</p>
+</details>
+
+
+Konu sonu cikarimlari;
+
+	 
+	 - Thread sinifini extend ettigimizde tum metotlari ezmek ( override ) yerine bir tane metot kullaniyoruz.
+	 Daha once de anlatilan 
+	
+		Inheritance (IS-A) vs. Composition (HAS-A) Relationship
+
+
+
+
+### Thread yasam dongusunun ogrenelim
+
+	start() 		- hazir  						
+
+	run() 			- calisiyor						
+
+	islem suresince	- bloklanmis	
+
+	wait() 			- bekleme modu  				
+
+	sleep() 		- uyku modu 					
+
+	stop()  		- artik yasamina devam etmiyor
+
+	yield() 		- calistiktan sonra hazir hale geri donmesi 
 
 
 
