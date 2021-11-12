@@ -1720,11 +1720,19 @@ Siniflarin birbirinden veya arayuzlerin (interface) birinden kalitilmasi islemid
 
 	Elma bir Meyvedir
 
+
+
 	interface Car extend Vehicle {
-		
+
 	}
 
 	Araba bir Aractir.
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceCarIsAVehicleOfThingClassOfRedCar.java
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceInterfaceCar.java
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceInterfaceVehicle.java
 
 
 

@@ -1,6 +1,6 @@
 package examples;
 
-public class InheritanceCarIsAVehicleOfThingRedCar implements InheritanceCar {
+public class InheritanceCarIsAVehicleOfThingClassOfRedCar implements InheritanceInterfaceCar {
 
     String color = "RED";
 
