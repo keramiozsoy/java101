@@ -1876,11 +1876,15 @@ Ornek
 Yukaridaki isciler isi tamamladilar ve birer birer saydilar.
 
 	- Olumlu 
-	- yani cok basit sekilde extend yaziyoruz run() metodunu dolduruyoruz calisiyor
-	- itersek kimin hangi anda calistigina hemen ulasabiliyoruz. getName()
+	
+	cok basit sekilde extend yaziyoruz run() metodunu dolduruyoruz calisiyor
+	itersek kimin hangi anda calistigina hemen ulasabiliyoruz. getName()
+
+
 
 	- Olumsuz
-	- Toplam isin suresini belli. Iscilerden birini dinlendirip. Sayima aslinda 2 kat daha
+	
+	Toplam isin suresini belli. Iscilerden birini dinlendirip. Sayima aslinda 2 kat daha
 	hizli sayim yapan birini aliyorum. 
 	 
 	 Tamam ama kodu nasil yazacagim cunku yazacagim sinif hem Worker sinifindan turemeli,
@@ -1901,5 +1905,20 @@ interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasin
 yararlaniyoruz.
 
 
-ConcurrencyThreadMainWithRunnable
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMainWithRunnable.java
+
+
+
+`		- Olumlu
+			Yukaridaki probleme cozum uretiyor.`
+
+		- Olumsuz
+			Interface sadece tek metoda sahip ve @FunctionalInterface. Bu kavramin ne oldugunu arastirabilirsiniz?
+			Thread isimlendirmesi manuel ve ulasmasi icin farkli siniflara tekrar ihtiyac duyuyoruz.
+
+
+
+Runnabkle ne zaman kullanilammamali bu eksik arastir.
+
 
