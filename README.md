@@ -2048,7 +2048,7 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ###  Lambda function kullanarak Thread olusturalim
 
-- ConcurrencyThreadLambdaMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadLambdaMain.java
 
 
 ###  ExecutorService kullanarak Thread olusturma
