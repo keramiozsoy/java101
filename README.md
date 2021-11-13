@@ -1999,7 +1999,6 @@ Cozum icin denemeler
 
 
 
-
 Yukaridaki problem yuzunden Runnable arayuzunu kullanabiliriz. Bir ortak nokta bulmak yerine 
 interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasindan
 yararlaniyoruz.
@@ -2047,7 +2046,12 @@ Bu kavramin ne anlama geldigini bilen var mi?
 </details>
 
 
-###  ExecutorService kullanarak Thread olusturma ?
+###  Lambda function kullanarak Thread olusturalim
+
+- ConcurrencyThreadLambdaMain
+
+
+###  ExecutorService kullanarak Thread olusturma
 
 
 ### Thread Genel Konu sonu cikarimlari
