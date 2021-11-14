@@ -1788,10 +1788,7 @@ Soru
 
 
 
-
-
-
-## Concurrency
+## Eşzamanlılık ( Concurrency ) ve Paralellik ( Parallelism )
 
 Onceki bolumlerde gordugumuz uygulamalar hep siraliydi;
 
@@ -1813,31 +1810,56 @@ Bazi durumlarda ayni anda birden fazla isi yapma istegi olusabilir.
 Ornek 
 	
 	Tarayicilari dusunelim.
-	Bir yandan bir yaziyi okumak icin size sunarken, 
-	diger yandan dinlediginiz bir sarkiyi bilgisayariniza indirmenize yardimci olabilir
+	Bir sekme bir yaziyi okumak icin tarayici size sunarken, 
+	diger sekme dinlemek istedigiz bir sarkiyi bilgisayariniza indirmenize yardimci olabilir
 
 veya
 
-	Bilgisayarinizda bir dosya aramak istediniz arama bolumune 
-	ismini yazdiniz ve butun bilgisayarinizdaki dosyalari  incelemeye basladi. 
+	Bilgisayarinizda isminin bilgidiniz dosyayi aramak istediniz, arama bolumune 
+	ismini yazdiniz, dosyalar incelemeye baslandi. 
 	Siz bu aramanin bitmesini beklemeden 
 	hesap makinesi uygulamasindan islemler yapabiliyoruz. 
 
 	Hesap makinesinde islem yapabilmek icin dosya aramasini bitmesine gerek yok.
 
 
+Bazi kavramlari ogrenelim.
 
-### Thread nedir ?
 
-Az onceki orneklerin hepsi birer birbirinden bagimsiz olay/is parcasidir.
+		Process, bilgisayarimizdaki bir program calistirilip bellekten yer tahsis 
+		edildikten sonra calisma suresi boyunca biz ona bu ismi verebiliyoruz.
 
-Is parcalarini biz aslinda Thread olarak isimlendiriyoruz.
+
+		Calisan bir program yani process altinda yer alan, yapilan her bir is parcasina Thread denilir.
+
+
+		Bir process; yani calistirilmis bir program calistirilan ilk andan hayatinin
+		 son anina kadar ana is parcasi ( main Thread)  olarak adlandirilan yapinin icinde kalir.
+		Bu yapilara Single Thread olarak adlandirilir
+
+
+		Bu main Thread yardimi ile bir cok alt is parcasi (child thread) ler olusturulabilir.
+		Bu yapilara Multi Thread / Multithreading olarak adlandirilir.
+
+##### Concurrency
+
+		Elimizdeki tek bir isi (process) alt islere (task,thread) bolerek, alt islerin 
+		neredeyse ayni anda calisabilmesini sagladigimiz duruma Eşzamanlılık ( Concurrency ) denir.
+		Neredeyse diyorum cunku CPU ne zaman baslayip bitecegine kendi karar veriyor.
+		Son kullanici aslinda ayni anda calismis gibi hissediyor fakat programi yazdigimizda
+		farkli gorebiliyoruz.
+		Bu sekilde daha az surede daha hizli ciktilar uretebiliyoruz.
+
+
+		Thread kullanildiginda aslinda bulunduklari process in eristigi hafiza alanina 
+		eriserek sadece kucuk kucuk parcalar halinde bu islemleri yapmaya olanak sagliyor.
+
+
 	
 #### Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?
+	Merkezi Islem Birimi, CPU (Central Process Unit) veya Islemci kavrami 
 
-	Merkezi Islem Birimi( Central Process Unit ) CPU isimlendirmesinin kisaltmasidir yani islemci degidigimiz kavramin kendisidir.
-
-	Bilgisayardaki tum islemleri, isletim sistemini ve altinda calisan programlari yoneten birimdir.
+	bilgisayardaki tum islemleri, isletim sistemini ve altinda calisan programlari yoneten birimdir.
 
 	Bu islemleri yonetmek icin islemciler fiziksel olarak var olan cekirdek ( core ) denilen yapilara ihtiyac duyar.
 
@@ -1853,22 +1875,117 @@ Peki neden farkli sayilarda cekirdek sayisina sahip yapilar var ?
 	Asil amac hiz :)
 
 
-Is parcacigi (Thread) aslinda fizilsel cekirdeklerden olusturulan sanal cekirdeklerdir.
+Thread aslinda fizilsel cekirdeklerden olusturulan sanal cekirdeklerdir.
 
 Detaylandiralim;
 	
-		8 cekirdekli bir islmecide 8 adet fiziksel cekirdek mevcutken, 
-							 	   16 adet is parcacigi yer alir.
+		8 cekirdekli bir islemcide 8 adet fiziksel cekirdek mevcutken, 
+							 	   16 adet is parcacigi (Thread) yer alir.
 
 Peki ama neden sayilar bu sekilde ?
 
+	Her fiziksel cekirdek en fazla ikiye bolunerek, cekirdek basina iki is parcasi calistirma islemi yapabiliyor.
+	Yukarida bahsedilen hizli calisma beklentisi, teknolojini el verdigi olcude karsilaniyor.
+
+##### Parallelism
+
 	Her cekirdek farkli gorevleri yerine getirebildigi gibi, birden fazla cekirdek ayni gorevi yerine getirmek icin 
 	paralel olarak kullanilabilir.
+	Birden çok görevin veya benzersiz bir görevin birkaç bölümünün tam anlamıyla aynı anda çalışmasına 
+	paralellik (Parallelism) denir.
+	Her göreve veya alt göreve bir çekirdek atayarak, CPU'nun çok çekirdekli altyapısını kullanarak 
+	aynı anda görevlerin bölümlerini VEYA birden fazla görevi fiziksel olarak çalıştırır.
 
 
-	Her fiziksel cekirdegin ikiye bolunerek, cekirdek basina iki is parcasi calistirma islemi yapabiliyor.
-	Yukarida bahsedilen hizli calisma beklentisi teknolojini el verdigi olcude karsilaniyor.
-	Kavram olarak buna Multithreading denir.
+
+
+### Iki kavrami karsilastiralim
+
+
+- Eşzamanlılık, iki görevin çakışan zaman dilimlerinde başlatılabileceği, çalıştırılabileceği ve tamamlanabileceği zamandır. Paralellik, görevlerin tam anlamıyla aynı anda çalışmasıdır,
+
+- Eşzamanlılık, bağımsız olarak yürütülen süreçlerin bileşimidir, paralellik ise (muhtemelen ilgili) hesaplamaların eşzamanlı yürütülmesidir.
+
+- Bir uygulama eşzamanlı olabilir ancak paralel olmayabilir; bu, aynı anda birden fazla görevi işlediği, ancak aynı anda iki görevin yürütülmediği anlamına gelir.
+
+- Bir uygulama hem paralel hem de eşzamanlı olabilir; bu, aynı anda çok çekirdekli bir CPU'da birden çok görevi eşzamanlı olarak işlediği anlamına gelir.
+
+- HERSEYIN OZETI :  Tek çekirdekli bir CPU'da eşzamanlılık elde edebiliriz, ancak paralellik edemeyiz.
+
+
+### Soru cevaplar ile devam edelim.
+
+SORU
+Bir işlemci aynı anda kaç iş parçacığı işleyebilir?
+
+CEVAP
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+		Tek bir CPU çekirdeği, çekirdek başına en fazla 2 iş parçacığına sahip olabilir. 
+
+		Örneğin, 
+			bir CPU çift çekirdekliyse   4 iş parçacığına sahip olacaktır.
+		    bir CPU sekiz çekirdekliyse   16 iş parçacığına sahip olacaktır.
+```
+
+</p>
+</details>
+
+SORU
+Bir görevde bir iş parçacığı mi yoksa çoklu iş parçacığı çalıştırmak daha mı iyi? 
+
+CEVAP
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+ Duruma gore degisebilir, Cok fazla thread olusturmanin maliyeti ve bunlarin atama yapilmasi
+ tek parca ile yapilacak isin maliyetini, hafiza olarak gecebilir. Gereksiz yere thread acilip kulanilmaya calisilmasi.
+```
+
+</p>
+</details>
+
+
+SORU
+Daha fazla cekirdek mi yoksa daha fazla thread mi iyidir?
+
+CEVAP
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+ 	Temel olarak, daha fazla çekirdek ve daha fazla iş parçacığı dengeli sekilde kullanilmasi aslinda en performansli olani.
+
+ 	Iki durumu karsilastirmak aslinda garip.
+
+ 	Cekirdekler, isi yapanlar gercek CPU lardir. ( Buna araba diyelim )
+
+ 	Is parcalari, is yapma istegidir ( Buna surucu diyelim )
+
+ 	Aslinda soru, 
+ 		daha cok arabaya sahip olan bir kisi mi yoksa
+ 		daha cok surucusu olan bir araba mi gibi birsey oluyor.
+
+ 	Çekirdekten daha az iş parçacığınız varsa; sonra ekstra çekirdekler boşa harcanır.
+
+ 	Veya
+	Geçmişte, birçok oyun birden fazla CPU çekirdeğinden tam olarak yararlanmak için programlanmadığından,
+	 yüksek çekirdek sayısına sahip bir CPUya sahip olmak genellikle pek bir şey ifade etmiyordu.
+	 Yeni oyunlarda bunalara dikkat etmeye basladilar fakat hala tek cekirdek uzerindeki performans
+	 coklu cekirdek uzerindeki calismasindan daha onemli durumdadir.
+
+```
+
+</p>
+</details>
+
+
 
 
 Bir ornek ile konuyu genisletelim
@@ -2053,6 +2170,13 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ###  ExecutorService kullanarak Thread olusturma
 
+ConcurrencyExecutorServiceMain.java
+
+https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
+
+https://www.javatpoint.com/java-executorservice
+https://www.javatpoint.com/executor-framework-java
+
 
 ### Thread Genel Konu sonu cikarimlari
 
@@ -2073,6 +2197,11 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ### Thread yasam dongusunun ogrenelim
 
+https://howtodoinjava.com/java-concurrency-tutorial/
+
+https://www.javatpoint.com/multithreading-in-java
+
+
 	start() 		- hazir  						
 
 	run() 			- calisiyor						
@@ -2089,4 +2218,6 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 
 
+### Lock konusu ReentrantLock
 
+https://medium.com/@yusufcancelik/javada-thread-lere-giri%C5%9F-3-reentrantlock-bf93cdc9c466

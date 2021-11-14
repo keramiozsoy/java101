@@ -10,15 +10,21 @@ public class ConcurrencyThreadLambdaMain {
             }
         });
 
-        Thread tLambda = new Thread(() -> {
+        // Java 8
+        Thread tLambdaMultiLine = new Thread(() -> {
             System.out.println("Second Thread: "+ Thread.currentThread().getName());
+            System.out.println("Second Thread Multiline : "+ Thread.currentThread().getName());
         });
 
-//        Thread tLambda = new Thread(
-//                () -> System.out.println("Second Thread: "+ Thread.currentThread().getName())
-//        );
+        // Java 8
+        Thread tLambdaWithoutCurlyBrackets = new Thread(
+                () -> System.out.println("Second Thread: "+ Thread.currentThread().getName())
+                // Below line Will not work
+                // System.out.println("Second Thread Multiline : "+ Thread.currentThread().getName());
+        );
 
         t.start();
-        tLambda.start();
+        tLambdaMultiLine.start();
+        tLambdaWithoutCurlyBrackets.start();
     }
 }
