@@ -2170,12 +2170,7 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ###  ExecutorService kullanarak Thread olusturma
 
-ConcurrencyExecutorServiceMain.java
-
-https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
-
-https://www.javatpoint.com/java-executorservice
-https://www.javatpoint.com/executor-framework-java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.java
 
 
 ### Thread Genel Konu sonu cikarimlari
@@ -2195,11 +2190,60 @@ https://www.javatpoint.com/executor-framework-java
 	 - Runnable ile Java 8 tarafindan saglanan alt yapi yani lambda ifadeleri kullanilabiliyor.
 
 
+
 ### Thread yasam dongusunun ogrenelim
+
+Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
+
+	New 
+
+		Bir is parcasi olusturulmus fakat start() ile hazir hale getirilmemis
+	
+	Runnable
+
+		start() ile hazir hale getirilmis
+	
+	Blocked
+
+		Is parcasinin kendisinin Giris/cikis islemleri ( I/O ) yapildigi sirada threadin gectigi durumu temsil eder.
+		Dosya indirme, dosya gonderme, klavyeden giris bekleme gibi.
+	
+	Waiting
+
+		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen bir iş parçacığı bu durumdadır.
+
+	Timed Waiting	
+
+		Belirli bir bekleme süresine kadar başka bir iş parçacığının eylem gerçekleştirmesini bekleyen bir iş parçacığı bu durumdadır.
+
+	Terminated
+
+		Is dongusu hayat dongusu bittiginde aldigi durumdur.
+
+
+New ve Runnable
+
+ConcurrencyThreadLifecycleStatusNewAndRunnableMain
+
+
+Blocked
+
+ConcurrencyThreadLifecycleStatusBlockedMain
+
+
+
 
 https://howtodoinjava.com/java-concurrency-tutorial/
 
+
+
+https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
+
+https://www.javatpoint.com/java-executorservice
+
 https://www.javatpoint.com/multithreading-in-java
+
+https://www.javatpoint.com/executor-framework-java
 
 
 	start() 		- hazir  						
