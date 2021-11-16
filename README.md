@@ -1841,21 +1841,8 @@ Bazi kavramlari ogrenelim.
 		Bu main Thread yardimi ile bir cok alt is parcasi (child thread) ler olusturulabilir.
 		Bu yapilara Multi Thread / Multithreading olarak adlandirilir.
 
-##### Concurrency
-
-		Elimizdeki tek bir isi (process) alt islere (task,thread) bolerek, alt islerin 
-		neredeyse ayni anda calisabilmesini sagladigimiz duruma Eşzamanlılık ( Concurrency ) denir.
-		Neredeyse diyorum cunku CPU ne zaman baslayip bitecegine kendi karar veriyor.
-		Son kullanici aslinda ayni anda calismis gibi hissediyor fakat programi yazdigimizda
-		farkli gorebiliyoruz.
-		Bu sekilde daha az surede daha hizli ciktilar uretebiliyoruz.
 
 
-		Thread kullanildiginda aslinda bulunduklari process in eristigi hafiza alanina 
-		eriserek sadece kucuk kucuk parcalar halinde bu islemleri yapmaya olanak sagliyor.
-
-
-	
 #### Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?
 	Merkezi Islem Birimi, CPU (Central Process Unit) veya Islemci kavrami 
 
@@ -1875,8 +1862,6 @@ Peki neden farkli sayilarda cekirdek sayisina sahip yapilar var ?
 	Asil amac hiz :)
 
 
-Thread aslinda fizilsel cekirdeklerden olusturulan sanal cekirdeklerdir.
-
 Detaylandiralim;
 	
 		8 cekirdekli bir islemcide 8 adet fiziksel cekirdek mevcutken, 
@@ -1884,39 +1869,201 @@ Detaylandiralim;
 
 Peki ama neden sayilar bu sekilde ?
 
-	Her fiziksel cekirdek en fazla ikiye bolunerek, cekirdek basina iki is parcasi calistirma islemi yapabiliyor.
+	Her fiziksel cekirdek en fazla ikiye bolunerek, cekirdek basina iki is parcasi ayni anda calistirma islemi yapabiliyor.
 	Yukarida bahsedilen hizli calisma beklentisi, teknolojini el verdigi olcude karsilaniyor.
 
-##### Parallelism
+#### * Neden Multithreading yapilara ihtiyac vardir?
 
-	Her cekirdek farkli gorevleri yerine getirebildigi gibi, birden fazla cekirdek ayni gorevi yerine getirmek icin 
-	paralel olarak kullanilabilir.
-	Birden çok görevin veya benzersiz bir görevin birkaç bölümünün tam anlamıyla aynı anda çalışmasına 
-	paralellik (Parallelism) denir.
+Multithreading, aynı uygulama içinde birden çok yürütme iş parçacığına sahip olduğunuz anlamına geldigini soylemistik.
+	
+- Bir uygulamaya ait bircok is parcacigi bir CPU uzerinde calisabilir
+- Bir cok CPU bir uygulamanin farkli is parcaciklarini ayni anda calisatirabilir.
+
+Yukaridaki durumlardan dolayi aslinda asagidaki ihtiyaclari karsilayabiliyor
+	
+-  Tek CPU isin daha fayda saglayan bir kullanim
+
+		Bir iş parçacığı ağ üzerinden gönderilen bir isteğe yanıt bekliyorsa,
+		başka bir iş parçacığı bu arada CPU'yu başka bir şey yapmak için kullanabilir
+
+
+-  Birden fazla CPU nun beraber daha cok fayda saglayan kullanim
+
+		Tek is parcacigi tek CPU kullanabilir, uygulamamizi 
+		cok is parcacikli hale getirirsek bircok CPU yu beraber kullanabiliriz.
+
+-  Daha iyi bir kullanici deneyimi
+	
+		Bir uygulamamizin ekraninda bilgiler ve bir buton olsun.
+		Butona tiklayalim.
+		Buton gorevi ağ üzerinden bir istek atma olsun.
+		Bu isteği hangi iş parçacığının gerçekleştirdiği önemlidir.
+		Ekrandaki bilgilerin guncellenmesi islemi ayni is parcacigi (Thread) icinde gerceklesirse
+		kullanici ag uzerindeki istek bitene kadar ekrandaki bilgilerin guncellenmesini
+		beklerken sayfa sanki asili kalmis gibi hisseder. (Ajax ile bir bolum degil tum sayfanin gidip gelmesi olayi !!!)
+
+- Adil Paylasim 
+
+		Kullanilan bilgisayarin kullanicilar arasinda adil seklinde paylasilmasidir.
+
+		Istemcilerden istek alan ve bu istekleri yürütmek için yalnızca bir iş parçacığına 
+		sahip bir sunucu hayal edin. 
+		Bir istemci işlenmesi uzun süren bir istek gönderirse, 
+		diğer tüm istemcilerin isteklerinin o istek bitene kadar beklemesi gerekir.
+		Her müşterinin isteğinin kendi iş parçacığı tarafından yürütülmesi saglanabilir.
+
+#### Multithreding Maaliyetleri
+
+- Tek bir thread ile yapilacak isi coklu thread ile yaptigimizda bazen thread lerin
+arasindaki ayni veriye ulasma islemlerinden yonetilmeleri gerekir.
+Bu nedenle aslinda basit yapidan karmasik yapiya gecmis oluyoruz.
+Yonetimi dogru yapilmadiginda tespiti ve duzeltilmesi tek thread yapilara gore daha maliyetlidir.
+
+- Baglam Degistirme maaliyeti (Context Switching)
+bir thread altindan diger thread ler olustugunda aslinda CPU tum bu 
+thread lerin durumlarini (RUNNING,LOCKED,WAITING) , en kaldigi yeri veya verilerini tutmak
+zorunda kaliyor.
+
+- Artan kaynak tuketimi (Resource Consumption) yonetilmelidir. Kimse bosta duran 100 tane thread
+bellekte yer kaplasin istemez.
+
+
+#### Multitasking nedir?
+
+- Eskiden bilgisayarlarda tek CPU ile ayni anda sadece tek uygulama calisiyordu.
+
+- Simdi bilgisayarlar bircok programi ayni anda calistiriyor.
+ 
+- CPU lar, programlar arasında paylasilip, Isletim sistemi yardimi ile çalışan programlar arasında geçiş yaparak ve geçiş yapmadan önce her birini bir süre çalıştırır. 
+
+- Zaten gorev yoneticisinden baktigimzda, CPU larin uygulamalar arasindaki kullanim yuzdeleri surekli degistigini gorebiliriz.
+
+
+##### Concurrency
+
+		Elimizdeki tek bir isi (process) alt islere (thread) bolerek, alt islerin 
+		neredeyse ayni anda
+		ayni hafiza alanina, 
+		ayni dosyalara,
+		ayni veritabanina,
+		yazip okumaya calisabilmesini sagladigimiz duruma Eşzamanlılık ( Concurrency ) denir.
+		Neredeyse diyorum cunku bilgisayarimizdaki islemci bagimsiz is parcalarinin ne zaman baslayip bitecegine kendi karar veriyor.
+		Son kullanici aslinda ayni anda calismis gibi hissediyor fakat programi yazdigimizda
+		farkli gorebiliyoruz.
+		Bu sekilde daha az surede daha hizli ciktilar uretebiliyoruz.
+
+( Shared State )
+
+		Ayni hafiza alanlarinin kullanilmasi aslinda bazi problemlere neden oluyor. 
+		Birden fazla is parcasi ayni yerde calisip yanlis sonuc uretebiliyor. ( race condition )
+		Birbirini cagiran ve asla sonlanmayacak is parcalari ( dead lock )
+
+( Seperate state ) 
+
+			 Hicbir ortak alani paylasarak yazma, okuma yapmiyorlar 
+			 fakat kendi aralarinda bulunan degismez objeleri ( immutable objects ) veya
+			 degisen objelerin kopyalarini birbirileri ile degistokus yaparak 
+			 iletisim kurup son hamle yapmadan once her zaman son bilgiye ulasabiliyorlar. 
+			 Boylece ayni yere yazma, yanlis son veriyi okuma gibi problemlerden kaciniyorlar.
+				
+
+			 veya 
+
+
+					 Her is parcasi tamamen ayni talimatlari uyguluyarak isin tamamini kendi baslarina bastan sona bitiriyorlar.
+					 
+					 Ornek 
+					 	3 araba uretilecek, yontetici 3 calisana tek tek aralari tek basiniza bastan sonra yapin hazir hale getirin dedigi durumdur.
+
+
+			 veya
+
+				 	Her is parcasi kendi isini baslatip sonra cevabini beklemeden diger is parcasinin kendi isini baslatabilmesini sagliyor
+
+				 	( asenkron,non-bloking,reactive )
+
+				Ornek 
+				 	### WORKER #### -> ### WORKER #### -> ### WORKER #### -> ### WORKER ####
+				 	|						|					|				|
+				 	Is basla 			Is basla 			Is basla 		Is basla
+			 		 
+
+
+			 objelerin durumlarinin birbirinden ayri sekilde korunabildigi yapilar populer olmustur. 
+
+			 ( event driven )
+			 
+
+			 Ornek
+			 	bir satir bir kolon olan tabloda elimizdeki deger 5
+			 	bir islem geldi 1 artti ve o satir guncelledin    6 
+			 	bir islem geldi 1 azaltti ve o satir guncellendi  5
+			 	bir satir bir kolon olan tabloda elimizdeki son deger 5
+
+			 	bir satir bir kolon olan tabloda elimizde deger   5
+			 	bir satir daha atildi ve kolona +1  yazildi		  
+			 	bir satir daha atildi ve kolona -1  yazildi  
+			 	biz artik tum kolonlardaki islemleri yaptiktan sonra cevabi donuyoruz yani 5
+			 	istersek onceki durumlara da ulasabiliyoruz veya geri donebiliriz.
+			 	tum objelerin kendi durumlari korundu ve asenkdron olarak bagimsiz islem yapildi.
+
+			 Bazi projeler
+			- java.util.concurrent
+			- Java NIO adli java icindeki paket
+			- Node.JS 
+			- Netty.io
+			- Akka.io
+			- Vertx.io
+			- Eventuate.io
+			- Axoniq.io
+			
+			- LMax Disrupter 
+			- Java 7 Fork and Join framework
+			- Java 8 Collection streams API 
+
+
+	
+
+##### Parallel Execution( Paralel Calismak ) ve Parallelism ( Paralellik,Dagitik)
+
+	Her cekirdek farkli gorevleri yerine getirebilmesine  Parallel Calismak denir.
+
+	Fakat 
+
+	Birden fazla cekirdek ayni görevin birkaç alt is parcasini tam anlamıyla aynı anda çalışmasına 
+	paralellik,dagitik (Parallelism) denir. Bir CPU da uretilen alt gorev baska cpu userinde kosabilir.
 	Her göreve veya alt göreve bir çekirdek atayarak, CPU'nun çok çekirdekli altyapısını kullanarak 
 	aynı anda görevlerin bölümlerini VEYA birden fazla görevi fiziksel olarak çalıştırır.
 
 
 
 
-### Iki kavrami karsilastiralim
+### Detaylarin ozeti
 
 
 - Eşzamanlılık, iki görevin çakışan zaman dilimlerinde başlatılabileceği, çalıştırılabileceği ve tamamlanabileceği zamandır. Paralellik, görevlerin tam anlamıyla aynı anda çalışmasıdır,
 
 - Eşzamanlılık, bağımsız olarak yürütülen süreçlerin bileşimidir, paralellik ise (muhtemelen ilgili) hesaplamaların eşzamanlı yürütülmesidir.
 
-- Bir uygulama eşzamanlı olabilir ancak paralel olmayabilir; bu, aynı anda birden fazla görevi işlediği, ancak aynı anda iki görevin yürütülmediği anlamına gelir.
+- Bir uygulama eşzamanlı olabilir ancak paralel olmayabilir; bu, aynı anda birden fazla görevi işlediği, ancak aynı anda iki görevin yürütülmediği anlamına gelir. Parallel ayni anda olur.
 
 - Bir uygulama hem paralel hem de eşzamanlı olabilir; bu, aynı anda çok çekirdekli bir CPU'da birden çok görevi eşzamanlı olarak işlediği anlamına gelir.
 
-- HERSEYIN OZETI :  Tek çekirdekli bir CPU'da eşzamanlılık elde edebiliriz, ancak paralellik edemeyiz.
+- Tek çekirdekli bir CPU'da eşzamanlılık elde edebiliriz, ancak paralellik edemeyiz.
+
+- Eşzamanlı bir sistemde farklı iş parçacıkları birbirleriyle iletişim kurar. 
+Dağıtılmış,paralel bir sistemde farklı süreçler veya farkli bilgisayarlar birbirleriyle iletişim kurar. 
+Farkli bilgisayarlarin bir arada calistigi sistemler var.  
+( Apache Hadoop ile cluster kurulumu, Apache Cassandra NoSql dagitik veri tabani)
 
 
 ### Soru cevaplar ile devam edelim.
 
 SORU
-Bir işlemci aynı anda kaç iş parçacığı işleyebilir?
+Bir işlemci aynı anda kaç iş parçacığı işleyebilir? 
+ - tek cekirdek
+ - cift cekirdek
+ - sekiz cekirdek
 
 CEVAP
 <details>
@@ -1972,7 +2119,7 @@ CEVAP
  		daha cok arabaya sahip olan bir kisi mi yoksa
  		daha cok surucusu olan bir araba mi gibi birsey oluyor.
 
- 	Çekirdekten daha az iş parçacığınız varsa; sonra ekstra çekirdekler boşa harcanır.
+ 	Çekirdekten daha az iş parçacığınız varsa; ekstra çekirdekler boşa harcanır.
 
  	Veya
 	Geçmişte, birçok oyun birden fazla CPU çekirdeğinden tam olarak yararlanmak için programlanmadığından,
@@ -2055,15 +2202,29 @@ farkli is parcalarinda islemler yapildi.
 - Kisaca birbirinden haberleri olmasi lazim. Bu tasarim bize problem olusturdu.
 
 
+		Diger cozum
+
 		Bunun yerine OKUMA HESAPLAMA YAZMA islemi icin bir is parcacigi olsun fakat
-		
+
 		dosya basina ayri is parcacigi uretilebilsin. O zaman ayni anda farkli dosyalar
-		
+
 		icin islemler yapilabilir. Bu tasarimda dikkat edilmesi gereken nokta 
-		
+
 		birinin okudugunu digeri okumayacak veya birinin hesapladigi anda digeri
-		
+
 		de ayni dosyayi hesaplamamasi lazim.
+
+
+
+
+
+# Tek Is Parcacigi Ile Eszamanlilik
+
+http://tutorials.jenkov.com/java-concurrency/single-threaded-concurrency.html
+
+
+
+
 
 
 ### Thread sinifi veya Runnable arayuzu nasil kullanilir ?
@@ -2210,6 +2371,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 	
 	Waiting
 
+		( BU YANLIS OLABILIR TEKRAR BAK)
 		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen bir iş parçacığı bu durumdadır.
 
 	Timed Waiting	
@@ -2231,6 +2393,17 @@ Blocked
 ConcurrencyThreadLifecycleStatusBlockedMain
 
 
+Waiting
+
+( BU YANLIS OLABILIR TEKRAR BAK)
+
+
+
+
+
+
+
+https://tutorials.jenkov.com/java-concurrency/
 
 
 https://howtodoinjava.com/java-concurrency-tutorial/
@@ -2244,6 +2417,8 @@ https://www.javatpoint.com/java-executorservice
 https://www.javatpoint.com/multithreading-in-java
 
 https://www.javatpoint.com/executor-framework-java
+
+
 
 
 	start() 		- hazir  						
@@ -2265,3 +2440,11 @@ https://www.javatpoint.com/executor-framework-java
 ### Lock konusu ReentrantLock
 
 https://medium.com/@yusufcancelik/javada-thread-lere-giri%C5%9F-3-reentrantlock-bf93cdc9c466
+
+
+
+
+
+
+
+
