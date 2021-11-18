@@ -2218,15 +2218,6 @@ farkli is parcalarinda islemler yapildi.
 
 
 
-# Tek Is Parcacigi Ile Eszamanlilik
-
-http://tutorials.jenkov.com/java-concurrency/single-threaded-concurrency.html
-
-
-
-
-
-
 ### Thread sinifi veya Runnable arayuzu nasil kullanilir ?
 
 Ornek 
@@ -2371,7 +2362,6 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 	
 	Waiting
 
-		( BU YANLIS OLABILIR TEKRAR BAK)
 		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen bir iş parçacığı bu durumdadır.
 
 	Timed Waiting	
@@ -2391,11 +2381,12 @@ ConcurrencyThreadLifecycleStatusNewAndRunnableMain
 Blocked
 
 ConcurrencyThreadLifecycleStatusBlockedMain
-
+( BU YANLIS OLABILIR TEKRAR BAK)
 
 Waiting
 
-( BU YANLIS OLABILIR TEKRAR BAK)
+
+
 
 
 

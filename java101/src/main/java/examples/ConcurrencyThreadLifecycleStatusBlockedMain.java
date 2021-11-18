@@ -19,7 +19,5 @@ public class ConcurrencyThreadLifecycleStatusBlockedMain {
 
         Thread thread = new Thread(runnable,"T1");
         thread.start();
-
-        IntBuffer
     }
 }
