@@ -8,10 +8,13 @@ public class ConcurrencyThreadWorker extends Thread {
         for(int i = 0; i <= 50; i++){
 
             System.out.println(
-                     "PID - " + this.getId() + " - " + this.getName() + " - "  + i
+                     "PID -> " + this.getId() + " Name -> " + this.getName() + " Count -> " + i
             );
             if (i == 50){
-                System.out.println("==============================================");
+                System.out.println(" ============================================== " +
+                        this.getName() + " finished ");
+
+
             }
 
         }

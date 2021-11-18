@@ -2213,21 +2213,25 @@ farkli is parcalarinda islemler yapildi.
 		birinin okudugunu digeri okumayacak veya birinin hesapladigi anda digeri
 
 		de ayni dosyayi hesaplamamasi lazim.
-
-
-
+	
 
 
 ### Thread sinifi veya Runnable arayuzu nasil kullanilir ?
 
 Ornek 
 	
+	Elimizdeki 100 adet bardagin iki calisan tarafindan satisa sunulmadan once tekrar sayilmasini istiyoruz.
 
-	
-	Elimizdeki 100 bardagi iki calisan sayacaktir. Programi yazalim.
+	50 ser 50 ser boluserek sayilmasi ilk etapta bizi sonuca goturur
 
-	Sirkette 1 sene calisan 1 er 1 er sayabiliyor.
-	Sirkette 2 sene calisan 2 er 2 er sayabiliyor.
+	Iki calisanin bardak sayma hizlari normal sartlarda ayni olamaz. 
+	Biz gorevi verip calismaya baslayabilirsiniz diyecegiz 
+	onlar gorevlerini bitirince bize haber verecekler
+
+	Bir ana is parcasi yazacagiz (main), altinda iki kucuk is parcalari(child) yazacagiz.
+
+	Bu programi yazalim
+
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
@@ -2239,25 +2243,25 @@ Ornek
 		
 		is parcacigini hazir duruma getirmek icin start() fakat calismasi icin run() metodu kullanildi. 
 
-		Yukarida 1 parent, 2 child olacak sekilde is paarcaciklari olusturuldu ve calisti
-
 
 Yukaridaki isciler isi tamamladilar ve birer birer saydilar.
-
-	- Olumlu 
 	
-	cok basit sekilde extend yaziyoruz run() metodunu dolduruyoruz calisiyor
-	itersek kimin hangi anda calistigina hemen ulasabiliyoruz. getName()
-
-
-
-	- Olumsuz
-	
-	Toplam isin suresini belli. Iscilerden birini dinlendirip. Sayima aslinda 2 kat daha
+	Toplam isin suresini kisaltmak istiyorum. Iscilerden birini dinlendirip. Sayima aslinda 2 kat daha
 	hizli sayim yapan birini aliyorum. 
+
+	Sirkette 1 sene calisan 1 er 1 er sayabiliyor.
+	Sirkette 2 sene calisan 2 ser 2 ser sayabiliyor.
 	 
-	 Tamam ama kodu nasil yazacagim cunku yazacagim sinif hem Worker sinifindan turemeli,
-	 hem de Thread. Java da coklu kalitim var mi ? Nasil cozerim ?
+	Iki kat hizli sayim yapan calisan sinifini nasil kodlayabiliriz?
+
+	Kalitim konusundan yardim alarak calisan sinifinin calisma metodunu
+	ezerek (override) kendi calisma hizima gore guncelleme yaparim. 
+
+	Yukaridaki yontem sizce guzel mi ? Daha iyisi nedir ?
+
+
+	Hizli sayim yapan sinif hem Worker sinifindan turemeli,
+	hem de Thread. Java da coklu kalitim var mi ? Nasil cozerim ?
 
 
 Cozum icin denemeler 
@@ -2384,10 +2388,6 @@ ConcurrencyThreadLifecycleStatusBlockedMain
 ( BU YANLIS OLABILIR TEKRAR BAK)
 
 Waiting
-
-
-
-
 
 
 
