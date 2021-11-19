@@ -2296,24 +2296,6 @@ Bu kavramin ne anlama geldigini bilen var mi?
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.java
 
 
-### Thread Genel Konu sonu cikarimlari
-
-
-	- Thread sinifini extends kullarak kalitim yapmaya calisiyoruz. Ama aslinda 
-		Thread sinifinin kendisi Runnable arayuzu ile genisletilgidinden
-		Runnable icindeki run metodunu kullaniyor. Baska birsey yapmiyoruz.
-
-		Kalitim aslinda aralarinda IS-A iliskisi oldugunda kullanilmasi gereken durumdur.
-		Biz aradaki sinifi hic kullanmiyoruz. Bu temiz bir kullanim olmuyor. 
-		( IS - A ve HAS - A ilisikisi icin kalitim konularina bakilabilir)
-
-
-	 - Runnable uygulanarak olusturalan tasaarimi Thread sinifina parametre vererek komposizyon(Composition) yonteminden yararlanmis oluruz.
-
-	 - Runnable ile Java 8 tarafindan saglanan alt yapi yani lambda ifadeleri kullanilabiliyor.
-
-
-
 ### Thread yasam dongusunun ogrenelim
 
 Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
