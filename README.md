@@ -2220,11 +2220,13 @@ farkli is parcalarinda islemler yapildi.
 
 Ornek 
 	
-	Elimizdeki 100 adet bardagin iki calisan tarafindan satisa sunulmadan once tekrar sayilmasini istiyoruz.
+	Elimizdeki 100 adet kutu iki calisan tarafindan satisa sunulmadan once tekrar sayilmasini istiyoruz.
 
-	50 ser 50 ser boluserek sayilmasi ilk etapta bizi sonuca goturur
+	Esit veya farkli kutu sayilari vererek tum kutulari sayabiliriz.
 
-	Iki calisanin bardak sayma hizlari normal sartlarda ayni olamaz. 
+	Iki calisanin kutu sayma sayilari birer birer veya ikiser ikiser
+	olabilir fakat sayma hizlari normal sartlarda ayni olamaz.
+	
 	Biz gorevi verip calismaya baslayabilirsiniz diyecegiz 
 	onlar gorevlerini bitirince bize haber verecekler
 
@@ -2234,6 +2236,9 @@ Ornek
 
 
 
+Kalitimdan ogrendigimiz extends anahtar kelimesi yardimiyla olusturacagimiz islere sizler birer is parcasisiniz tanimi yapacagiz.
+
+
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorker.java
@@ -2241,40 +2246,13 @@ Ornek
 
 		Thread sinifini kullanarak is parcacigi olusturdugumuz icin 
 		
-		is parcacigini hazir duruma getirmek icin start() fakat calismasi icin run() metodu kullanildi. 
+		is parcacigini hazir duruma getirmek icin start()
+		calismasi icin run() metodu kullanildi. 
 
 
-Yukaridaki isciler isi tamamladilar ve birer birer saydilar.
-	
-	Toplam isin suresini kisaltmak istiyorum. Iscilerden birini dinlendirip. Sayima aslinda 2 kat daha
-	hizli sayim yapan birini aliyorum. 
-
-	Sirkette 1 sene calisan 1 er 1 er sayabiliyor.
-	Sirkette 2 sene calisan 2 ser 2 ser sayabiliyor.
-	 
-	Iki kat hizli sayim yapan calisan sinifini nasil kodlayabiliriz?
-
-	Kalitim konusundan yardim alarak calisan sinifinin calisma metodunu
-	ezerek (override) kendi calisma hizima gore guncelleme yaparim. 
-
-	Yukaridaki yontem sizce guzel mi ? Daha iyisi nedir ?
-
-
-	Hizli sayim yapan sinif hem Worker sinifindan turemeli,
-	hem de Thread. Java da coklu kalitim var mi ? Nasil cozerim ?
-
-
-Cozum icin denemeler 
-
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMainWithSenior.java
-
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSeniorWorker.java
-
-
-
-Yukaridaki problem yuzunden Runnable arayuzunu kullanabiliriz. Bir ortak nokta bulmak yerine 
-interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasindan
-yararlaniyoruz.
+ 
+Kaliimdan ogrendigimiz interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasindan
+yararlanarakda thread olusturabiliyoruz.
 
 
 
@@ -2283,17 +2261,6 @@ yararlaniyoruz.
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnable.java
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnableBase.java
-
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSeniorWorkerRunnable.java
-
-
-`		- Olumlu
-			Yukaridaki probleme cozum uretiyor.`
-
-		- Olumsuz
-			Runnable interface sadece tek metoda sahiptir ve diger metotlara dogrudan ulasamiyorum. 
-			Bu nedenle
-			Thread isimlendirmesi manuel ve ulasmasi icin farkli siniflara tekrar ihtiyac duyuyoruz.
 
 
 

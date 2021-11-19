@@ -1,23 +1,24 @@
 package examples;
 
-public class ConcurrencyThreadWorkerRunnable extends ConcurrencyThreadWorkerRunnableBase implements Runnable {
+public class ConcurrencyThreadWorkerRunnable implements Runnable {
 
+    private final int powerCount;
+    private final int boxCount;
 
-    @Override
-    void work() {
-        System.out.println(" Worker - finish ");
+    public ConcurrencyThreadWorkerRunnable(int powerCount, int boxCount) {
+        this.powerCount = powerCount;
+        this.boxCount = boxCount;
     }
 
     @Override
     public void run() {
 
-        for(int i = 0; i <= 50; i++){
+        for(int i = 0; i <= boxCount; i = i + powerCount){
 
             System.out.println(
                      "PID - " + Thread.currentThread().getId() + " - " +Thread.currentThread().getName() + " - "  + i
             );
-            if (i == 50){
-                this.work();
+            if (i == boxCount){
                 System.out.println("==============================================");
             }
 
