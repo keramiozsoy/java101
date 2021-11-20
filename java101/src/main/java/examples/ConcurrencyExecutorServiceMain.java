@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 public class ConcurrencyExecutorServiceMain {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
+        // There are 2 threads to work
         // above line is instead of start()
 
         for (int i = 1; i <= 5; i++) {

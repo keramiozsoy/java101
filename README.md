@@ -2260,7 +2260,28 @@ yararlanarakda thread olusturabiliyoruz.
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnable.java
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnableBase.java
+
+
+
+Soru
+
+Thread.start() yerine Thread.run()  metodu cagirirsak ne olur ?
+
+
+<details>
+<summary> Sorunun Cevabi Icin Tikla</summary>
+<p>
+	
+```bash
+		Yeni bir thread olusmaz main thread uzerinde sadece metot cagrisi yapmis oluruz.
+```
+
+</p>
+</details>
+
+
+ConcurrencyThreadRunMethodDirectInvoke 
+
 
 
 
