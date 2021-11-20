@@ -2216,7 +2216,12 @@ farkli is parcalarinda islemler yapildi.
 	
 
 
-### Thread sinifi veya Runnable arayuzu nasil kullanilir ?
+### Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?
+
+
+Yazdigimiz uygulamalar aslinda temel olarak main thread olarak bilinen yapilar ile calismaya baslar.
+
+ConcurrencyThreadMain
 
 Ornek 
 	
@@ -2239,9 +2244,9 @@ Ornek
 Kalitimdan ogrendigimiz extends anahtar kelimesi yardimiyla olusturacagimiz islere sizler birer is parcasisiniz tanimi yapacagiz.
 
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadByThreadClassMain.java
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorker.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadByThreadClassWorker.java
 
 
 		Thread sinifini kullanarak is parcacigi olusturdugumuz icin 
@@ -2256,9 +2261,9 @@ yararlanarakda thread olusturabiliyoruz.
 
 
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMainWithRunnable.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadByRunnableInterfaceMain.java
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadWorkerRunnable.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadByRunnableWorker.java
 
 
 
@@ -2280,7 +2285,9 @@ Thread.start() yerine Thread.run()  metodu cagirirsak ne olur ?
 </details>
 
 
-ConcurrencyThreadRunMethodDirectInvoke 
+Cevap ile ilgili ornek 
+
+- ConcurrencyThreadRunMethodDirectInvoke 
 
 
 

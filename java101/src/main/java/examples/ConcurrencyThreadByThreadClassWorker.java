@@ -1,11 +1,11 @@
 package examples;
 
-public class ConcurrencyThreadWorker extends Thread {
+public class ConcurrencyThreadByThreadClassWorker extends Thread {
 
     private final int powerCount;
     private final int boxCount;
 
-    public ConcurrencyThreadWorker(int powerCount, int boxCount) {
+    public ConcurrencyThreadByThreadClassWorker(int powerCount, int boxCount) {
         this.powerCount = powerCount;
         this.boxCount = boxCount;
     }

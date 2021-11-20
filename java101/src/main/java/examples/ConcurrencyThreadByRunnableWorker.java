@@ -1,11 +1,11 @@
 package examples;
 
-public class ConcurrencyThreadWorkerRunnable implements Runnable {
+public class ConcurrencyThreadByRunnableWorker implements Runnable {
 
     private final int powerCount;
     private final int boxCount;
 
-    public ConcurrencyThreadWorkerRunnable(int powerCount, int boxCount) {
+    public ConcurrencyThreadByRunnableWorker(int powerCount, int boxCount) {
         this.powerCount = powerCount;
         this.boxCount = boxCount;
     }
