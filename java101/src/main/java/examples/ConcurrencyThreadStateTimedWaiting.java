@@ -1,8 +1,6 @@
 package examples;
 
 
-import java.util.concurrent.TimeUnit;
-
 public class ConcurrencyThreadStateTimedWaiting {
 
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class ConcurrencyThreadStateTimedWaiting {
                     System.out.println(i);
 
                     try {
-                        TimeUnit.SECONDS.sleep(2);
+                        Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

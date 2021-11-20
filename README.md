@@ -1,6 +1,6 @@
 # java101
 
-https://github.com/keramiozsoy/java101/find/main
+			https://github.com/keramiozsoy/java101/find/main
 
 # BIRINCI BOLUM
 
@@ -2351,21 +2351,20 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 - https://docs.oracle.com/javase/6/docs/api/java/lang/Thread.State.html
 
-	New 
+	NEW 
 
-		Bir is parcasi obje olarak olusturulmus fakat start() ile hazir hale getirilmemis
+		Bir is parcasi obje olarak olusturulmus fakat start() ile hazir hale getirilmediginde bu durumdadir.
 	
 	RUNNABLE
 
-		start() ile hazir hale getirilmis
-	
+		start() ile hazir hale getirildiginde bu durumdadir.
+	 
 	Blocked
-
 		
 	
 	Waiting
 
-		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen bir iş parçacığı bu durumdadır.
+		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen iş parçacığı bu durumdadır.
 
 	TIMED_WAITING	
 
@@ -2373,12 +2372,16 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 	TERMINATED
 
-		Is e agit hayat dongusu bittiginde aldigi durumdur.
+		Is parcasinin hayat dongusu bittiginde aldigi durumdur.
 
 
-New ve Runnable
+NEW - RUNNABLE
 
-ConcurrencyThreadStateNewAndRunnable
+	Is parcasi ilk olusturugnda aldigi durum
+
+https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateNewAndRunnable.java
+
+
 
 
 Blocked
@@ -2391,26 +2394,56 @@ Waiting
 
 TIMED_WAITING
 
-ConcurrencyThreadStateTimedWaiting
+	Bir is parcasi belirli bir zaman araligi gectikten sonra calicak ise zamani gecmesini beklerken aldigi durumdur.
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateTimedWaiting.java
 
 
 TERMINATED
-~~~
-Bir is parcasini baslatmak icin thread.start() metodunu kullaniyoruz.
 
-Durdurmak icin thread.stop() metodunu kullanabiliriz.
+	Bir is parcasini baslatmak icin thread.start() metodunu kullaniyoruz.
 
-Fakat stop() metodu is parcasinin devam eden bir isi var mi yok mu diye kontrol etmeden dogrudan
-bir istek atarak sonlanmasini sagliyor.
+	Durdurmak icin thread.stop() metodunu kullanabiliriz.
 
-Bu durum tehlikelidir. Cunku is parcasinin yapmasi gereken is yarim kalabiliyor.
+	Fakat stop() metodu is parcasinin devam eden bir isi var mi yok mu diye kontrol etmeden dogrudan
+	bir istek atarak sonlanmasini sagliyor.
 
-Bu nedenle kendimiz ozel olarak is parcacigimizi durduran yapilar gelistirmeliyiz.
-~~~
+	Bu durum tehlikelidir. Cunku is parcasinin yapmasi gereken is yarim kalabiliyor.
 
-ConcurrencyThreadStateTerminatedMain
+	Bu nedenle kendimiz ozel olarak is parcacigimizi durduran yapilar gelistirmeliyiz.
 
 
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateTerminatedMain.java
+
+
+
+
+###  Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? ( Race Conditions )
+
+	Eger bir is parcasinin gerceklestirdigi islem sonucu diger is parcasinin baslangicta erismesi gereken giris bilgilerini etkiliyor ise
+
+	ve bu is parcalarinin calisma sirasi sizin icin onemli ise, 
+
+	farkli is parcalarinin sirasiyla calismasini saglamak icin yontemler gelistirmelisiniz.
+
+	Cunku ayni anda ayni islem uzerinde farkli is parcalari calistiginda elde edilen sonuc buyuk olasilikla yanlis olacaktir.
+
+	Yukaridaki durum iki farkli durumda olusabilir.
+
+	- oku - degistir - yaz    ve sonraki is parcasi bu adimi tekrarlar
+
+	- kontrol et sonra aksiyona gec   ve sonraki is parcasi bu adimi tekrarlar
+
+
+
+Ornek 
+
+Ortak banka hesabindan farkli kisiler para cekiyor. Ayni zaman diliminde islem yapmaya calistiklarinda nasil bir 
+durum ile karsilasiyoruz beraber inceleyelim.
+
+
+
+ConcurrencyThreadRaceConditionMain
 
 
 

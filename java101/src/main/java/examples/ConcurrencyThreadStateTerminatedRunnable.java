@@ -1,6 +1,6 @@
 package examples;
 
-import java.util.concurrent.TimeUnit;
+
 
 public class ConcurrencyThreadStateTerminatedRunnable implements Runnable {
 
@@ -21,7 +21,7 @@ public class ConcurrencyThreadStateTerminatedRunnable implements Runnable {
             System.out.println("Running");
 
             try {
-                TimeUnit.SECONDS.sleep(2);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

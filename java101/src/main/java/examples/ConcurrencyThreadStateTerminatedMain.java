@@ -1,6 +1,5 @@
 package examples;
 
-import java.util.concurrent.TimeUnit;
 
 public class ConcurrencyThreadStateTerminatedMain {
     public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class ConcurrencyThreadStateTerminatedMain {
         }).start();
 
         try {
-            TimeUnit.SECONDS.sleep(10);
+            Thread.sleep(10_000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -28,7 +27,7 @@ public class ConcurrencyThreadStateTerminatedMain {
          runnable.customStop();
 
         try {
-            TimeUnit.SECONDS.sleep(10);
+            Thread.sleep(10_000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
