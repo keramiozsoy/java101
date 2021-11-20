@@ -1,6 +1,6 @@
 # java101
 
-			https://github.com/keramiozsoy/java101/find/main
+https://github.com/keramiozsoy/java101/find/main
 
 # BIRINCI BOLUM
 
