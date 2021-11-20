@@ -2,9 +2,9 @@ package examples;
 
 import java.util.concurrent.TimeUnit;
 
-public class ConcurrentThreadCustomMonitor {
+public class ConcurrencyThreadCustomMonitor {
 
-    public static void monitorThread(Thread thread) {
+    public static void monitor(Thread thread) {
         while (thread.isAlive()){
 
             System.out.println(thread.getName() + " is alive and state = " + thread.getState() );

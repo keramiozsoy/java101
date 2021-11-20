@@ -2353,7 +2353,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 	New 
 
-		Bir is parcasi olusturulmus fakat start() ile hazir hale getirilmemis
+		Bir is parcasi obje olarak olusturulmus fakat start() ile hazir hale getirilmemis
 	
 	RUNNABLE
 
@@ -2361,8 +2361,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 	
 	Blocked
 
-		Is parcasinin kendisinin Giris/cikis islemleri ( I/O ) yapildigi sirada threadin gectigi durumu temsil eder.
-		Dosya indirme, dosya gonderme, klavyeden giris bekleme gibi.
+		
 	
 	Waiting
 
@@ -2372,9 +2371,9 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 		Belirli bir bekleme süresine kadar başka bir iş parçacığının eylem gerçekleştirmesini bekleyen bir iş parçacığı bu durumdadır.
 
-	Terminated
+	TERMINATED
 
-		Is dongusu hayat dongusu bittiginde aldigi durumdur.
+		Is e agit hayat dongusu bittiginde aldigi durumdur.
 
 
 New ve Runnable
@@ -2384,8 +2383,7 @@ ConcurrencyThreadStateNewAndRunnable
 
 Blocked
 
-ConcurrencyThreadLifecycleStatusBlockedMain
-( BU YANLIS OLABILIR TEKRAR BAK)
+
 
 Waiting
 
@@ -2394,6 +2392,23 @@ Waiting
 TIMED_WAITING
 
 ConcurrencyThreadStateTimedWaiting
+
+
+TERMINATED
+~~~
+Bir is parcasini baslatmak icin thread.start() metodunu kullaniyoruz.
+
+Durdurmak icin thread.stop() metodunu kullanabiliriz.
+
+Fakat stop() metodu is parcasinin devam eden bir isi var mi yok mu diye kontrol etmeden dogrudan
+bir istek atarak sonlanmasini sagliyor.
+
+Bu durum tehlikelidir. Cunku is parcasinin yapmasi gereken is yarim kalabiliyor.
+
+Bu nedenle kendimiz ozel olarak is parcacigimizi durduran yapilar gelistirmeliyiz.
+~~~
+
+ConcurrencyThreadStateTerminatedMain
 
 
 
