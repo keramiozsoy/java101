@@ -8,7 +8,6 @@ public class ConcurrencyThreadStateTerminatedMain {
 
         Thread thread = new Thread(runnable);
         thread.start();
-        // thread.stop(); Don't use
 
         System.out.println(thread.getName() + " is alive and state = " + thread.getState() );
 
@@ -25,7 +24,8 @@ public class ConcurrencyThreadStateTerminatedMain {
             e.printStackTrace();
         }
 
-        runnable.customStop();
+         // thread.stop();
+         runnable.customStop();
 
         try {
             TimeUnit.SECONDS.sleep(10);
@@ -33,6 +33,6 @@ public class ConcurrencyThreadStateTerminatedMain {
             e.printStackTrace();
         }
 
-        System.out.println(thread.getName() + " is dead and state = " + thread.getState() );
+        System.out.println("LAST INFO " + thread.getName() + " is dead and state = " + thread.getState() );
     }
 }
