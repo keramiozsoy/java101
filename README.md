@@ -2221,7 +2221,9 @@ farkli is parcalarinda islemler yapildi.
 
 Yazdigimiz uygulamalar aslinda temel olarak main thread olarak bilinen yapilar ile calismaya baslar.
 
-ConcurrencyThreadMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMain.java
+
+
 
 Ornek 
 	
@@ -2256,8 +2258,8 @@ Kalitimdan ogrendigimiz extends anahtar kelimesi yardimiyla olusturacagimiz isle
 
 
  
-Kaliimdan ogrendigimiz interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasindan
-yararlanarakda thread olusturabiliyoruz.
+Kalitimdan ogrendigimiz interface kavraminin bize sagladigi sadece o is icin bir ozellik ekleme faydasindan
+yararlanarak thread olusturabiliyoruz.
 
 
 
@@ -2287,8 +2289,7 @@ Thread.start() yerine Thread.run()  metodu cagirirsak ne olur ?
 
 Cevap ile ilgili ornek 
 
-- ConcurrencyThreadRunMethodDirectInvoke 
-
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadRunMethodDirectInvoke.java
 
 
 
@@ -2318,11 +2319,23 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadLambdaMain.java
 
-
 ###  ExecutorService kullanarak Thread olusturma
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.java
 
+
+
+
+
+
+
+
+
+
+
+
+
+BU SATIRDAN ASAGISI TEKRAR KONTROL ET
 
 ### Thread yasam dongusunun ogrenelim
 

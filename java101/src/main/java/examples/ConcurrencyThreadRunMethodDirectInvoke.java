@@ -20,7 +20,7 @@ public class ConcurrencyThreadRunMethodDirectInvoke {
         Thread thread = new Thread(runnable);
         thread.run(); // Instead of thread.run() we should use thread.start() to create new Thread
 
-        System.out.println(" I coma back this line after run() method invoked.");
+        System.out.println(" this line after run() method invoked.");
 
     }
 }
