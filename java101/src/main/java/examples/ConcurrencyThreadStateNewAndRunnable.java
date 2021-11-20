@@ -1,6 +1,6 @@
 package examples;
 
-public class ConcurrencyThreadLifecycleStatusNewAndRunnableMain {
+public class ConcurrencyThreadStateNewAndRunnable {
     public static void main(String[] args) {
         Runnable runnable = () -> System.out.println("test");
 

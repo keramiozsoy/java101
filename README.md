@@ -2321,12 +2321,7 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ###  ExecutorService kullanarak Thread olusturma
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.java
-
-
-
-
-
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.jav
 
 
 
@@ -2337,15 +2332,30 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 BU SATIRDAN ASAGISI TEKRAR KONTROL ET
 
+
+
+
+
+
+
+
+
+
+
+
+
 ### Thread yasam dongusunun ogrenelim
 
 Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
+
+
+- https://docs.oracle.com/javase/6/docs/api/java/lang/Thread.State.html
 
 	New 
 
 		Bir is parcasi olusturulmus fakat start() ile hazir hale getirilmemis
 	
-	Runnable
+	RUNNABLE
 
 		start() ile hazir hale getirilmis
 	
@@ -2358,7 +2368,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen bir iş parçacığı bu durumdadır.
 
-	Timed Waiting	
+	TIMED_WAITING	
 
 		Belirli bir bekleme süresine kadar başka bir iş parçacığının eylem gerçekleştirmesini bekleyen bir iş parçacığı bu durumdadır.
 
@@ -2369,7 +2379,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 New ve Runnable
 
-ConcurrencyThreadLifecycleStatusNewAndRunnableMain
+ConcurrencyThreadStateNewAndRunnable
 
 
 Blocked
@@ -2378,6 +2388,12 @@ ConcurrencyThreadLifecycleStatusBlockedMain
 ( BU YANLIS OLABILIR TEKRAR BAK)
 
 Waiting
+
+
+
+TIMED_WAITING
+
+ConcurrencyThreadStateTimedWaiting
 
 
 
