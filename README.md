@@ -2443,7 +2443,23 @@ durum ile karsilasiyoruz beraber inceleyelim.
 
 
 
-ConcurrencyThreadRaceConditionMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadRaceConditionReadWriteMain.java
+
+
+Odev
+En fazla iki is parcasi olusturacak sekilde, ayni uygulamayi bir is parcasi para cekiyor, diger is parcasi hesapta kalan son parayi kontrol edecek sekilde 
+bir onceki uygulamadaki adimlari yeniden kodlama yapabiliriniz.
+
+
+
+Ornek 
+ 
+Eger iki farkli is parcasi onceden belirlenmis bir durumu ayni anda kontrol ettikten sonra hareket ediyorlar ise 
+burada problem ile karsilasabiliriz.
+
+
+
+
 
 
 

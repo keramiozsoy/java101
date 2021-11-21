@@ -1,10 +1,10 @@
 package examples;
 
-public class ConcurrencyThreadRaceConditionBankAccount {
+public class ConcurrencyThreadRaceConditionReadWriteBankAccount {
     private Double totalMoney;
     private String accountOwner;
 
-    public ConcurrencyThreadRaceConditionBankAccount(Double totalMoney, String accountOwner) {
+    public ConcurrencyThreadRaceConditionReadWriteBankAccount(Double totalMoney, String accountOwner) {
         this.totalMoney = totalMoney;
         this.accountOwner = accountOwner;
     }

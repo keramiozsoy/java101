@@ -1,10 +1,10 @@
 package examples;
 
-public class ConcurrencyThreadRaceConditionDecrementMoneySyncThread extends Thread {
-    private ConcurrencyThreadRaceConditionBankAccount bankAccount;
+public class ConcurrencyThreadRaceConditionReadWriteDecrementMoneySyncThread extends Thread {
+    private ConcurrencyThreadRaceConditionReadWriteBankAccount bankAccount;
     private double willDecrementMoney;
 
-    public ConcurrencyThreadRaceConditionDecrementMoneySyncThread(ConcurrencyThreadRaceConditionBankAccount bankAccount, double willDecrementMoney) {
+    public ConcurrencyThreadRaceConditionReadWriteDecrementMoneySyncThread(ConcurrencyThreadRaceConditionReadWriteBankAccount bankAccount, double willDecrementMoney) {
         this.bankAccount = bankAccount;
         this.willDecrementMoney = willDecrementMoney;
     }
