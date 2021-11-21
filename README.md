@@ -2483,7 +2483,45 @@ Ornek
 	Ikinci adim olarak birbirinden bagimsiz olan olaylari farkli synchronized bloklari olusturarak sonucu gorelim.
 
 
-ConcurrencyThreadSyncDividedMultipleMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSyncDividedMultipleMain.java
+
+
+
+
+
+#### Is parcalari icinde bulunan hangi degiskenler korumalidir?
+
+	Java sanal makinesindeki hafiza modelini tekrar hatirlayalim.
+
+	Stack ve heap isminde alanlarimiz vardi.
+
+	Tum yerel(local) degiskenler, ilkel degiskenler (primitive) ve objelerin referanslari stack bolgesinde durur.
+
+	Tum objeleri kendisi heap uzerinde duruyor.
+
+	Yukaridaki bilgilere ek olarak ana is parcaciginin altinda bulunan alt is parclarinin hepsinin
+	kendine ozel stack alani mevcuttur.
+
+	Bu nedenle diger is parcalari ile yerel degiskenler(local variable) paylasilmaz,
+	 bu durum genel olarak yerel degiskenleri  korumali ( thread-safe ) yapar.
+
+Ornek 
+
+	Yukaridaki durumu ornekleyen kodu yazalim.
+	
+	Elimizdeki bir sinifin icindeki objeye ait degiskeni ve yerel degiskenelere farkli is parcalari uzerinden eriselim.
+
+	Her yeni is parcasi yerel degiskenlerin birbirinden farkli degerler aldigini gozlemleyelim.
+
+
+
+	ConcurrencyThreadSafeLocalVariablesAutomaticallyMain
+
+
+
+
+
+
 
 
 
