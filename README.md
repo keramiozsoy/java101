@@ -2476,6 +2476,17 @@ burada problem ile karsilasabiliriz.
 
 
 
+Ornek 
+
+	Elimizdeki 4 farkli sayiyi birer birer arttiran programi yazalim.
+	Ilk adim olarak bizim icin kritik olan islemin tamamnin tek synchronized blogu olusturarak sonucu gorelim.
+	Ikinci adim olarak birbirinden bagimsiz olan olaylari farkli synchronized bloklari olusturarak sonucu gorelim.
+
+
+ConcurrencyThreadSyncDividedMultipleMain
+
+
+
 
 
 volatile
