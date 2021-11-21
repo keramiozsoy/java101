@@ -2359,8 +2359,10 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 		start() ile hazir hale getirildiginde bu durumdadir.
 	 
-	Blocked
-		
+	BLOCKED
+		Bir is parcacigi koruma olan bir bolgede calisiyor. Calisma uzun suruyor. Ikinci is parcasi birinci is parcasinin 
+		calisacagi yerde calismak istiyor. Fakat ilk is parcasi islemini tamamlamadigi surece, ikinci is parcasi 
+		bu durumdadir
 	
 	Waiting
 
@@ -2382,10 +2384,9 @@ NEW - RUNNABLE
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateNewAndRunnable.java
 
 
-
-
 Blocked
 
+ConcurrencyThreadStateBlocked
 
 
 Waiting
@@ -2513,9 +2514,7 @@ Ornek
 
 	Her yeni is parcasi yerel degiskenlerin birbirinden farkli degerler aldigini gozlemleyelim.
 
-
-
-	ConcurrencyThreadSafeLocalVariablesAutomaticallyMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSafeLocalVariablesAutomaticallyMain.java
 
 
 
