@@ -2458,7 +2458,7 @@ Ornek
 	Elimizdeki tek listeyi okuma yaparken ayni anda listeden eleman silersek listenin baslangictaki tutarliligi bozuldugu icin
 	es zamanlilik problemleri yasariz.
 
-- ConcurrencyThreadSimultaneousProblemMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSimultaneousProblemMain.java
 
 		Ornekteki gibi hem okuma hem silme, birden fazla is parcasi calistirabilen veri yapisi ConcurrentHashMap ile cozume ulastik.
 		Collections.synchronizedMap() de benzer bir yapitadadir. Fakat tek thread ile yapilan islemleri kabul etmektedir. Inceleyebilirsiniz.
@@ -2472,8 +2472,13 @@ Eger iki farkli is parcasi onceden belirlenmis bir durumu ayni anda kontrol etti
 burada problem ile karsilasabiliriz.
 
 
-ConcurrencyThreadRaceConditionCheckAndActMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadRaceConditionCheckAndActMain.java
 
+
+
+
+
+volatile
 
 
 
