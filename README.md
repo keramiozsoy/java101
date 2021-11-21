@@ -2360,13 +2360,14 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 		start() ile hazir hale getirildiginde bu durumdadir.
 	 
 	BLOCKED
+		
 		Bir is parcacigi koruma olan bir bolgede calisiyor. Calisma uzun suruyor. Ikinci is parcasi birinci is parcasinin 
 		calisacagi yerde calismak istiyor. Fakat ilk is parcasi islemini tamamlamadigi surece, ikinci is parcasi 
 		bu durumdadir
 	
 	Waiting
 
-		Başka bir iş parçacığının belirli bir eylemi gerçekleştirmesini süresiz olarak bekleyen iş parçacığı bu durumdadır.
+		Bir is parcasinin calismaya devam edebilmesi icin diger is parcasindan sinyal bekledigi durumdur.
 
 	TIMED_WAITING	
 
@@ -2381,16 +2382,17 @@ NEW - RUNNABLE
 
 	Is parcasi ilk olusturugnda aldigi durum
 
-https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateNewAndRunnable.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateNewAndRunnable.java
 
 
 Blocked
 
-ConcurrencyThreadStateBlocked
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateBlocked.java
 
 
 Waiting
 
+ConcurrencyThreadStateWaiting
 
 
 TIMED_WAITING
