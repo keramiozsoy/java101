@@ -2438,17 +2438,31 @@ TERMINATED
 
 Ornek 
 
-Ortak banka hesabindan farkli kisiler para cekiyor. Ayni zaman diliminde islem yapmaya calistiklarinda nasil bir 
-durum ile karsilasiyoruz beraber inceleyelim.
-
+	Ortak banka hesabindan farkli kisiler para cekiyor. Ayni zaman diliminde islem yapmaya calistiklarinda nasil bir 
+	durum ile karsilasiyoruz beraber inceleyelim.
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadRaceConditionReadWriteMain.java
 
 
 Odev
+
 En fazla iki is parcasi olusturacak sekilde, ayni uygulamayi bir is parcasi para cekiyor, diger is parcasi hesapta kalan son parayi kontrol edecek sekilde 
 bir onceki uygulamadaki adimlari yeniden kodlama yapabiliriniz.
+
+
+
+Ornek 
+
+
+	Elimizdeki tek listeyi okuma yaparken ayni anda listeden eleman silersek listenin baslangictaki tutarliligi bozuldugu icin
+	es zamanlilik problemleri yasariz.
+
+- ConcurrencyThreadSimultaneousProblemMain
+
+		Ornekteki gibi hem okuma hem silme, birden fazla is parcasi calistirabilen veri yapisi ConcurrentHashMap ile cozume ulastik.
+		Collections.synchronizedMap() de benzer bir yapitadadir. Fakat tek thread ile yapilan islemleri kabul etmektedir. Inceleyebilirsiniz.
+
 
 
 
@@ -2458,7 +2472,7 @@ Eger iki farkli is parcasi onceden belirlenmis bir durumu ayni anda kontrol etti
 burada problem ile karsilasabiliriz.
 
 
-
+ConcurrencyThreadRaceConditionCheckAndActMain
 
 
 
