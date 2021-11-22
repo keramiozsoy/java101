@@ -2560,7 +2560,7 @@ T2
 	   runnable1 
 	   												
 	   													
-	   										runnable2
+	   							runnable2
    												
 
 ================================= HEAP ==================================
@@ -2571,17 +2571,17 @@ T2
 		paramObject
 
 
-		( runnable1 ref )				  ( runnable2 ref )
+		( runnable1 ref )		 ( runnable2 ref )
 		 
-		 globalCount=0						globalCount=0
+		 globalCount=0				globalCount=0
 
 
 ======== Thread Stack 1 ======================= Thread Stack 2 ============
 
 
-	i=0;						|				i=0;
+	i=0;						|	i=0;
 								|
-	localCount=0				|				localCount=0
+	localCount=0				|	localCount=0
 								|
 								|
 
@@ -2638,19 +2638,19 @@ T2
 ======== Thread Stack 1 ======================= Thread Stack 2 ============
 
 
-	i=0;						|				i=0;
-								| 	
-								|
-						  		|
-						  		|
-			!!!!	Two threads will use same localCount object  !!!!
-			!!!!	because only one runnable object             !!!!
-							
-						 ( runnable1 ref )	
-							
-							localCount=0 	
-								|
-								|
+i=0;						|			i=0;
+							| 	
+							|
+					  		|
+					  		|
+		!!!!	Two threads will use same localCount object  !!!!
+		!!!!	because only one runnable object             !!!!
+						
+					 ( runnable1 ref )	
+						
+					localCount=0 	
+							|
+							|
 
 
 ============================================================================
