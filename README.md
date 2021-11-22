@@ -2579,9 +2579,9 @@ T2
 ======== Thread Stack 1 ======================= Thread Stack 2 ============
 
 
-i=0;					|	
-						|
-localCount=0			|	
+i=0;					|					
+						|				
+localCount=0			|				
 						|	i=0;
 						|   localCount=0
 
