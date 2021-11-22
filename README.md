@@ -2635,7 +2635,7 @@ T2
 			globalCount=0
 
 
-======== Thread Stack 1 ======================= Thread Stack 2 ============
+======== Thread Stack 1 ===================================== Thread Stack 2 ============
 
 
 i=0;						|			i=0;
