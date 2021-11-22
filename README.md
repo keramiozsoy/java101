@@ -2378,6 +2378,8 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 		Is parcasinin hayat dongusu bittiginde aldigi durumdur.
 
 
+#### Durumlarin kod orneklerine bakalim ?
+
 NEW - RUNNABLE
 
 	Is parcasi ilk olusturugnda aldigi durum
@@ -2392,7 +2394,7 @@ Blocked
 
 Waiting
 
-ConcurrencyThreadStateWaiting
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateWaiting.java
 
 
 TIMED_WAITING
@@ -2431,11 +2433,13 @@ TERMINATED
 
 	Cunku ayni anda ayni islem uzerinde farkli is parcalari calistiginda elde edilen sonuc buyuk olasilikla yanlis olacaktir.
 
-	Yukaridaki durum iki farkli durumda olusabilir.
 
-	- oku - degistir - yaz    ve sonraki is parcasi bu adimi tekrarlar
+	Genel olarak iki farkli durumda bu yontemi kendimizin gelistirmesi gerekir.
 
-	- kontrol et sonra aksiyona gec   ve sonraki is parcasi bu adimi tekrarlar
+	-  veri oku - degistir - yaz
+
+	- veri kontrol et sonra aksiyona gecip islem baslatildiginda
+
 
 
 
@@ -2492,31 +2496,189 @@ Ornek
 
 
 
-#### Is parcalari icinde bulunan hangi degiskenler korumalidir?
+#### Is parcalarinin durumuna gore ?
 
-	Java sanal makinesindeki hafiza modelini tekrar hatirlayalim.
+~~~
+Herhangi bir thread calistiginda her thread kendi stack alanina erisebilir.
 
-	Stack ve heap isminde alanlarimiz vardi.
+Calisan metotlarin icindeki tum yerel ( local ) degisken tipleri ve degerleri 
+( boolean, byte, short, char, int, long, float, double ) her thread in kendi stack bolgesinde bulunur.
 
-	Tum yerel(local) degiskenler, ilkel degiskenler (primitive) ve objelerin referanslari stack bolgesinde durur.
+bu nedenle bir thread icerisinde olusturulan yerel degisken diger thread tarafindan erisilemez.
 
-	Tum objeleri kendisi heap uzerinde duruyor.
+Hatta iki thread ayni kodu calistiriyor olsa bile 
+her thread kendi stack bolgesinde ayni yerel degiskenleri tutup o anki degerini saklayacaktir.
 
-	Yukaridaki bilgilere ek olarak ana is parcaciginin altinda bulunan alt is parclarinin hepsinin
-	kendine ozel stack alani mevcuttur.
 
-	Bu nedenle diger is parcalari ile yerel degiskenler(local variable) paylasilmaz,
-	 bu durum genel olarak yerel degiskenleri  korumali ( thread-safe ) yapar.
+HEAP alaninda, uygulamamiz calistiginda tum objeler 
 
-Ornek 
+( Boolean, Byte, Short ,Integer, Long, Float, Object )
 
-	Yukaridaki durumu ornekleyen kodu yazalim.
-	
-	Elimizdeki bir sinifin icindeki objeye ait degiskeni ve yerel degiskenelere farkli is parcalari uzerinden eriselim.
+olusturulur ve nerede olduguna bakilmaksizin (global, local ) saklanir.
 
-	Her yeni is parcasi yerel degiskenlerin birbirinden farkli degerler aldigini gozlemleyelim.
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadSafeLocalVariablesAutomaticallyMain.java
+
+
+KURAL : Tek runnable veya cok runnable farketmeksizin yerel degiskenler thread korumalidir.
+
+
+Farkli is parcalari birbirinden bagimsiz olaylar ise herhangi bir problem yok
+fakat farkli is parcalari ayni kaynagi kullaniyorsa kullandigimiz degikenlerin 
+
+global degisken yani sinifa ait  veya 
+yerel degisken yani sadece icinde bulundugu  metodun  kapsami boyunca hayattak kalan degisken 
+olup olmadigina dikkat etmeliyiz !!!!!!!!!!!!!!!!
+
+~~~
+
+
+
+#### Seperate
+
+ConcurrencyThreadMemoryModelSeparateObjectsMain
+
+~~~
+T1 
+  Global Object : examples.CurMyObject@49f55a94 
+  Local Object : examples.CurMyObject@4732bdda 
+  Global Count : 1000000 
+  Local Count    : 1000000
+T2 
+  Global Object : examples.CurMyObject@49f55a94 
+  Local Object : examples.CurMyObject@57610202 
+  Global Count : 1000000 
+  Local Count    : 1000000
+~~~
+
+
+~~~
+
+
+================================ HEAP ======================================
+
+
+	   runnable1 
+	   												
+	   													
+	   										runnable2
+   												
+
+================================= HEAP ==================================
+
+
+================================== Main Stack ==================================
+
+		paramObject
+
+
+		( runnable1 ref )				  ( runnable2 ref )
+		 
+		 globalCount=0						globalCount=0
+
+
+======== Thread Stack 1 ======================= Thread Stack 2 ============
+
+
+	i=0;						|				i=0;
+								|
+	localCount=0				|				localCount=0
+								|
+								|
+
+
+============================================================================
+
+
+~~~
+
+
+
+
+#### Shared
+
+
+- ConcurrencyThreadMemoryModelSharedObjectsMain
+
+~~~
+T1 
+  Global Object : examples.CurMyObject@7124e9e7 
+  Local Object : examples.CurMyObject@7fe319b3 
+  Global Count : 1057570 
+  Local Count    : 1000000
+
+
+T2 
+  Global Object : examples.CurMyObject@7124e9e7 
+  Local Object : examples.CurMyObject@17624f8e 
+  Global Count : 1057570 
+  Local Count    : 1000000
+~~~
+
+~~~
+
+================================ HEAP ======================================
+
+							runnable1    										
+
+
+================================= HEAP =====================================
+
+================================== Main Stack ==============================
+
+
+		paramObject
+
+
+
+	!!!!	Two threads will use same globalCount object  !!!!
+	!!!!	because only one runnable object              !!!!
+			globalCount=0
+
+
+======== Thread Stack 1 ======================= Thread Stack 2 ============
+
+
+	i=0;						|				i=0;
+								| 	
+								|
+						  		|
+						  		|
+			!!!!	Two threads will use same localCount object  !!!!
+			!!!!	because only one runnable object             !!!!
+							
+						 ( runnable1 ref )	
+							
+							localCount=0 	
+								|
+								|
+
+
+============================================================================
+
+
+
+~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
