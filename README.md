@@ -2637,22 +2637,22 @@ T2
 
 
 ======== Thread Stack 1 ===================================== Thread Stack 2 ============
-										|
+								|
 
 i=0;											i=0;
-										|	 	
-							
+								|	 	
+					
 
 
-				!!!!	Two threads will use same localCount object  !!!!
-				!!!!	because only one runnable object             !!!!
-								
-							 ( runnable1 ref )	
-								
-							localCount=0 	
-								
+		!!!!	Two threads will use same localCount object  !!!!
+		!!!!	because only one runnable object             !!!!
+						
+					 ( runnable1 ref )	
+						
+					localCount=0 	
+						
 
-										|
+								|
 ============================================================================
 
 
