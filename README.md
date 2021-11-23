@@ -2323,23 +2323,7 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ###  ExecutorService kullanarak Thread olusturma
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.jav
-
-
-
-
-
-
-
-
-BU SATIRDAN ASAGISI TEKRAR KONTROL ET
-
-
-
-
-
-
-
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.java
 
 
 ### Thread yasam dongusunun ogrenelim
@@ -2376,7 +2360,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 		Is parcasinin hayat dongusu bittiginde aldigi durumdur.
 
 
-#### Durumlarin kod orneklerine bakalim ?
+#### Durumlarin kod orneklerine bakalim
 
 NEW - RUNNABLE
 
@@ -2417,6 +2401,67 @@ TERMINATED
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateTerminatedMain.java
+
+
+
+#### Is parcalarinin birbirilerine sinyal gonderme islemleri
+
+~~~
+ java.lang.Object.class isimli sinifimizin 3 adet final anahtar kelimesine sahip metodu vardir.
+
+ wait()
+ notify()
+ notifyAll()
+
+ final anahtar kelimesi ;
+ 	- sinif seviyesinde olursa kalitim yapilmasi engellenir.
+ 	- metot seviyesinde olursa metodun ezilmesi (override - kullanildigi sinifta yeniden yazilmasi) engelenir.
+ 	- degisken seviyesinde olursa degerleri ilk atandiktan sonra degistirilemez.
+
+
+
+ wait() kullanimi
+
+ 	parametresiz wait()
+
+  - kullanildigi is parcasi sonsuza kadar bekler 
+  fakat diger is parcalari notify() veya notifyAll() cagirdiginda
+  calismaya devam eder.
+
+  	parametreli wait(long)
+
+  - kullanildigi is parcasi verilen parametre kadar sure bekledikten sonra 
+  calismaya devam edeer
+
+
+ notify() kullanimi
+
+ - Bir veya birden fazla is parcasi bekledigi durumda yanlizca tek is parcasini uyandirir
+ digerleri beklemeye devam eder.
+ Hangisinin uyandirilacagi secimi isletim sisteminin kendi kararina baglidir.
+
+
+ notifyAll() kullaniimi
+
+ - Tum bekleyen durumda olan is parcalarini uyandirir.
+ Hangi sirada uyandirilacagi secimi isletim sisteminin kendi kararina baglidir.
+
+
+
+~~~
+
+Ornek 
+
+~~~
+Iki adet bekleyen is parcasi olusturalim.
+
+Bir tane sinyal gonderelim yani notify() calistiralim. Ikinci is parcasinin bitirilmesini bekleyecegiz.
+
+notify() yerine notifyAll() yazarak programmizin basarilil sonlandirigini gorelim.
+~~~
+
+ConcurrencySignalMain
+
 
 
 
@@ -2790,7 +2835,7 @@ degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 ~~~
 
 
-ConcurrencyAtomicBooleanMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicBooleanMain.java
 
 
 #### Atomic Integer
@@ -2804,7 +2849,7 @@ volatile int value;
 degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 ~~~
 
-ConcurrencyAtomicIntegerMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicIntegerMain.java
 
 
 #### Atomic Long
@@ -2820,7 +2865,7 @@ degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 ~~~
 
 
-ConcurrencyAtomicLongMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicLongMain.java
 
 
 
@@ -2832,8 +2877,17 @@ ConcurrencyAtomicLongMain
 AtomicInteger listesi tutmak istedigimizde bu sinifi kullanabiliriz.
 ~~~
 
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicIntegerArrayMain.java
 
-ConcurrencyAtomicIntegerArrayMain
+#### AtomicLongArray
+
+
+~~~
+AtomicLong listesi tutmak istedigimizde bu sinifi kullanabiliriz.
+~~~
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicLongArrayMain.java
+
 
 
 #### Atomic Reference
@@ -2847,7 +2901,7 @@ volatile V value;
 degiskeni yardimi ile V degerine verilen obje tipinde bellekteki son bilginin alinabilmesini saglar.
 ~~~
 
-ConcurrencyAtomicReferenceMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicReferenceMain.java
 
 
 
