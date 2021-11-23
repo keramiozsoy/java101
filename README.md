@@ -2622,7 +2622,7 @@ Her is parcasi kendisi yazdigi veriyi okuyabiliyor fakat digerlerini etki edemiy
 Calistirip gorelim.
 ~~~
 
-ConcurrencyThreadLocalMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadLocalMain.java
 
 
 Ornek 
@@ -2631,7 +2631,7 @@ Is parclasinin kullandigi ThreadLocal objesininin tum verilerini silmeye calisal
 Sadece kendi verilerinin silindigini gorelim.
 ~~~
 
-ConcurrencyThreadLocalRemoveMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadLocalRemoveMain.java
 
 
 Ornek
@@ -2647,7 +2647,7 @@ ikinci is parcasi iki farkli threadlocal objesi uzerinde yeni objeler uretmis ol
 
 ~~~
 
-ConcurrencyThreadLocalInitialValueMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadLocalInitialValueMain.java
 
 
 
@@ -3025,20 +3025,11 @@ Atomic Reference tipinden tek farki
 ConcurrencyAtomicStampedReferenceMain
 
 
-## ThreadLocal
-
-http://tutorials.jenkov.com/java-concurrency/threadlocal.html
-
-
-
 http://tutorials.jenkov.com/java-concurrency/deadlock.html
 
 
-## Reenant lock
 
 https://medium.com/@yusufcancelik/javada-thread-lere-giri%C5%9F-3-reentrantlock-bf93cdc9c466
-
-
 
 
 
