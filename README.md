@@ -1943,9 +1943,9 @@ bellekte yer kaplasin istemez.
 
 		Elimizdeki tek bir isi (process) alt islere (thread) bolerek, alt islerin 
 		neredeyse ayni anda
-		ayni hafiza alanina, 
-		ayni dosyalara,
-		ayni veritabanina,
+		ayni hafiza alanina veya
+		ayni dosyalara veya
+		ayni veritabanina
 		yazip okumaya calisabilmesini sagladigimiz duruma Eşzamanlılık ( Concurrency ) denir.
 		Neredeyse diyorum cunku bilgisayarimizdaki islemci bagimsiz is parcalarinin ne zaman baslayip bitecegine kendi karar veriyor.
 		Son kullanici aslinda ayni anda calismis gibi hissediyor fakat programi yazdigimizda
@@ -2272,6 +2272,8 @@ yararlanarak thread olusturabiliyoruz.
 
 Soru
 
+Is parcasinini tanimlamasini yaptiktan sonra 
+
 Thread.start() yerine Thread.run()  metodu cagirirsak ne olur ?
 
 
@@ -2331,10 +2333,6 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 
 BU SATIRDAN ASAGISI TEKRAR KONTROL ET
-
-
-
-
 
 
 
@@ -2763,8 +2761,47 @@ okundugunu deneyimleyelim.
 
 
 ## Atomic degiskenler
+~~~
 
-http://tutorials.jenkov.com/java-util-concurrent/atomicinteger.html
+Atomik degiskenlerin isleyis mantigi Volatile anahtar kelimesi yardimiyla 
+elimizdeki degiskenlerin istedigimiz obje tipinde tutulabilmesi ve 
+obje seviyesinde islemler yapilabilmesini saglar.
+
+~~~
+
+#### Atomic Boolean
+
+~~~
+boolean deger tutmak istedigimizde 
+
+AtomicBoolean sinifindaki
+
+volatile int value;
+
+degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
+~~~
+
+
+ConcurrencyAtomicBooleanMain
+
+
+#### Atomic Integer
+~~~
+int deger tutmak istedigimizde 
+
+AtomicInteger sinifindaki
+
+volatile int value;
+
+degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
+~~~
+
+ConcurrencyAtomicIntegerMain
+
+
+
+
+
 
 ## ThreadLocal
 
