@@ -2460,7 +2460,72 @@ Bir tane sinyal gonderelim yani notify() calistiralim. Ikinci is parcasinin biti
 notify() yerine notifyAll() yazarak programmizin basarilil sonlandirigini gorelim.
 ~~~
 
-ConcurrencySignalMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencySignalMain.java
+
+
+
+
+## Synchronized Anahtar kelimesi
+
+~~~
+Farkli is parcalarinin ayni anda girmesini istemedigimiz bolgeyi Synchronized anahtar kelimesi ile 
+isaretlerdigimizde bir is parcaasi isini bitirmeden digerinin girmesini engellemis oluruz.
+
+synchronized kullanildiginda birbirini bekleyecegi icin calisma suresinin daha uzun surmesinin
+sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
+~~~
+
+#### Sinifin Nesnesine Ait Metot
+~~~
+	  public synchronized void writerEverything(int value){
+	      this.count += value;
+	      System.out.println(this.count);
+	  }
+~~~
+
+
+
+#### Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
+~~~
+	  public void writerEverything(int value){
+	      
+	      this.count += value;
+	      
+	      synchronized (this){
+	      	System.out.println(this.count);
+	      }
+	      
+	  }
+~~~
+
+
+
+#### Static Metot
+~~~
+	  public static  synchronized void writerEverything(int value){
+	      this.count += value;
+	      System.out.println(this.count)
+	  }
+~~~
+
+
+#### Static Metot Icinde istenilen bir bolge
+~~~
+	public classs User {
+
+		..
+		..
+
+		  public static void writerEverything(int value){
+		      this.count += value;
+
+			synchronized(User.class){
+		      System.out.println(this.count);
+			}
+
+		  }
+	 }
+~~~
 
 
 
@@ -2516,6 +2581,8 @@ Ornek
 
 
 
+
+
 Ornek 
  
 Eger iki farkli is parcasi onceden belirlenmis bir durumu ayni anda kontrol ettikten sonra hareket ediyorlar ise 
@@ -2537,9 +2604,62 @@ Ornek
 
 
 
+## Thread Local Kullanimi
+~~~
+Istegidimiz objelerin sadece istedigimiz is parcasi tarafindan erisilebilir olmasini saglar. 
+( Objects thread-safe)
+
+Her olusturulan is parcasinin kendisine ait ThreadLocal map yapisi bulunur. 
+
+Iki farkli is parcasi ayni ThreadLocal nesnesine eristigi zaman, 
+aslinda kendisine ait olan ThreadLocla nesnesinin erisebildigi degerleri donus saglar.
+~~~
 
 
-#### Is parcalarinin durumuna gore ?
+Ornek 
+~~~
+Her is parcasi kendisi yazdigi veriyi okuyabiliyor fakat digerlerini etki edemiyor.
+Calistirip gorelim.
+~~~
+
+ConcurrencyThreadLocalMain
+
+
+Ornek 
+~~~
+Is parclasinin kullandigi ThreadLocal objesininin tum verilerini silmeye calisalim.
+Sadece kendi verilerinin silindigini gorelim.
+~~~
+
+ConcurrencyThreadLocalRemoveMain
+
+
+Ornek
+~~~
+
+Farkli is parclari ile farkli ThreadLocal objelerini atama yaptiktan sonra olusturalim.
+
+iki thread ve iki threadlocal objesi olusturmamiza ragmen her thread tarafinda okundugunda farkli 
+objeleri gorecegiz. Bunun sebebi her cagrildiginda new Object() yeniden olusturuluyor.
+
+ilk is parcasi iki farkli threadlocal objesi uzerinde yeni objeler uretmis oluyor.
+ikinci is parcasi iki farkli threadlocal objesi uzerinde yeni objeler uretmis oluyor.
+
+~~~
+
+ConcurrencyThreadLocalInitialValueMain
+
+
+
+Odev
+~~~
+
+InheritableThreadLocal var onu da sizler inceleyebilirsiniz
+~~~
+
+
+
+#### Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari
 
 ~~~
 Herhangi bir thread calistiginda her thread kendi stack alanina erisebilir.
@@ -2706,64 +2826,7 @@ i=0;											i=0;
 
 
 
-## Synchronized Anahtar kelimesi
 
-Farkli is parcalarinin ayni anda girmesini istemedigimiz bolgeyi Synchronized anahtar kelimesi ile 
-isaretlerdigimizde bir is parcaasi isini bitirmeden digerinin girmesini engellemis oluruz.
-
-
-
-#### Sinifin Nesnesine Ait Metot
-~~~
-	  public synchronized void writerEverything(int value){
-	      this.count += value;
-	      System.out.println(this.count);
-	  }
-~~~
-
-
-
-#### Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
-~~~
-	  public void writerEverything(int value){
-	      
-	      this.count += value;
-	      
-	      synchronized (this){
-	      	System.out.println(this.count);
-	      }
-	      
-	  }
-~~~
-
-
-
-#### Static Metot
-~~~
-	  public static  synchronized void writerEverything(int value){
-	      this.count += value;
-	      System.out.println(this.count)
-	  }
-~~~
-
-
-#### Static Metot Icinde istenilen bir bolge
-~~~
-	public classs User {
-
-		..
-		..
-
-		  public static void writerEverything(int value){
-		      this.count += value;
-
-			synchronized(User.class){
-		      System.out.println(this.count);
-			}
-
-		  }
-	 }
-~~~
 
 
 
@@ -2967,12 +3030,6 @@ ConcurrencyAtomicStampedReferenceMain
 http://tutorials.jenkov.com/java-concurrency/threadlocal.html
 
 
-## notifyAll
-
-http://tutorials.jenkov.com/java-concurrency/thread-signaling.html
-
-
-##
 
 http://tutorials.jenkov.com/java-concurrency/deadlock.html
 
