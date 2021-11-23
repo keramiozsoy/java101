@@ -24,8 +24,8 @@ public class ConcurrencyThreadMemoryModelMyRunnable implements Runnable {
                 Thread.currentThread().getName() + " \n " +
                 " Global Object : " + this.globalObject + " \n " +
                 " Local Object : " + localObject + " \n " +
-                " Global Count : " + this.globalCount + " \n " +
-                " Local Count    : " + localCount
+                " Global Primitive Count : " + this.globalCount + " \n " +
+                " Local Primitive  Count    : " + localCount
         );
     }
 }

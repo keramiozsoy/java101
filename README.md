@@ -2535,19 +2535,19 @@ olup olmadigina dikkat etmeliyiz !!!!!!!!!!!!!!!!
 
 #### Seperate
 
-ConcurrencyThreadMemoryModelSeparateObjectsMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMemoryModelSeparateObjectsMain.java
 
 ~~~
 T1 
-  Global Object : examples.CurMyObject@49f55a94 
-  Local Object : examples.CurMyObject@4732bdda 
-  Global Count : 1000000 
-  Local Count    : 1000000
+  Global Object : Object@5eea0b9f 
+  Local Object :  Object@19a5a312 
+  Global Primitive Count : 1000000 
+  Local Primitive  Count    : 1000000
 T2 
-  Global Object : examples.CurMyObject@49f55a94 
-  Local Object : examples.CurMyObject@57610202 
-  Global Count : 1000000 
-  Local Count    : 1000000
+  Global Object :  Object@5eea0b9f 
+  Local Object :  bject@502dee32 
+  Global Primitive Count : 1000000 
+  Local Primitive  Count    : 1000000
 ~~~
 
 
@@ -2598,21 +2598,20 @@ localCount=0
 #### Shared
 
 
-- ConcurrencyThreadMemoryModelSharedObjectsMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMemoryModelSharedObjectsMain.java
 
 ~~~
 T1 
-  Global Object : examples.CurMyObject@7124e9e7 
-  Local Object : examples.CurMyObject@7fe319b3 
-  Global Count : 1057570 
-  Local Count    : 1000000
-
-
+  Global Object : Object@57610202 
+  Local Object :  Object@59a6f69e 
+  Global Primitive Count : 1028102 
+  Local Primitive  Count    : 1000000
 T2 
-  Global Object : examples.CurMyObject@7124e9e7 
-  Local Object : examples.CurMyObject@17624f8e 
-  Global Count : 1057570 
-  Local Count    : 1000000
+  Global Object :  Object@57610202 
+  Local Object :  Object@6b093046 
+  Global Primitive Count : 1028102 
+  Local Primitive  Count    : 1000000
+
 ~~~
 
 ~~~
@@ -2664,6 +2663,96 @@ i=0;											i=0;
 
 
 
+## Synchronized Anahtar kelimesi
+
+Farkli is parcalarinin ayni anda girmesini istemedigimiz bolgeyi Synchronized anahtar kelimesi ile 
+isaretlerdigimizde bir is parcaasi isini bitirmeden digerinin girmesini engellemis oluruz.
+
+
+
+#### Sinifin Nesnesine Ait Metot
+~~~
+	  public synchronized void writerEverything(int value){
+	      this.count += value;
+	      System.out.println(this.count);
+	  }
+~~~
+
+
+
+#### Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
+~~~
+	  public void writerEverything(int value){
+	      
+	      this.count += value;
+	      
+	      synchronized (this){
+	      	System.out.println(this.count);
+	      }
+	      
+	  }
+~~~
+
+
+
+#### Static Metot
+~~~
+	  public static  synchronized void writerEverything(int value){
+	      this.count += value;
+	      System.out.println(this.count)
+	  }
+~~~
+
+
+#### Static Metot Icinde istenilen bir bolge
+~~~
+	public classs User {
+
+		..
+		..
+
+		  public static void writerEverything(int value){
+		      this.count += value;
+
+			synchronized(User.class){
+		      System.out.println(this.count);
+			}
+
+		  }
+	 }
+~~~
+
+
+
+
+
+## Volatile Anahtar kelimesi
+
+~~~
+Volatile anahtar kelimesine sahip olan degiskenin 
+
+Java derleyicisi ve Thread ler tarafindan on bellege okumak yerine
+
+her zaman ana bellekten degiskenin son verisinin okunmasi saglanir.
+
+Sinif veya metot ile kullanilmaz.
+
+Farkli is parcalari ayni anda ayni degisken uzerinde calisabilmesini sagliyor.
+~~~
+
+
+Ornek
+
+Elimizdeki bir degiskeni bir is parcasi ile degerini arttiralim, diger is parcasi ile degeri degistiginde
+hemen ekrana yazalim. 
+
+Ikinci is parcasi degerin degistigini anlayabilmek icin degeri aldiginda hafizadaki son deger olmalidir.
+Bunu saglayan volatile anahtar kelimesidir.
+
+Calistirdiktan sonra volatile anahtar kelimesini silip tekrar calistirarak hafizadan degilde cache ten 
+okundugunu deneyimleyelim.
+
+ConcurrencyThreadVolatileMain
 
 
 
@@ -2672,13 +2761,7 @@ i=0;											i=0;
 
 
 
-
-
-
-
-
-
-
+http://tutorials.jenkov.com/java-util-concurrent/atomicinteger.html
 
 
 
