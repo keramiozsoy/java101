@@ -2767,6 +2767,14 @@ Atomik degiskenlerin isleyis mantigi Volatile anahtar kelimesi yardimiyla
 elimizdeki degiskenlerin istedigimiz obje tipinde tutulabilmesi ve 
 obje seviyesinde islemler yapilabilmesini saglar.
 
+Degerler Volatile anahtar kelimesi ile tutuldugu icin 
+birden fazla thread calistirmak istenildiginde herhangi bir 
+koruma yapmaya gerek yoktur.
+
+Atomic kelimesi iceren siniflarindan olusturulan degiskenler
+okuma ve yazma islemini atomik olarak yaptigi icin 
+birden cok thread calistiginda tutarsizlik olmayacaktir.
+
 ~~~
 
 #### Atomic Boolean
@@ -2799,8 +2807,105 @@ degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 ConcurrencyAtomicIntegerMain
 
 
+#### Atomic Long
+
+~~~
+long deger tutmak istedigimizde 
+
+AtomicLong sinifindaki
+
+volatile long value;
+
+degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
+~~~
 
 
+ConcurrencyAtomicLongMain
+
+
+
+
+#### AtomicIntegerArray
+
+
+~~~
+AtomicInteger listesi tutmak istedigimizde bu sinifi kullanabiliriz.
+~~~
+
+
+ConcurrencyAtomicIntegerArrayMain
+
+
+#### Atomic Reference
+~~~
+Obje tipinde deger tutmak istedigimizde
+
+AtomicReference sinifindaki
+
+volatile V value;
+
+degiskeni yardimi ile V degerine verilen obje tipinde bellekteki son bilginin alinabilmesini saglar.
+~~~
+
+ConcurrencyAtomicReferenceMain
+
+
+
+
+#### Compare And Swap Concept ( CAS )
+~~~
+	Elimizde is parcalari tarafindan paylasilan bir alan olsun.
+	Bu alan uzerinde ayni anda birden fazla is parcasi calisiyor olsun.
+
+	Eger is parcalarindan bir tanesi bu alanin degerini degitirirse
+	diger is parcalarinin basarisiz olmasini 
+	herhangi bir lock mekanizmasi olmadan cozen
+	konseptin ismidir.
+
+	Eger paylasilan alan uzerinde islem yaptigimiz anda 
+	o alanin mevcut ve guncellemek istedigimiz bilgiyi ayni anda tutabilirsek;
+
+	- mevcut ve alanin orijinal  degeri ile karsilastiriyoruz.
+	- eger yukaridaki adimda cevap esit ise mevcut deger guncellenen deger ile degisir.
+
+	alan = 1 (orijinal)
+
+	threadA calisti 1 degerini aldi 2 olarak guncellemek istiyor
+
+	threadA guncelledi
+
+	threadB calisti 1 degerini aldi 2 olarak guncellemek istiyor
+
+	mevcut degere bakti 2 ( threadA degistirdi )
+
+
+~~~
+
+Thread paylasilan alan okundu orijinal degeri A, bunu guncelleyecek.
+
+Thread paylasilan alan okundu orijinal degeri B, bunu guncelleyerek A yapti.
+
+Ilk thread compare and swap yaptiginda hicbir sey degismemiz gibi oldugundan hata olusacak
+
+
+
+
+#### A-B-A Problem
+~~~
+	Compare And Swap Concept ( CAS ) veri yapisi dogru calismadigi durumda ortaya cikan probleme denir.
+~~~
+
+
+
+#### Atomic Stamped Reference
+~~~
+Atomic Reference tipinden tek farki
+~~~
+
+
+
+
+ConcurrencyAtomicStampedReferenceMain
 
 
 ## ThreadLocal
