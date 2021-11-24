@@ -2529,6 +2529,50 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 
 
 
+##  ReentrantLock ile lock mekanizmalari
+~~~
+
+	ReentrantLock sınıfı ile is parcalarinin aynı anda istedigimiz kod bolumunde calismasi 
+
+	Synchronized kelimesine benzer sekilde engelleyebiliriz.
+
+
+
+ 	ReentrantLock lock = new ReentrantLock();
+
+ 	...
+ 	...
+
+ 	lock.lock();
+
+ 			//sadece 1 is parcasi ayni anda calisabilecegi alan
+
+ 	lock.unlock();
+
+
+ 	Yanlis kullanimlarda dead lock olarak adlandirilan durum olusur.
+~~~
+
+
+
+## Deadlock 
+~~~
+
+iki veya daha fazla is parcassinin calismak istedigi alandaki kilide ulasabilmesi
+
+fakat birbirlerinin kiliti birakmasini beklemesi fakat kimseinin
+
+orada calismak icin elindeki kilidi digerlerine birakamamasi olarak aciklanabilir.
+
+~~~
+
+ConcurrencyDeadLockMain
+
+
+
+
+
+
 
 
 ###  Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? ( Race Conditions )
@@ -2656,6 +2700,9 @@ Odev
 
 InheritableThreadLocal var onu da sizler inceleyebilirsiniz
 ~~~
+
+
+
 
 
 
@@ -3029,7 +3076,7 @@ http://tutorials.jenkov.com/java-concurrency/deadlock.html
 
 
 
-https://medium.com/@yusufcancelik/javada-thread-lere-giri%C5%9F-3-reentrantlock-bf93cdc9c466
+
 
 
 
