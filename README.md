@@ -2538,6 +2538,10 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 
 
 
+
+
+
+
  	ReentrantLock lock = new ReentrantLock();
 
  	...
@@ -2548,6 +2552,44 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
  			//sadece 1 is parcasi ayni anda calisabilecegi alan
 
  	lock.unlock();
+
+
+
+
+
+
+    Sadece okuma veya sadece yazma islemini kontrol etmek isteyebiliriz.
+
+     
+      ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+     
+      Lock readLock = readWriteLock.readLock();
+     
+      Lock writeLock = readWriteLock.writeLock();
+
+
+       readLock.lock();
+
+       				// sadece  1 is parcasi ayni anda burayi okuyabilir 
+
+       readLock.unlock();
+
+
+
+
+       writeLock.lock();
+
+				// sadece  1 is parcasi ayni anda burayi yazabilir. 
+
+       writeLock.unlock();
+
+
+
+
+       Yukaridakilerin disinda recursive cagrilar yapildiginda birden fazla kez ayni lock islemini calistirmak
+       veya bunlarla iliskili olan lock yapma islemimizin FairSync veya NoFairSync olmasinin 
+       farklarini arastirabilirsiniz.
+
 
 
  	Yanlis kullanimlarda dead lock olarak adlandirilan durum olusur.
@@ -2566,12 +2608,27 @@ orada calismak icin elindeki kilidi digerlerine birakamamasi olarak aciklanabili
 
 ~~~
 
-ConcurrencyDeadLockMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyDeadLockMain.java
+
+
+
+## Deadlock tan nasil kacinilir.
+~~~
+	
+	- Islemleri try finally bloguna alarak finally icinde kilidi ne olursa olsun acabiliriz.
+
+	- Lock surelerini belirleyip otomatik sekilde tekrar actirabiliriz.
+
+	- lock.tryLock() mekanizmasi ile eger kilitlenebilir durumda ise bu islemi yap gibi islemler yapabiliriz.
+
+~~~
 
 
 
 
 
+
+# YARIN DEVAM EDELIM
 
 
 
@@ -3016,6 +3073,20 @@ degiskeni yardimi ile V degerine verilen obje tipinde bellekteki son bilginin al
 
 
 
+
+
+~~~
+
+
+
+BURADAN ASAGISI EKSIKLER VAR
+
+
+~~~
+
+
+
+
 #### Compare And Swap Concept ( CAS )
 ~~~
 	Elimizde is parcalari tarafindan paylasilan bir alan olsun.
@@ -3063,20 +3134,13 @@ Ilk thread compare and swap yaptiginda hicbir sey degismemiz gibi oldugundan hat
 
 #### Atomic Stamped Reference
 ~~~
-Atomic Reference tipinden tek farki
+Atomic Reference tipinden tek farki hem objeyi hem damga degerinin tutuyor
 ~~~
 
 
 
 
 ConcurrencyAtomicStampedReferenceMain
-
-
-http://tutorials.jenkov.com/java-concurrency/deadlock.html
-
-
-
-
 
 
 

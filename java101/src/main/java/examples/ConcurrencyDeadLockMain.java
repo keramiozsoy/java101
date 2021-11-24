@@ -3,7 +3,6 @@ package examples;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ConcurrencyDeadLockMain {
     public static void main(String[] args) {
