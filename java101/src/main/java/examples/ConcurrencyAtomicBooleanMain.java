@@ -30,6 +30,7 @@ public class ConcurrencyAtomicBooleanMain {
         AtomicBoolean ab4 = new AtomicBoolean(true);
         final boolean resultGetAndSet = ab4.getAndSet(false);
         System.out.println(resultGetAndSet);
+        System.out.println(ab4.get());
 
 
         System.out.println("========5======");
