@@ -1,3 +1,123 @@
+<!-- MarkdownTOC -->
+
+- java101
+- BIRINCI BOLUM
+	- Java Nedir ?
+	- Java Tarihçesi
+	- Java Dilinin Basarisi Nedir ?
+	- Cop Toplayici Nedir?
+	- Java Nasil Calisir?
+	- JDK JRE JVM Kavramları
+	- Değişkenler
+		- Nesne Degiskenleri
+		- Statik degiskenler
+		- Yerel degiskenler
+		- Parametre degiskenleri
+	- Depolanan veriler nerede tutulur ?
+	- Stack Kavramı
+	- Heap Kavramı
+	- Veri Tipleri
+		- Ilkel Veri Tipleri
+			- Tamsayilar
+			- Ondalik Sayilar
+			- Karakterler
+			- Mantiksal Tipler
+				- Ilkel Veri Tipleri arasinda tip donusum islemleri
+		- Referans Veri Tipleri
+				- Referans Veri Tipleri ayni objeyi gostermesi
+- IKINCI BOLUM YARIN DEVAM EDELIM
+	- Operatörler
+		- Atama Operatorleri
+		- Aritmetik Operatörler
+		- Karşılaştırma Operatörler
+		- Mantıksal Operatörler
+		- Bit Tabanlı Operatörler
+- UCUNCU BOLUM YARIN DEVAM EDELIM
+	- Kontrol Ifadeleri
+		- if else
+		- switch case
+- DORDUNCU BOLUM YARIN DEVAM EDELIM
+	- Donguler
+		- while dongusu
+		- do while dongusu
+		- for dongusu
+		- for each
+		- Continue anahtar kelimesi kullanimi
+- BESINCI BOLUM YARIN DEVAM EDELIM
+	- String Operations
+		- String Karsilastirma
+		- String Length
+		- String Upper Case & Lower Case
+		- String indexOf
+		- String charAt
+		- String Concatenation
+		- String Trim
+		- String SubString
+		- String Manupilation
+	- Math Operations
+		- IEEE-754 Virgullu Sayi Gosterimi
+		- Bir kac farkli durum icin java derleyicisinin nasil ciktilar verdigine bakalim.
+		- Math.abs
+		- Math.ceil
+		- Math.floor
+		- Math.floorDiv
+		- Math.round
+		- Math.min
+		- Math.max
+		- Math.pow
+		- Math.sqrt
+	- Wrapper Classes Cache Mechanism
+		- Integer Sinif
+	- Case Study
+	- Fonksiyonlar
+	- Diziler
+	- Kalitim ve Komposizyon
+		- KALITIM
+		- KOMPOZISYON
+		- POLIMORFIZM
+	- Eşzamanlılık \( Concurrency \) ve Paralellik \( Parallelism \)
+			- Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?
+			- * Neden Multithreading yapilara ihtiyac vardir?
+			- Multithreding Maaliyetleri
+			- Multitasking nedir?
+				- Concurrency
+				- Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)
+		- Detaylarin ozeti
+		- Soru cevaplar ile devam edelim.
+		- Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?
+		- Lambda function kullanarak Thread olusturalim
+		- ExecutorService kullanarak Thread olusturma
+		- Thread yasam dongusunun ogrenelim
+			- Durumlarin kod orneklerine bakalim
+			- Is parcalarinin birbirilerine sinyal gonderme islemleri
+	- Synchronized Anahtar kelimesi
+			- Sinifin Nesnesine Ait Metot
+			- Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
+			- Static Metot
+			- Static Metot Icinde istenilen bir bolge
+	- ReentrantLock ile lock mekanizmalari
+	- Deadlock
+	- Deadlock tan nasil kacinilir.
+- YARIN DEVAM EDELIM
+		- Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? \( Race Conditions \)
+	- Thread Local Kullanimi
+			- Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari
+			- Seperate
+			- Shared
+	- Volatile Anahtar kelimesi
+	- Atomic degiskenler
+			- Atomic Boolean
+			- Atomic Integer
+			- Atomic Long
+			- AtomicIntegerArray
+			- AtomicLongArray
+			- Atomic Reference
+			- Compare And Swap Concept \( CAS \)
+			- A-B-A Problem
+			- Atomic Stamped Reference
+
+<!-- /MarkdownTOC -->
+
 # java101
 
 https://github.com/keramiozsoy/java101/find/main
