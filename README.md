@@ -1,120 +1,120 @@
-<!-- MarkdownTOC -->
+<!-- MarkdownTOC  autolink=true -->
 
-- java101
-- BIRINCI BOLUM
-	- Java Nedir ?
-	- Java Tarihçesi
-	- Java Dilinin Basarisi Nedir ?
-	- Cop Toplayici Nedir?
-	- Java Nasil Calisir?
-	- JDK JRE JVM Kavramları
-	- Değişkenler
-		- Nesne Degiskenleri
-		- Statik degiskenler
-		- Yerel degiskenler
-		- Parametre degiskenleri
-	- Depolanan veriler nerede tutulur ?
-	- Stack Kavramı
-	- Heap Kavramı
-	- Veri Tipleri
-		- Ilkel Veri Tipleri
-			- Tamsayilar
-			- Ondalik Sayilar
-			- Karakterler
-			- Mantiksal Tipler
-				- Ilkel Veri Tipleri arasinda tip donusum islemleri
-		- Referans Veri Tipleri
-				- Referans Veri Tipleri ayni objeyi gostermesi
-- IKINCI BOLUM YARIN DEVAM EDELIM
-	- Operatörler
-		- Atama Operatorleri
-		- Aritmetik Operatörler
-		- Karşılaştırma Operatörler
-		- Mantıksal Operatörler
-		- Bit Tabanlı Operatörler
-- UCUNCU BOLUM YARIN DEVAM EDELIM
-	- Kontrol Ifadeleri
-		- if else
-		- switch case
-- DORDUNCU BOLUM YARIN DEVAM EDELIM
-	- Donguler
-		- while dongusu
-		- do while dongusu
-		- for dongusu
-		- for each
-		- Continue anahtar kelimesi kullanimi
-- BESINCI BOLUM YARIN DEVAM EDELIM
-	- String Operations
-		- String Karsilastirma
-		- String Length
-		- String Upper Case & Lower Case
-		- String indexOf
-		- String charAt
-		- String Concatenation
-		- String Trim
-		- String SubString
-		- String Manupilation
-	- Math Operations
-		- IEEE-754 Virgullu Sayi Gosterimi
-		- Bir kac farkli durum icin java derleyicisinin nasil ciktilar verdigine bakalim.
-		- Math.abs
-		- Math.ceil
-		- Math.floor
-		- Math.floorDiv
-		- Math.round
-		- Math.min
-		- Math.max
-		- Math.pow
-		- Math.sqrt
-	- Wrapper Classes Cache Mechanism
-		- Integer Sinif
-	- Case Study
-	- Fonksiyonlar
-	- Diziler
-	- Kalitim ve Komposizyon
-		- KALITIM
-		- KOMPOZISYON
-		- POLIMORFIZM
-	- Eşzamanlılık \( Concurrency \) ve Paralellik \( Parallelism \)
-			- Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?
-			- * Neden Multithreading yapilara ihtiyac vardir?
-			- Multithreding Maaliyetleri
-			- Multitasking nedir?
-				- Concurrency
-				- Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)
-		- Detaylarin ozeti
-		- Soru cevaplar ile devam edelim.
-		- Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?
-		- Lambda function kullanarak Thread olusturalim
-		- ExecutorService kullanarak Thread olusturma
-		- Thread yasam dongusunun ogrenelim
-			- Durumlarin kod orneklerine bakalim
-			- Is parcalarinin birbirilerine sinyal gonderme islemleri
-	- Synchronized Anahtar kelimesi
-			- Sinifin Nesnesine Ait Metot
-			- Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
-			- Static Metot
-			- Static Metot Icinde istenilen bir bolge
-	- ReentrantLock ile lock mekanizmalari
-	- Deadlock
-	- Deadlock tan nasil kacinilir.
-- YARIN DEVAM EDELIM
-		- Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? \( Race Conditions \)
-	- Thread Local Kullanimi
-			- Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari
-			- Seperate
-			- Shared
-	- Volatile Anahtar kelimesi
-	- Atomic degiskenler
-			- Atomic Boolean
-			- Atomic Integer
-			- Atomic Long
-			- AtomicIntegerArray
-			- AtomicLongArray
-			- Atomic Reference
-			- Compare And Swap Concept \( CAS \)
-			- A-B-A Problem
-			- Atomic Stamped Reference
+- [java101](#java101)
+- [BIRINCI BOLUM](#birinci-bolum)
+	- [Java Nedir ?](#java-nedir-)
+	- [Java Tarihçesi](#java-tarih%C3%A7esi)
+	- [Java Dilinin Basarisi Nedir ?](#java-dilinin-basarisi-nedir-)
+	- [Cop Toplayici Nedir?](#cop-toplayici-nedir)
+	- [Java Nasil Calisir?](#java-nasil-calisir)
+	- [JDK JRE JVM Kavramları](#jdk-jre-jvm-kavramlar%C4%B1)
+	- [Değişkenler](#de%C4%9Fi%C5%9Fkenler)
+		- [Nesne Degiskenleri](#nesne-degiskenleri)
+		- [Statik degiskenler](#statik-degiskenler)
+		- [Yerel degiskenler](#yerel-degiskenler)
+		- [Parametre degiskenleri](#parametre-degiskenleri)
+	- [Depolanan veriler nerede tutulur ?](#depolanan-veriler-nerede-tutulur-)
+	- [Stack Kavramı](#stack-kavram%C4%B1)
+	- [Heap Kavramı](#heap-kavram%C4%B1)
+	- [Veri Tipleri](#veri-tipleri)
+		- [Ilkel Veri Tipleri](#ilkel-veri-tipleri)
+			- [Tamsayilar](#tamsayilar)
+			- [Ondalik Sayilar](#ondalik-sayilar)
+			- [Karakterler](#karakterler)
+			- [Mantiksal Tipler](#mantiksal-tipler)
+				- [Ilkel Veri Tipleri arasinda tip donusum islemleri](#ilkel-veri-tipleri-arasinda-tip-donusum-islemleri)
+		- [Referans Veri Tipleri](#referans-veri-tipleri)
+				- [Referans Veri Tipleri ayni objeyi gostermesi](#referans-veri-tipleri-ayni-objeyi-gostermesi)
+- [IKINCI BOLUM YARIN DEVAM EDELIM](#ikinci-bolum-yarin-devam-edelim)
+	- [Operatörler](#operat%C3%B6rler)
+		- [Atama Operatorleri](#atama-operatorleri)
+		- [Aritmetik Operatörler](#aritmetik-operat%C3%B6rler)
+		- [Karşılaştırma Operatörler](#kar%C5%9F%C4%B1la%C5%9Ft%C4%B1rma-operat%C3%B6rler)
+		- [Mantıksal Operatörler](#mant%C4%B1ksal-operat%C3%B6rler)
+		- [Bit Tabanlı Operatörler](#bit-tabanl%C4%B1-operat%C3%B6rler)
+- [UCUNCU BOLUM YARIN DEVAM EDELIM](#ucuncu-bolum-yarin-devam-edelim)
+	- [Kontrol Ifadeleri](#kontrol-ifadeleri)
+		- [if else](#if-else)
+		- [switch case](#switch-case)
+- [DORDUNCU BOLUM YARIN DEVAM EDELIM](#dorduncu-bolum-yarin-devam-edelim)
+	- [Donguler](#donguler)
+		- [while dongusu](#while-dongusu)
+		- [do while dongusu](#do-while-dongusu)
+		- [for dongusu](#for-dongusu)
+		- [for each](#for-each)
+		- [Continue anahtar kelimesi kullanimi](#continue-anahtar-kelimesi-kullanimi)
+- [BESINCI BOLUM YARIN DEVAM EDELIM](#besinci-bolum-yarin-devam-edelim)
+	- [String Operations](#string-operations)
+		- [String Karsilastirma](#string-karsilastirma)
+		- [String Length](#string-length)
+		- [String Upper Case & Lower Case](#string-upper-case--lower-case)
+		- [String indexOf](#string-indexof)
+		- [String charAt](#string-charat)
+		- [String Concatenation](#string-concatenation)
+		- [String Trim](#string-trim)
+		- [String SubString](#string-substring)
+		- [String Manupilation](#string-manupilation)
+	- [Math Operations](#math-operations)
+		- [IEEE-754 Virgullu Sayi Gosterimi](#ieee-754-virgullu-sayi-gosterimi)
+		- [Bir kac farkli durum icin java derleyicisinin nasil ciktilar verdigine bakalim.](#bir-kac-farkli-durum-icin-java-derleyicisinin-nasil-ciktilar-verdigine-bakalim)
+		- [Math.abs](#mathabs)
+		- [Math.ceil](#mathceil)
+		- [Math.floor](#mathfloor)
+		- [Math.floorDiv](#mathfloordiv)
+		- [Math.round](#mathround)
+		- [Math.min](#mathmin)
+		- [Math.max](#mathmax)
+		- [Math.pow](#mathpow)
+		- [Math.sqrt](#mathsqrt)
+	- [Wrapper Classes Cache Mechanism](#wrapper-classes-cache-mechanism)
+		- [Integer Sinif](#integer-sinif)
+	- [Case Study](#case-study)
+	- [Fonksiyonlar](#fonksiyonlar)
+	- [Diziler](#diziler)
+	- [Kalitim ve Komposizyon](#kalitim-ve-komposizyon)
+		- [KALITIM](#kalitim)
+		- [KOMPOZISYON](#kompozisyon)
+		- [POLIMORFIZM](#polimorfizm)
+	- [Eşzamanlılık \( Concurrency \) ve Paralellik \( Parallelism \)](#e%C5%9Fzamanl%C4%B1l%C4%B1k--concurrency--ve-paralellik--parallelism-)
+			- [Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?](#merkezi-islem-birimi-ve-cekirdek-nedir--is-parcalari-ile-iliskisi-nedir-)
+			- [* Neden Multithreading yapilara ihtiyac vardir?](#-neden-multithreading-yapilara-ihtiyac-vardir)
+			- [Multithreding Maaliyetleri](#multithreding-maaliyetleri)
+			- [Multitasking nedir?](#multitasking-nedir)
+				- [Concurrency](#concurrency)
+				- [Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)](#parallel-execution-paralel-calismak--ve-parallelism--paralellikdagitik)
+		- [Detaylarin ozeti](#detaylarin-ozeti)
+		- [Soru cevaplar ile devam edelim.](#soru-cevaplar-ile-devam-edelim)
+		- [Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?](#thread-nasil-olusturulur--thread-sinifi-veya-runnable-arayuzu-nasil-kullanilir-)
+		- [Lambda function kullanarak Thread olusturalim](#lambda-function-kullanarak-thread-olusturalim)
+		- [ExecutorService kullanarak Thread olusturma](#executorservice-kullanarak-thread-olusturma)
+		- [Thread yasam dongusunun ogrenelim](#thread-yasam-dongusunun-ogrenelim)
+			- [Durumlarin kod orneklerine bakalim](#durumlarin-kod-orneklerine-bakalim)
+			- [Is parcalarinin birbirilerine sinyal gonderme islemleri](#is-parcalarinin-birbirilerine-sinyal-gonderme-islemleri)
+	- [Synchronized Anahtar kelimesi](#synchronized-anahtar-kelimesi)
+			- [Sinifin Nesnesine Ait Metot](#sinifin-nesnesine-ait-metot)
+			- [Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge](#sinifin-nesnesine-ait-metot-icinde-istenilen-bir-bolge)
+			- [Static Metot](#static-metot)
+			- [Static Metot Icinde istenilen bir bolge](#static-metot-icinde-istenilen-bir-bolge)
+	- [ReentrantLock ile lock mekanizmalari](#reentrantlock-ile-lock-mekanizmalari)
+	- [Deadlock](#deadlock)
+	- [Deadlock tan nasil kacinilir.](#deadlock-tan-nasil-kacinilir)
+- [YARIN DEVAM EDELIM](#yarin-devam-edelim)
+		- [Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? \( Race Conditions \)](#farkli-is-parcalari-ayni-kod-parcasina-ayni-anda-erisirlerse-ne-olur---race-conditions-)
+	- [Thread Local Kullanimi](#thread-local-kullanimi)
+			- [Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari](#is-parcalarinin-calisma-senaryolarina-gore-degiskenlerin-erisilebilirlik-durumlari)
+			- [Seperate](#seperate)
+			- [Shared](#shared)
+	- [Volatile Anahtar kelimesi](#volatile-anahtar-kelimesi)
+	- [Atomic degiskenler](#atomic-degiskenler)
+			- [Atomic Boolean](#atomic-boolean)
+			- [Atomic Integer](#atomic-integer)
+			- [Atomic Long](#atomic-long)
+			- [AtomicIntegerArray](#atomicintegerarray)
+			- [AtomicLongArray](#atomiclongarray)
+			- [Atomic Reference](#atomic-reference)
+			- [Compare And Swap Concept \( CAS \)](#compare-and-swap-concept--cas-)
+			- [A-B-A Problem](#a-b-a-problem)
+			- [Atomic Stamped Reference](#atomic-stamped-reference)
 
 <!-- /MarkdownTOC -->
 
