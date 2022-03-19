@@ -2116,17 +2116,22 @@ bellekte yer kaplasin istemez.
 			 
 
 			 Ornek
+			 		A 
+
 			 	bir satir bir kolon olan tabloda elimizdeki deger 5
 			 	bir islem geldi 1 artti ve o satir guncelledin    6 
 			 	bir islem geldi 1 azaltti ve o satir guncellendi  5
 			 	bir satir bir kolon olan tabloda elimizdeki son deger 5
+
+
+			 		B
 
 			 	bir satir bir kolon olan tabloda elimizde deger   5
 			 	bir satir daha atildi ve kolona +1  yazildi		  
 			 	bir satir daha atildi ve kolona -1  yazildi  
 			 	biz artik tum kolonlardaki islemleri yaptiktan sonra cevabi donuyoruz yani 5
 			 	istersek onceki durumlara da ulasabiliyoruz veya geri donebiliriz.
-			 	tum objelerin kendi durumlari korundu ve asenkdron olarak bagimsiz islem yapildi.
+			 	tum objelerin kendi durumlari korundu ve asenkron olarak bagimsiz islem yapildi.
 
 			 Bazi projeler
 			- java.util.concurrent
