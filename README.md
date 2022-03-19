@@ -2320,7 +2320,7 @@ Her T ani icin 1 dk sure harcadigini dusunelim.
 - Yukaridaki tasarimda HESAPLAMA is parcacigi OKUMA is parcaciginin dogru bir okuma gerceklestirip
 gerceklestirmedigini kontrol etmesi lazim. 
 
-- Yani bittigini kontrol ettmesi lazim. Cunku birbirinden bagimiz sekilde 
+- Yani bittigini kontrol etmesi lazim. Cunku birbirinden bagimiz sekilde 
 farkli is parcalarinda islemler yapildi.
 
 - Benzer sekilde YAZMA is parcacigi HESAPLAMA is parcaciginin isini dogru yaptigindan hatta bittiginden emin olmasi lazim.
@@ -2369,7 +2369,7 @@ Ornek
 
 
 
-Kalitimdan ogrendigimiz extends anahtar kelimesi yardimiyla olusturacagimiz islere sizler birer is parcasisiniz tanimi yapacagiz.
+Kalitimdan ogrendigimiz extends anahtar kelimesi yardimiyla olusturacagimiz islere; sizler birer is parcasisiniz tanimi yapacagiz.
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadByThreadClassMain.java
