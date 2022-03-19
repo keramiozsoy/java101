@@ -2081,7 +2081,7 @@ bellekte yer kaplasin istemez.
 
 ( Seperate state ) 
 
-			 Hicbir ortak alani paylasarak yazma, okuma yapmiyorlar 
+			 Ortak alani paylasarak yazma, okuma yapmiyorlar 
 			 fakat kendi aralarinda bulunan degismez objeleri ( immutable objects ) veya
 			 degisen objelerin kopyalarini birbirileri ile degistokus yaparak 
 			 iletisim kurup son hamle yapmadan once her zaman son bilgiye ulasabiliyorlar. 
