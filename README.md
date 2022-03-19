@@ -2056,7 +2056,7 @@ bellekte yer kaplasin istemez.
  
 - CPU lar, programlar arasında paylasilip, Isletim sistemi yardimi ile çalışan programlar arasında geçiş yaparak ve geçiş yapmadan önce her birini bir süre çalıştırır. 
 
-- Zaten gorev yoneticisinden baktigimzda, CPU larin uygulamalar arasindaki kullanim yuzdeleri surekli degistigini gorebiliriz.
+- Zaten gorev yoneticisinden baktigimizda, CPU larin uygulamalar arasindaki kullanim yuzdeleri surekli degistigini gorebiliriz.
 
 
 ##### Concurrency
