@@ -1935,10 +1935,10 @@ Ornek
 
 veya
 
-	Bilgisayarinizda isminin bilgidiniz dosyayi aramak istediniz, arama bolumune 
-	ismini yazdiniz, dosyalar incelemeye baslandi. 
+	Bilgisayarinizda bilgidiniz dosyayi aramak istiyorsunuz, arama bolumune 
+	dosya ismini yazdiniz, arama islemi basladi. 
 	Siz bu aramanin bitmesini beklemeden 
-	hesap makinesi uygulamasindan islemler yapabiliyoruz. 
+	hesap makinesi uygulamasindan islemler yapabiliyorsunuz.
 
 	Hesap makinesinde islem yapabilmek icin dosya aramasini bitmesine gerek yok.
 
