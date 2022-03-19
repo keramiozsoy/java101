@@ -2473,7 +2473,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 		calisacagi yerde calismak istiyor. Fakat ilk is parcasi islemini tamamlamadigi surece, ikinci is parcasi 
 		bu durumdadir
 	
-	Waiting
+	WAITING
 
 		Bir is parcasinin calismaya devam edebilmesi icin diger is parcasindan sinyal bekledigi durumdur.
 
