@@ -2490,7 +2490,7 @@ Bir thread yasam dongusu boyunca asagidaki durumlarda olabilir.
 
 NEW - RUNNABLE
 
-	Is parcasi ilk olusturugnda aldigi durum
+	Is parcasi ilk olusturuldugunda aldigi durum
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadStateNewAndRunnable.java
 
