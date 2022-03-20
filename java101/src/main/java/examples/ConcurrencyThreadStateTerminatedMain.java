@@ -10,12 +10,7 @@ public class ConcurrencyThreadStateTerminatedMain {
 
         System.out.println(thread.getName() + " is alive and state = " + thread.getState() );
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                ConcurrencyThreadCustomMonitor.monitor(thread);
-            }
-        }).start();
+        ConcurrencyThreadCustomMonitor.monitor(thread);
 
         try {
             Thread.sleep(10_000);

@@ -24,6 +24,8 @@ public class ConcurrencyThreadStateTimedWaiting {
         Thread thread = new Thread(runnable," ChildThread ");
         thread.start();
 
+
         ConcurrencyThreadCustomMonitor.monitor(thread);
+
     }
 }
