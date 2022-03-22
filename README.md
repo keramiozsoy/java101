@@ -2719,7 +2719,7 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 
 
 
- 	Yanlis kullanimlarda dead lock olarak adlandirilan durum olusur.
+ 	Yanlis kullanimlarda dead lock olarak adlandirilan durum olusmaktadir.
 ~~~
 
 
