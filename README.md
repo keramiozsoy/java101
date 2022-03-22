@@ -2581,9 +2581,10 @@ Ornek
 ~~~
 Iki adet bekleyen is parcasi olusturalim.
 
-Bir tane sinyal gonderelim yani notify() calistiralim. Ikinci is parcasinin bitirilmesini bekleyecegiz.
+Bir tane sinyal gonderelim yani notify() calistiralim. Ikinci is parcasinin calisip 
+calismadigini gozlemleyelim.
 
-notify() yerine notifyAll() yazarak programmizin basarilil sonlandirigini gorelim.
+notify() yerine notifyAll() yazarak programimizdaki tum is parcalarinin sonlandirildigini gorelim.
 ~~~
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencySignalMain.java
