@@ -2727,9 +2727,9 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 ## Deadlock 
 ~~~
 
-iki veya daha fazla is parcassinin calismak istedigi alandaki kilide ulasabilmesi
+iki veya daha fazla is parcasinin calismak istedigi alandaki kilide ulasabilmesi
 
-fakat birbirlerinin kiliti birakmasini beklemesi fakat kimseinin
+fakat birbirlerinin kilidi birakmasini beklemesi fakat kimsenin
 
 orada calismak icin elindeki kilidi digerlerine birakamamasi olarak aciklanabilir.
 
