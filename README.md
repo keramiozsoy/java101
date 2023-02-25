@@ -91,10 +91,10 @@
 			- [Durumlarin kod orneklerine bakalim](#durumlarin-kod-orneklerine-bakalim)
 			- [Is parcalarinin birbirilerine sinyal gonderme islemleri](#is-parcalarinin-birbirilerine-sinyal-gonderme-islemleri)
 	- [Synchronized Anahtar kelimesi](#synchronized-anahtar-kelimesi)
-			- [Sinifin Nesnesine Ait Metot](#sinifin-nesnesine-ait-metot)
-			- [Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge](#sinifin-nesnesine-ait-metot-icinde-istenilen-bir-bolge)
-			- [Static Metot](#static-metot)
-			- [Static Metot Icinde istenilen bir bolge](#static-metot-icinde-istenilen-bir-bolge)
+		- [Sinifin Nesnesine Ait Metot](#sinifin-nesnesine-ait-metot)
+		- [Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge](#sinifin-nesnesine-ait-metot-icinde-istenilen-bir-bolge)
+		- [Static Metot](#static-metot)
+		- [Static Metot Icinde istenilen bir bolge](#static-metot-icinde-istenilen-bir-bolge)
 	- [ReentrantLock ile lock mekanizmalari](#reentrantlock-ile-lock-mekanizmalari)
 	- [Deadlock](#deadlock)
 	- [Deadlock tan nasil kacinilir.](#deadlock-tan-nasil-kacinilir)
@@ -2605,7 +2605,7 @@ synchronized kullanildiginda birbirini bekleyecegi icin calisma suresinin daha u
 sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 ~~~
 
-#### Sinifin Nesnesine Ait Metot
+### Sinifin Nesnesine Ait Metot
 ~~~
 	  public synchronized void writerEverything(int value){
 	      this.count += value;
@@ -2615,7 +2615,7 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 
 
 
-#### Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
+### Sinifin Nesnesine Ait Metot Icinde istenilen bir bolge
 ~~~
 	  public void writerEverything(int value){
 	      
@@ -2630,7 +2630,7 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 
 
 
-#### Static Metot
+### Static Metot
 ~~~
 	  public static  synchronized void writerEverything(int value){
 	      this.count += value;
@@ -2639,7 +2639,7 @@ sizin icin problem olmayacagini kodumuza taahhut etmis oluruz.
 ~~~
 
 
-#### Static Metot Icinde istenilen bir bolge
+### Static Metot Icinde istenilen bir bolge
 ~~~
 	public classs User {
 
