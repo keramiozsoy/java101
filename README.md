@@ -98,7 +98,7 @@
 	- [ReentrantLock ile lock mekanizmalari](#reentrantlock-ile-lock-mekanizmalari)
 	- [Deadlock](#deadlock)
 	- [Deadlock tan nasil kacinilir.](#deadlock-tan-nasil-kacinilir)
-- [YARIN DEVAM EDELIM](#yarin-devam-edelim)
+- [ALTINCI BOLUM YARIN DEVAM EDELIM](#altinci-bolum-yarin-devam-edelim)
 	- [Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? \( Race Conditions \)](#farkli-is-parcalari-ayni-kod-parcasina-ayni-anda-erisirlerse-ne-olur---race-conditions-)
 	- [Thread Local Kullanimi](#thread-local-kullanimi)
 		- [Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari](#is-parcalarinin-calisma-senaryolarina-gore-degiskenlerin-erisilebilirlik-durumlari)
@@ -2758,7 +2758,7 @@ orada calismak icin elindeki kilidi digerlerine birakamamasi olarak aciklanabili
 
 
 
-# YARIN DEVAM EDELIM
+# ALTINCI BOLUM YARIN DEVAM EDELIM
 
 
 
