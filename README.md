@@ -99,22 +99,22 @@
 	- [Deadlock](#deadlock)
 	- [Deadlock tan nasil kacinilir.](#deadlock-tan-nasil-kacinilir)
 - [YARIN DEVAM EDELIM](#yarin-devam-edelim)
-		- [Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? \( Race Conditions \)](#farkli-is-parcalari-ayni-kod-parcasina-ayni-anda-erisirlerse-ne-olur---race-conditions-)
+	- [Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? \( Race Conditions \)](#farkli-is-parcalari-ayni-kod-parcasina-ayni-anda-erisirlerse-ne-olur---race-conditions-)
 	- [Thread Local Kullanimi](#thread-local-kullanimi)
-			- [Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari](#is-parcalarinin-calisma-senaryolarina-gore-degiskenlerin-erisilebilirlik-durumlari)
-			- [Seperate](#seperate)
-			- [Shared](#shared)
+		- [Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari](#is-parcalarinin-calisma-senaryolarina-gore-degiskenlerin-erisilebilirlik-durumlari)
+		- [Seperate](#seperate)
+		- [Shared](#shared)
 	- [Volatile Anahtar kelimesi](#volatile-anahtar-kelimesi)
 	- [Atomic degiskenler](#atomic-degiskenler)
-			- [Atomic Boolean](#atomic-boolean)
-			- [Atomic Integer](#atomic-integer)
-			- [Atomic Long](#atomic-long)
-			- [AtomicIntegerArray](#atomicintegerarray)
-			- [AtomicLongArray](#atomiclongarray)
-			- [Atomic Reference](#atomic-reference)
-			- [Compare And Swap Concept \( CAS \)](#compare-and-swap-concept--cas-)
-			- [A-B-A Problem](#a-b-a-problem)
-			- [Atomic Stamped Reference](#atomic-stamped-reference)
+		- [Atomic Boolean](#atomic-boolean)
+		- [Atomic Integer](#atomic-integer)
+		- [Atomic Long](#atomic-long)
+		- [AtomicIntegerArray](#atomicintegerarray)
+		- [AtomicLongArray](#atomiclongarray)
+		- [Atomic Reference](#atomic-reference)
+		- [Compare And Swap Concept \( CAS \)](#compare-and-swap-concept--cas-)
+		- [A-B-A Problem](#a-b-a-problem)
+		- [Atomic Stamped Reference](#atomic-stamped-reference)
 
 <!-- /MarkdownTOC -->
 
@@ -2762,7 +2762,7 @@ orada calismak icin elindeki kilidi digerlerine birakamamasi olarak aciklanabili
 
 
 
-###  Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? ( Race Conditions )
+##  Farkli is parcalari ayni kod parcasina ayni anda erisirlerse ne olur ? ( Race Conditions )
 
 	Eger bir is parcasinin gerceklestirdigi islem sonucu diger is parcasinin baslangicta erismesi gereken giris bilgilerini etkiliyor ise
 
@@ -2893,7 +2893,7 @@ InheritableThreadLocal var onu da sizler inceleyebilirsiniz
 
 
 
-#### Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari
+### Is parcalarinin calisma senaryolarina gore degiskenlerin erisilebilirlik durumlari
 
 ~~~
 Herhangi bir thread calistiginda her thread kendi stack alanina erisebilir.
@@ -2930,7 +2930,7 @@ olup olmadigina dikkat etmeliyiz !!!!!!!!!!!!!!!!
 
 
 
-#### Seperate
+### Seperate
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMemoryModelSeparateObjectsMain.java
 
@@ -2992,7 +2992,7 @@ localCount=0
 
 
 
-#### Shared
+### Shared
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyThreadMemoryModelSharedObjectsMain.java
@@ -3119,7 +3119,7 @@ birden cok thread calistiginda tutarsizlik olmayacaktir.
 
 ~~~
 
-#### Atomic Boolean
+### Atomic Boolean
 
 ~~~
 boolean deger tutmak istedigimizde 
@@ -3135,7 +3135,7 @@ degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicBooleanMain.java
 
 
-#### Atomic Integer
+### Atomic Integer
 ~~~
 int deger tutmak istedigimizde 
 
@@ -3149,7 +3149,7 @@ degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicIntegerMain.java
 
 
-#### Atomic Long
+### Atomic Long
 
 ~~~
 long deger tutmak istedigimizde 
@@ -3167,7 +3167,7 @@ degiskeni yardimi ile bellekteki son bilginin alinabilmesini saglar.
 
 
 
-#### AtomicIntegerArray
+### AtomicIntegerArray
 
 
 ~~~
@@ -3176,7 +3176,7 @@ AtomicInteger listesi tutmak istedigimizde bu sinifi kullanabiliriz.
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyAtomicIntegerArrayMain.java
 
-#### AtomicLongArray
+### AtomicLongArray
 
 
 ~~~
@@ -3187,7 +3187,7 @@ AtomicLong listesi tutmak istedigimizde bu sinifi kullanabiliriz.
 
 
 
-#### Atomic Reference
+### Atomic Reference
 ~~~
 Obje tipinde deger tutmak istedigimizde
 
@@ -3217,7 +3217,7 @@ BURADAN ASAGISI EKSIKLER VAR
 
 
 
-#### Compare And Swap Concept ( CAS )
+### Compare And Swap Concept ( CAS )
 ~~~
 	Elimizde is parcalari tarafindan paylasilan bir alan olsun.
 	Bu alan uzerinde ayni anda birden fazla is parcasi calisiyor olsun.
@@ -3255,14 +3255,14 @@ Ilk thread compare and swap yaptiginda hicbir sey degismemiz gibi oldugundan hat
 
 
 
-#### A-B-A Problem
+### A-B-A Problem
 ~~~
 	Compare And Swap Concept ( CAS ) veri yapisi dogru calismadigi durumda ortaya cikan probleme denir.
 ~~~
 
 
 
-#### Atomic Stamped Reference
+### Atomic Stamped Reference
 ~~~
 Atomic Reference tipinden tek farki hem objeyi hem damga degerinin tutuyor
 ~~~
