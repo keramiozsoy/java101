@@ -76,12 +76,12 @@
 		- [KOMPOZISYON](#kompozisyon)
 		- [POLIMORFIZM](#polimorfizm)
 	- [Eşzamanlılık \( Concurrency \) ve Paralellik \( Parallelism \)](#e%C5%9Fzamanl%C4%B1l%C4%B1k--concurrency--ve-paralellik--parallelism-)
-			- [Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?](#merkezi-islem-birimi-ve-cekirdek-nedir--is-parcalari-ile-iliskisi-nedir-)
-			- [* Neden Multithreading yapilara ihtiyac vardir?](#-neden-multithreading-yapilara-ihtiyac-vardir)
-			- [Multithreding Maaliyetleri](#multithreding-maaliyetleri)
-			- [Multitasking nedir?](#multitasking-nedir)
-				- [Concurrency](#concurrency)
-				- [Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)](#parallel-execution-paralel-calismak--ve-parallelism--paralellikdagitik)
+		- [Merkezi Islem Birimi ve Cekirdek nedir, Is parcalari ile iliskisi nedir](#merkezi-islem-birimi-ve-cekirdek-nedir-is-parcalari-ile-iliskisi-nedir)
+		- [* Neden Multithreading yapilara ihtiyac vardir?](#-neden-multithreading-yapilara-ihtiyac-vardir)
+		- [Multithreding Maaliyetleri](#multithreding-maaliyetleri)
+		- [Multitasking nedir?](#multitasking-nedir)
+			- [Concurrency](#concurrency)
+			- [Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)](#parallel-execution-paralel-calismak--ve-parallelism--paralellikdagitik)
 		- [Detaylarin ozeti](#detaylarin-ozeti)
 		- [Soru cevaplar ile devam edelim.](#soru-cevaplar-ile-devam-edelim)
 		- [Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?](#thread-nasil-olusturulur--thread-sinifi-veya-runnable-arayuzu-nasil-kullanilir-)
@@ -1965,7 +1965,8 @@ Bazi kavramlari ogrenelim.
 
 
 
-#### Merkezi Islem Birimi ve Cekirdek Nedir ? Is parcalari ile iliskisi nedir ?
+### Merkezi Islem Birimi ve Cekirdek nedir, Is parcalari ile iliskisi nedir 
+
 	Merkezi Islem Birimi, CPU (Central Process Unit) veya Islemci kavrami 
 
 	bilgisayardaki tum islemleri, isletim sistemini ve altinda calisan programlari yoneten birimdir.
@@ -1994,7 +1995,7 @@ Peki ama neden sayilar bu sekilde ?
 	Her fiziksel cekirdek en fazla ikiye bolunerek, cekirdek basina iki is parcasi ayni anda calistirma islemi yapabiliyor.
 	Yukarida bahsedilen hizli calisma beklentisi, teknolojini el verdigi olcude karsilaniyor.
 
-#### * Neden Multithreading yapilara ihtiyac vardir?
+### * Neden Multithreading yapilara ihtiyac vardir?
 
 Multithreading, aynı uygulama içinde birden çok yürütme iş parçacığına sahip olduğunuz anlamına geldigini soylemistik.
 	
@@ -2034,7 +2035,7 @@ Yukaridaki durumlardan dolayi aslinda asagidaki ihtiyaclari karsilayabiliyor
 		diğer tüm istemcilerin isteklerinin o istek bitene kadar beklemesi gerekir.
 		Her müşterinin isteğinin kendi iş parçacığı tarafından yürütülmesi saglanabilir.
 
-#### Multithreding Maaliyetleri
+### Multithreding Maaliyetleri
 
 - Tek bir thread ile yapilacak isi coklu thread ile yaptigimizda bazen thread lerin
 arasindaki ayni veriye ulasma islemlerinden yonetilmeleri gerekir.
@@ -2050,7 +2051,7 @@ zorunda kaliyor.
 bellekte yer kaplasin istemez.
 
 
-#### Multitasking nedir?
+### Multitasking nedir?
 
 - Eskiden bilgisayarlarda tek CPU ile ayni anda sadece tek uygulama calisiyordu.
 
@@ -2061,7 +2062,7 @@ bellekte yer kaplasin istemez.
 - Zaten gorev yoneticisinden baktigimizda, CPU larin uygulamalar arasindaki kullanim yuzdeleri surekli degistigini gorebiliriz.
 
 
-##### Concurrency
+#### Concurrency
 
 		Elimizdeki tek bir isi (process) alt islere (thread) bolerek, alt islerin 
 		neredeyse ayni anda
@@ -2152,7 +2153,7 @@ bellekte yer kaplasin istemez.
 
 	
 
-##### Parallel Execution( Paralel Calismak ) ve Parallelism ( Paralellik,Dagitik)
+#### Parallel Execution( Paralel Calismak ) ve Parallelism ( Paralellik,Dagitik)
 
 	Her cekirdek farkli gorevleri yerine getirebilmesine  Parallel Calismak denir.
 
