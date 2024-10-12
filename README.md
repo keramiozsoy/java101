@@ -87,6 +87,7 @@
 		- [Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?](#thread-nasil-olusturulur--thread-sinifi-veya-runnable-arayuzu-nasil-kullanilir-)
 		- [Lambda function kullanarak Thread olusturalim](#lambda-function-kullanarak-thread-olusturalim)
 		- [ExecutorService kullanarak Thread olusturma](#executorservice-kullanarak-thread-olusturma)
+		- [Thread Pool Size neye gore ayarlanir](#thread-pool-size-neye-gore-ayarlanir)
 		- [Thread yasam dongusunun ogrenelim](#thread-yasam-dongusunun-ogrenelim)
 			- [Durumlarin kod orneklerine bakalim](#durumlarin-kod-orneklerine-bakalim)
 			- [Is parcalarinin birbirilerine sinyal gonderme islemleri](#is-parcalarinin-birbirilerine-sinyal-gonderme-islemleri)
@@ -2452,7 +2453,78 @@ Bu kavramin ne anlama geldigini bilen var mi?
 
 ###  ExecutorService kullanarak Thread olusturma
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceMain.java
+Tek tek her thread olusturulmasi icin kod yazmak yerine,
+Executors isimli sinifi icerisindeki hazir yapilari kullanabiliriz.
+
+
+Executors sinifinda ExecutorService Interface implement eden siniflarin metotlari mevcuttur.
+
+Bu metotlar Thread Pool yapilari olusturulur. 
+
+ThreadPool olusturulurken Queue veri yapısı kullanılır.
+
+Bu metotlardan bir kac tanesini gorelim.
+
+
+1 newFixedThreadPool
+
+Verilen parametre kadar Thread olusturulur. En uygun yontem JVM in kullanabilecegi yani programin calistigi bilgisayardaki core sayisini parametre olarak verebilirsiniz.
+
+new LinkedBlockingQueue veri yapisi ile olusturulur.
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceNewFixedThreadPoolMain.java
+
+
+
+2 newCachedThreadPool
+
+Hizli başlayıp biten işlerde newCachedThreadPool olan version kullanılırsa, yapilacak is sayisi fazla olsa bile isi bitmis olan thread yeni bir is alir. Bu sekilde gereksiz yeni thread oluşturulması onune gecilir. 
+
+Eger yavas calisan isler ile newCachedThreadPool yapisi kullanılırsa newFixedThreadPool dan hiçbir farkli kalmaz.
+
+
+new SynchronousQueue veri yapisi ile olusturulur.
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceNewCachedThreadPoolMain.java
+
+
+
+3 newScheduledThreadPool
+
+Parametrede verilen zaman kadar vakit gectikten sonra calismaya baslar.
+
+new DelayedWorkQueue() veri yapisi ile olusturulur.
+
+Uygulama ayaga kalktiktan 10 sn sonra calisacak bir ornek olusturalim.
+
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceNewScheduledThreadPoolMain.java
+
+
+
+4 Callable Interface ve Future Interface kullanimi
+
+Yukaridaki orneklerde executore service cagirirken Runnable functional interface kullanmaktadir. Bu interface icindeki metod void oldugu icin is bittikten sonra bize bir deger donusu saglayamaz.
+
+Callable interface kullanarak is bittiginde bize geriye cevap donulmesi saglanir.
+
+ExecutorService ve Callable beraber kullanildigi durumda islem bitiminde islemin sonucunu takip edebilmemize icin bize Future tipinde interface ile referans verilir.
+
+Biz Future referansi yardimiyla islem sonunda alinmak istenilen degerlere ulasilir.
+
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/ConcurrencyExecutorServiceFutureCallableMain.java
+
+
+
+###  Thread Pool Size neye gore ayarlanir
+
+CPU-bound Isler: (  MATEMATIKSEL FONKSIYONLAR ) Eger islemler CPU'yu yogun bir sekilde kullanirsa, genellikle thread sayisini islemci sayisina esit veya biraz daha az tutmak iyi bir yaklasimdir. Bu, her islemcinin verimli bir sekilde kulanilmasini saglar.
+
+
+I/O-bound Isler:  ( DOSYA OKUMA YAZMA )  Eger gorevler I/O islemleri ile ilgiliyse daha fazla iş parçacığı kullanılabilir. I/O gorevleri genellikle bekleme süresi (blocking) icerir, bu yüzden daha fazla thread kullanmak sistem kaynaklarını daha verimli kullanabilir.
+
+
+VisualVM veya GCViewer gibi araclar yardimi ile sistemi izleyerek sizin icin uygun sayilari deneme yanilma ile ulasabilirsiniz.
 
 
 ### Thread yasam dongusunun ogrenelim
@@ -3275,25 +3347,17 @@ ConcurrencyAtomicStampedReferenceMain
 
 
 
-https://tutorials.jenkov.com/java-concurrency/
-
-
-https://howtodoinjava.com/java-concurrency-tutorial/
 
 
 
-https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
 
-https://www.javatpoint.com/java-executorservice
 
-https://www.javatpoint.com/multithreading-in-java
 
-https://www.javatpoint.com/executor-framework-java
 
 
 		
 		
-		https://www.javamex.com/
+		
 
 
 	start() 		- hazir  						

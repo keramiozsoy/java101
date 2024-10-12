@@ -3,11 +3,11 @@ package examples;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ConcurrencyExecutorServiceMain {
+public class ConcurrencyExecutorServiceNewFixedThreadPoolMain {
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
-        // There are 2 threads to work
-        // above line is instead of start()
+        int availableProcessors = Runtime.getRuntime().availableProcessors();
+        System.out.println(" count of availableProcessors " + availableProcessors);
+        ExecutorService executorService = Executors.newFixedThreadPool(availableProcessors);
 
         for (int i = 1; i <= 5; i++) {
             int count = i;
