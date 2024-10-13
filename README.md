@@ -2463,6 +2463,8 @@ Bu metotlar Thread Pool yapilari olusturulur.
 
 ThreadPool olusturulurken Queue veri yapısı kullanılır.
 
+Queue , FIFO ( Ilk eklenen ilk cikar ) alt yapisisini kullanir.
+
 Bu metotlardan bir kac tanesini gorelim.
 
 
