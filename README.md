@@ -291,7 +291,7 @@ kodlama yapana ait iken , java dilinde kodlama yapan kisiye ait degildir.
 
 ## Java Nasil Calisir?
 
-Bit kavramini ogrendikten sonra nasil calistirigina bakabiliriz.
+Bit kavramini ogrendikten sonra nasil calistigina bakabiliriz.
 
  Bit nedir?
 
