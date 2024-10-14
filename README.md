@@ -385,6 +385,10 @@ Degisken Tipleri;
 	- Yerel degiskenler
 	- Parametre degiskenleri
 
+Degiskenler ile ilgili ornekleri asagidaki siniftan inceleyebilirsiniz.
+
+ - https://github.com/keramiozsoy/java101/tree/main/java101/src/main/java/examples/VariableExample.java
+
 
 ### Nesne Degiskenleri
 
@@ -451,13 +455,6 @@ Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler
 
 
 Siniflarin icindeki metotlarin iclerinde kullanilmak uzere gecici olarak aldigi degerlerdir.
-
-
-https://github.com/keramiozsoy/java101/tree/main/java101/src/main/java/examples/VariableExample.java
-
-
-https://www.geeksforgeeks.org/what-is-the-difference-between-field-variable-attribute-and-property-in-java/
-
 
 
 
