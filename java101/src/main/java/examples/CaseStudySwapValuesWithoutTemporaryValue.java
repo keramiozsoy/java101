@@ -14,7 +14,7 @@ public class CaseStudySwapValuesWithoutTemporaryValue {
         a = a - b;
 
         System.out.println(a); // it will print first initialized value of b
-        System.out.println(b); // it will print first initialized value of b
+        System.out.println(b); // it will print first initialized value of a
 
     }
 }
