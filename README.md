@@ -2109,7 +2109,7 @@ bellekte yer kaplasin istemez.
 
 				 	Her is parcasi kendi isini baslatip sonra cevabini beklemeden diger is parcasinin kendi isini baslatabilmesini sagliyor
 
-				 	( asenkron,non-bloking,reactive )
+				 	( asenkron ( non-bloking,reactive) )
 
 				Ornek 
 				 	### WORKER #### -> ### WORKER #### -> ### WORKER #### -> ### WORKER ####
