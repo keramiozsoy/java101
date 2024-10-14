@@ -468,7 +468,8 @@ Siniflarin icindeki metotlarin icinde kullanilmak uzere bulunan, kapsami metot p
 		sonra ise Metaspace isimli kalici bolgede konumlanirlar.
 
 		Peki farklari nedir?
-		PermGen sinifli bir boyutu var, Metaspace otomatik olarak boyutu artabilir.
+		PermGen sabit hafiza boyutuna sahipti ve hafiza doldugunda problem yasaniyordu, Metaspace otomatik olarak boyutunu kendi arttiriyor.
+
 
 - Stack  ( RAM )
 - Heap   ( RAM )
