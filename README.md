@@ -651,7 +651,8 @@ printList metoduna gönderilerek her eleman yazdırılıyor.
 
 
 4
--Listenin tüm elemanları yazdırıyoruz ve sonrasında value ve data değişkenleri stack üzerinden siliniyor çünkü metodumuz bitti. 
+
+- Listenin tüm elemanları yazdırıyoruz ve sonrasında value ve data değişkenleri stack üzerinden siliniyor çünkü metodumuz bitti. 
 
 
 
