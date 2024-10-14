@@ -1856,7 +1856,9 @@ Siniflarin birbirinden veya arayuzlerin (interface) birinden kalitilmasi islemid
 
 		}
 
-		Araba bir Aractir. Kalitim tek yonlu oldugu icin her araba bir aractir fakat her arac bir araba degildir.
+		Araba bir Aractir.
+  		Kalitim tek yonlu oldugu icin her araba bir aractir
+  		fakat her arac bir araba degildir.
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceCarIsAVehicleOfThingClassOfRedCar.java
 
