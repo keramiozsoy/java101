@@ -1341,11 +1341,10 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 Ornek 
 
+- Continue ile jump ornegi
+
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopBranchingContinueWithJump.java
 
-
-
-bir liste icerisinde var olan ayni degerleri tek for dongusu kullarak bulmaya calisalim.
 
 
 
