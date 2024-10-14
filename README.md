@@ -454,7 +454,7 @@ Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler
 ### Parametre degiskenleri
 
 
-Siniflarin icindeki metotlarin iclerinde kullanilmak uzere gecici olarak aldigi degerlerdir.
+Siniflarin icindeki metotlarin icinde kullanilmak uzere bulunan, kapsami bulundugu parantezlerin ici olan degiskenlerdir.
 
 
 
