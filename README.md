@@ -1465,24 +1465,21 @@ StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari k
 
 	StringBuilder
 
-	Olumlu 
 	- Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
 	- Diger tipe gore daha hizlidir
 
-	Olumsuz
-	- Thread(Is yapan parca) islemelrine karsi korumasi yoktur. (Not tread-safe ). ( synchonized kod blogu icermememektedir. )
-	- Yani iki farkli Thread ayni StringBuilder degiskeni uzerinde islem yaparsa birbirini ezmis olurlar.
+	- Thread(Is yapan parca) islemelrine karsi korumasi yoktur. (Not tread-safe ).
+ 	( synchonized kod blogu icermememektedir. )
+	- Yani iki farkli Thread ayni StringBuilder degiskeni uzerinde
+ 	islem yaparsa birbirini ezmis olurlar.
 
 
 
 	StringBuffer
 	
-	Olumlu 
 	- Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
-
 	- Thread(Is yapan parca) islemlerine karsi korumasi vardir. (tread-safe ). ( synchonized kod blogu var. )
 
-	Olumsuz
 	-  Yani iki farkli Thread ayni StringBuffer degiskeni uzerinde islem yapilmasi otomatik engellenir.
 	-  Diger tipe gore daha yavastir.
 
