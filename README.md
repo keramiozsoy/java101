@@ -263,7 +263,7 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 
  - Bellek problemlerini cozmesidir.
 
- - Nesneye yonelik progamalamaya uygun olmasi programlarimizi yazarken daha uygun gelistirmeler yapmamizi sagliyor.
+ - Nesneye yonelik programlamaya uygun olmasi programlarimizi yazarken daha uygun gelistirmeler yapmamizi sagliyor.
 
  - Cok uzun yillardan beri sagladigi "bir kez yaz her yerde calistir" olanagini saglamasidir.
 
