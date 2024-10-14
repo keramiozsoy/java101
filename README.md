@@ -874,7 +874,7 @@ https://programmer.group/test-outofmemoryerror-exception.html
 
 ## Operatörler
 
-	- Operatörler ilsem ozelligi olan simgelerdir. 
+	- Operatörler islem ozelligi olan simgelerdir. 
 
 	- En basit toplama + cikarma - carpma * bolme / birer operatordur.
 
