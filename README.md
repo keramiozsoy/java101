@@ -454,8 +454,7 @@ Yerel degiskenler o tanimlanan blogun disina cikildiginda etkilerini kaybederler
 ### Parametre degiskenleri
 
 
-Siniflarin icindeki metotlarin icinde kullanilmak uzere bulunan, kapsami bulundugu parantezlerin ici olan degiskenlerdir.
-
+Siniflarin icindeki metotlarin icinde kullanilmak uzere bulunan, kapsami metot parantezlerinin ici olan degiskenlerdir.
 
 
 ## Depolanan veriler nerede tutulur ?
