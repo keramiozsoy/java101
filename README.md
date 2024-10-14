@@ -403,8 +403,7 @@ Ornek
 	  Elimizde bir kitabimiz olsun. 
 	  Kitabin var olmasini saglayan parcalara bakalim;
 	   
-	   - yazar
-	   - adi
+	   - yazar adi
 	   - tur
 	   - renk
 	   - sayfa sayisi 
@@ -417,7 +416,7 @@ Bu kitaba ait kalibimiz olsa, kolayca kitap uretebiliriz.
 Peki program yaziyoruz programimiza tanimlamak icin ne yapariz?
 
 	- kitap isminde bir sinif olustururuz
-	- parcalarini tanimlamak icin nesne degiskenleri olustururuz. 
+	- kitabi olusturan bilgi parcalarini tanimlamak icin sinif icerisinde nesne degiskenleri yani yazar adi, tur, renk gibi bilgileri tutariz.
 
 
 
