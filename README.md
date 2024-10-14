@@ -2043,14 +2043,14 @@ Yukaridaki durumlardan dolayi aslinda asagidaki ihtiyaclari karsilayabiliyor
 ### Multithreding Maaliyetleri
 
 - Tek bir thread ile yapilacak isi coklu thread ile yaptigimizda bazen thread lerin
-arasindaki ayni veriye ulasma islemlerinden yonetilmeleri gerekir.
+arasindaki ayni veriye ulasma islemlerinden dolayi yonetilmeleri gerekir.
 Bu nedenle aslinda basit yapidan karmasik yapiya gecmis oluyoruz.
 Yonetimi dogru yapilmadiginda tespiti ve duzeltilmesi tek thread yapilara gore daha maliyetlidir.
 
 - Baglam Degistirme maaliyeti (Context Switching)
 bir thread altindan diger thread ler olustugunda aslinda CPU tum bu 
-thread lerin durumlarini (RUNNING,LOCKED,WAITING) , en kaldigi yeri veya verilerini tutmak
-zorunda kaliyor.
+thread lerin durumlarini (RUNNING,LOCKED,WAITING),
+en son kaldigi yeri veya verilerini tutmak zorunda kaliyor.
 
 - Artan kaynak tuketimi (Resource Consumption) yonetilmelidir. Kimse bosta duran 100 tane thread
 bellekte yer kaplasin istemez.
