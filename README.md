@@ -1990,8 +1990,10 @@ Peki neden farkli sayilarda cekirdek sayisina sahip yapilar var ?
 
 Detaylandiralim;
 	
-		8 cekirdekli bir islemcide 8 adet fiziksel cekirdek mevcutken, 
-							 	   16 adet is parcacigi (Thread) yer alir.
+		8 cekirdekli bir islemcide 8 adet fiziksel cekirdek mevcutken,
+  		ayni anda maksimum 8 is parcacigi (Thread) calistirilabilir. 
+  		Hyper-threading ozelligi olan islemcilerde 16 adet is parcacigi (Thread) 
+    		ayni cekirdekte 2 tane is parcacigi (Thread) calisacak sekilde tasaarlanmistir.
 
 Peki ama neden sayilar bu sekilde ?
 
