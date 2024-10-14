@@ -330,7 +330,7 @@ Calistirma Islemi ( Run Time )
 
 	JRE - Java Calistirma Ortami ( Java Runtime Environment )
 
-    	- Java uygulamalarinin calismasi icin gereken kutuphanleri barindirir.
+    	- Java uygulamalarinin calismasi icin gereken kutuphaneleri barindirir.
 
 	JDK - Java Gelistirebilme Ortami ( Java Development Environment )
 
