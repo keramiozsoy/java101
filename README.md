@@ -468,7 +468,8 @@ Siniflarin icindeki metotlarin icinde kullanilmak uzere bulunan, kapsami metot p
 		sonra ise Metaspace isimli kalici bolgede konumlanirlar.
 
 		Peki farklari nedir?
-		PermGen sabit hafiza boyutuna sahipti ve hafiza doldugunda problem yasaniyordu, Metaspace otomatik olarak boyutunu kendi arttiriyor.
+		PermGen sabit hafiza boyutuna sahipti ve hafiza doldugunda problem yasaniyordu,
+  		Metaspace otomatik olarak boyutunu kendi arttiriyor.
 
 
 - Stack  ( RAM )
@@ -478,7 +479,9 @@ Siniflarin icindeki metotlarin icinde kullanilmak uzere bulunan, kapsami metot p
 
 ## Stack Kavramı
 
-Javada kullanılan primitif ve yerel değişkenler ile objelerin referanslarının tutulduğu hafıza bölgesine stack diyoruz. Bununla birlikte, java memory management için Stack yığın yapısının Last In First Out ( LIFO - Son giren ilk çıkar ) türünü  kullanmaktadır. 
+Javada kullanılan primitif ve yerel değişkenler ile objelerin referanslarının 
+tutulduğu hafıza bölgesine stack diyoruz. Bununla birlikte, java memory management için
+Stack yığın yapısının Last In First Out ( LIFO - Son giren ilk çıkar ) türünü  kullanmaktadır. 
 
 ![Resim 1](https://github.com/keramiozsoy/java101/blob/main/images/1stack.png)
 
@@ -544,11 +547,15 @@ tempValue ve newValue alanları stackten silinir ve artık main method scopuna g
 
 
 		Java’da bütün lokal değişkenler stacklerde tutulur,
-		method çağırımı sonra erdiğinde jvm tüm değerleri sileceği için stack boş kalacaktır, böylelikle bu değişkenler hafızada yer kaplamaz. 
+		method çağırımı sonra erdiğinde jvm tüm değerleri
+  		sileceği için stack boş kalacaktır,
+  		böylelikle bu değişkenler hafızada yer kaplamaz. 
 
 		
 
-		Ek bilgi : Java’da her bir thread ın kendisine ait bir yığını bulunur. Bu da sizin oluşturduğunuz her thread in hafızada yer kaplayacağı anlamına gelir. ( Thread kavramı ve memory management nasıl olur bir araştırma konusu olsun lütfen. )
+		Ek bilgi : Java’da her bir thread ın kendisine ait bir yığını bulunur.
+  		Bu da sizin oluşturduğunuz her thread in hafızada yer kaplayacağı anlamına gelir.
+  		( Thread kavramı ve memory management nasıl olur bir araştırma konusu olsun lütfen. )
 
 
 
@@ -571,7 +578,8 @@ Aslinda bu bölgeler öyle gözle görünüp fark edeceğimiz şeyler değildir.
 JVM sizin için memory de bellek tahsis(allocation) yapar ve
 bu yapılan tahsis içerisinde de bu bölümleri ayırır. 
 
-(Bir java uygulaması için minimum bellek ihtiyacı ne kadardır? Çok fazla bellek ihtiyacımız varsa bunu nasıl yapabiliriz? ) 
+(Bir java uygulaması için minimum bellek ihtiyacı ne kadardır? 
+Çok fazla bellek ihtiyacımız varsa bunu nasıl yapabiliriz? ) 
 
 
 
@@ -627,7 +635,12 @@ printList metoduna gönderilerek her eleman yazdırılıyor.
 
 
 1
-- String value = data.get(1) dediğimizde, listenin birinci elemanındaki değeri yeni bir değişkene atıyoruz. value isimli bir değişkenin stack üzerinde String objesinin referansını tuttuğunu görüyoruz. Dikkat ederseniz, burada aynı objeye iki farklı referans veriyoruz. Liste içerisinde bulunan List objesi içerisinde birinci String içerisindeki eleman ile Stack üzerinde bulunan value değişkeninin referansı aynı yere bakıyor. İşte bu da Java’da Pass by Reference olarak nitelendiriliyor. 
+- String value = data.get(1) dediğimizde, listenin birinci elemanındaki değeri yeni bir değişkene atıyoruz.
+  value isimli bir değişkenin stack üzerinde String objesinin referansını tuttuğunu görüyoruz.
+  Dikkat ederseniz, burada aynı objeye iki farklı referans veriyoruz.
+  Liste içerisinde bulunan List objesi içerisinde birinci String içerisindeki eleman ile
+  Stack üzerinde bulunan value değişkeninin referansı aynı yere bakıyor.
+  İşte bu da Java’da Pass by Reference olarak nitelendiriliyor. 
 
 
 
