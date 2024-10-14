@@ -139,7 +139,7 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 
  - Oyunlar 
  
- - Android gibi temel gucu buyuk oranda java tarafindan gelen mobil uygulamalar gelisitirebilirsiniz.
+ - Android gibi temel gucu buyuk oranda java tarafindan gelen mobil uygulamalar gelistirebilirsiniz.
 
 
 
