@@ -1897,6 +1897,8 @@ Basitce objelerin referans nesnelerini kullanmak.
 ### POLIMORFIZM
 
 
+Polimorfizm ornekleri daha sonra ekleyecegim.
+
 Soru 
 
 	Ne zaman hangisini kullanalim ?
