@@ -638,7 +638,7 @@ printList metoduna gönderilerek her eleman yazdırılıyor.
   Dikkat ederseniz, burada aynı objeye iki farklı referans veriyoruz.
   Liste içerisinde bulunan List objesi içerisinde birinci String içerisindeki eleman ile
   Stack üzerinde bulunan value değişkeninin referansı aynı yere bakıyor.
-  İşte bu da Java’da Pass by Reference olarak nitelendiriliyor. 
+  İşte bu da Java’da nesnenin referansini kullanmak olarak karsimiza cikiyor. 
 
 
 
