@@ -538,7 +538,7 @@ tempValue ve newValue alanları stackten silinir ve artık main method scopuna g
 - Kodumuzda bu aşamadan sonra işletilecek bir kod satırı kalmadığı için JVM tarafından ilgili stack boşaltılır.
 
 11
-- Eğer stack üzerinde herhangi bir değer kalmadığında, JVM tarafından ilgili stack hafızadan silinir. 
+- Stack üzerinde herhangi bir değer kalmadığında, JVM tarafından ilgili stack hafızadan silinir. 
 
 
 
