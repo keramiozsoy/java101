@@ -571,8 +571,6 @@ ve JVM tarafından yönetilen yerde saklanır.
 
 Yani javadaki tüm Objeler Heap üstünde tutulur. 
 
-Aslinda bu bölgeler öyle gözle görünüp fark edeceğimiz şeyler değildir. 
-
 - Siz bir java uygulamasını çalıştırdığınızda, 
 
 JVM sizin için memory de bellek tahsis(allocation) yapar ve
