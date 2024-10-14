@@ -957,13 +957,6 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 
 
-Javascript dilinde farkli bir sekilde karsilasitiriliyor.
-
-- (==) operatörü ile  değişkenin değerlerine bakılırken ( === ) operatörü ile değişkenlerin referans değerlerine bakılır. 
-
-
-
-
 ###	Mantıksal Operatörler
 
 Degiskenleri karsilastirip, sonuc olarak boolean tipinde veri donmesini istedigimiz durumlarda operatorler kullaniriz.
