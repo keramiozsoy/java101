@@ -2102,7 +2102,7 @@ bellekte yer kaplasin istemez.
 					 Her is parcasi tamamen ayni talimatlari uyguluyarak isin tamamini kendi baslarina bastan sona bitiriyorlar.
 					 
 					 Ornek 
-					 	3 araba uretilecek, yontetici 3 calisana tek tek aralari tek basiniza bastan sonra yapin hazir hale getirin dedigi durumdur.
+					 	3 araba uretilme isini,  3 calisana  her biri tek basiniza calisarak hazir hale gerirecegi durumdur.
 
 
 			 veya
