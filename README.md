@@ -1840,7 +1840,9 @@ Siniflarin birbirinden veya arayuzlerin (interface) birinden kalitilmasi islemid
 
 		}
 
-		Elma bir Meyvedir. Kalitim tek yonlu oldugu icin her elma bir meyvedir fakat her meyve elma degildir.
+		Elma bir Meyvedir. 
+  		Kalitim tek yonlu oldugu icin her elma bir meyvedir
+    		fakat her meyve elma degildir.
 
 
 - https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/InheritanceClassOfAppleYellow.java
