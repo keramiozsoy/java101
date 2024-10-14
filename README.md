@@ -1887,15 +1887,14 @@ Basitce objelerin referans nesnelerini kullanmak.
 	Derslik tanimlanmis. Universite de dersliklere sahiptir. 
 	Dersligi olmayan universite olamaz. Bu nedenle HAS-A iliskisi tutulmustur.
 
-CompositionMain
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CompositionMain.java
 
-CompositionUniversity
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CompositionUniversity.java 
 
-CompositionClassroom
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CompositionClassroom.java 
+
 
 ### POLIMORFIZM
-
-https://omerozkan.net/oop-polimorfizm/
 
 
 Soru 
