@@ -173,7 +173,7 @@ Dilin kullanildigi yerlere birkac ornek verelim.
 	islemler yapmak istedigimizde bize yardimci olan kutuphane gibi dusunebiliriz.
 
 
-	JDBC Yazdigimiz kod ile vertabana ozel yazilmis kutuphaneler
+	JDBC Yazdigimiz kod ile veritabanina ozel yazilmis kutuphaneler
 	arasindaki bir noktayi temsil eder. Farkli varitabanlarina
 	baglanmak icin ek olarak farkli kutuphanelere ihtiyacimiz var.
 
