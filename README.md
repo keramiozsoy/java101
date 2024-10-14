@@ -516,7 +516,7 @@ bunun için calculate metodu içerisinde kullanılacak veri için stack’e bir 
 	- --> value değişkeninin değeri pass by value şeklinde aktarılır. 
 	Yani ilgili değişkenin değerinin bir kopyası methoda argüman olarak gönderilir.
 
-	- --> calculate methoduna geçildiği anda artık main metod out-ouf-scope durumuan gelir. 
+	- --> calculate methoduna geçildiği anda artık main metod out-ouf-scope durumuna gelir. 
 	Bu aşamadan sonra main metodu içerisindeki value değerlerine erişim yapılamaz. 
 
 
