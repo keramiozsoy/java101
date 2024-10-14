@@ -845,7 +845,7 @@ Yukaridaki tanimlamalarin farklina bakalim.
 
 	-	Integer gibi sınıflar immutable (değişmez) özelliğe sahiptirler, sıradan nesneler gibi davranmazlar.
 
-Bununla birlikte ek bir not olarak;  Java derleyicisi gerektiğinde tanımlanan her ilkel veriyi ait olduğu sınıfa otomatik olarak gömer buna kutulama (boxing) denilir ya da derleyici gerektiğinde bir sınıf nesnesini ilkel veri tipine döndürür buna da kutu açma (unboxing) denilir. Her iki işlemi de Java derleyicisi kendiliğinden otomatik yapar.
+Bununla birlikte ek bir not olarak;  Java derleyicisi gerektiğinde tanımlanan her ilkel veriyi ait olduğu sınıfa otomatik olarak gömer buna kutulama (boxing) olarak adlandirilir ya da derleyici gerektiğinde bir sınıf nesnesini ilkel veri tipine döndürür buna da kutu açma (unboxing) olarak adlandirilir. Her iki işlemi de Java derleyicisi kendiliğinden otomatik yapar.
 
 
 
@@ -1955,7 +1955,7 @@ Bazi kavramlari ogrenelim.
 		edildikten sonra calisma suresi boyunca biz ona bu ismi verebiliyoruz.
 
 
-		Calisan bir program yani process altinda yer alan, yapilan her bir is parcasina Thread denilir.
+		Calisan bir program yani process altinda yer alan, yapilan her bir is parcasina Thread olarak adlandirilir.
 
 
 		Bir process; yani calistirilmis bir program calistirilan ilk andan hayatinin
