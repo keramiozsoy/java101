@@ -1479,7 +1479,7 @@ StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari k
 	- Thread(Is yapan parca) islemlerina karsi korumasi yoktur. (Not tread-safe ).
  	( synchonized kod blogu icermememektedir. )
 	- Yani iki farkli Thread ayni StringBuilder degiskeni uzerinde
- 	islem yaparsa birbirini ezmis olurlar.
+ 	islem yaparsa birbirini etkiler ve dogru sonuc uretemezler.
 
 
 
