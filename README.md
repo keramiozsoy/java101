@@ -1485,10 +1485,11 @@ StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari k
 
 	StringBuffer
 	
-	- Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
-	- Thread(Is yapan parca) islemlerine karsi korumasi vardir. (tread-safe ). ( synchonized kod blogu var. )
+	-  Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
+	-  Thread(Is yapan parca) islemlerine karsi korumasi vardir. (tread-safe ). ( synchonized kod blogu var. )
 
-	-  Yani iki farkli Thread ayni StringBuffer degiskeni uzerinde islem yapilmasi otomatik engellenir.
+	-  Yani iki farkli Thread ayni StringBuffer degiskeni uzerinde islem yapilmasi 
+ 	otomatik engellenir. Birbirlerini etkilemeden dogru sonuc uretilir.
 	-  Diger tipe gore daha yavastir.
 
 
