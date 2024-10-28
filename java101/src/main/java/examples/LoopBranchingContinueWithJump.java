@@ -14,7 +14,7 @@ public class LoopBranchingContinueWithJump {
                     System.out.println(" j " + j);
                 }
 
-            System.out.println(" This line will never show ");
+            System.out.println(" This line will never appear ");
             System.out.println(i);
 
         }
