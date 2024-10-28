@@ -1451,7 +1451,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 ###  String SubString
 
-- Elimizdeki yazidan istedigimiz parcayi elde etmememizi saglar.
+- Parametre olarak verilen indeks sayisinda gore istedigimiz String veriyi elde etmememizi saglar.
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringSubString.java
 
