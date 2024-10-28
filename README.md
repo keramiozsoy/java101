@@ -1372,7 +1372,7 @@ String in primitive tipi nedir ?
 		- en kucuk yapi tasi 
 
 				java 8 ve oncesi char tipinde,
-				java 11 de byte sekilinde tutuluyor.
+				java 11 de byte seklinde tutuluyor.
 
 ```
 
