@@ -1389,8 +1389,16 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 == veya equals() metotlari ile hangi bilgilerin karsilastirildigini daha once gormustuk.
 
-String tipindeki bilgilerin ek olarak compareTo() metodu ile karsilasitirlmasi islemi vardir.
+
+String tipindeki bilgilerin ek olarak compareTo() metodu ile karsilastirilma islemi vardir.
+
+Comparable interface temel tiplerin karsilastirilmasinda compareTo() ( Long - Long, String - String, Boolean - Boolean vb.)
+kullanilmaktadir.
+
+Kendi olusturdugumuz siniflar icin de Comparable interface kullanarak siniflarimizi karsilastirabiliriz.
+
 Arastirip inceleyebilirsiniz.
+
 
 
 ### String Length
