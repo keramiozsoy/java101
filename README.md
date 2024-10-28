@@ -2017,10 +2017,10 @@ Detaylandiralim;
 
 ### Neden Multithreading yapilara ihtiyac vardir?
 
-Multithreading, aynı uygulama içinde birden çok yürütme iş parçacığına sahip olduğunuz anlamına geldigini soylemistik.
+Multithreading, aynı uygulama içinde birden çok iş parçacığına sahip olduğunuz anlamına geldigini soylemistik.
 	
 - Bir uygulamaya ait bircok is parcacigi bir CPU uzerinde calisabilir
-- Bir cok CPU bir uygulamanin farkli is parcaciklarini ayni anda calisatirabilir.
+- Bir cok CPU bir uygulamanin farkli is parcaciklarini ayni zaman periyodu icinde calistirabilir.
 
 Yukaridaki durumlardan dolayi aslinda asagidaki ihtiyaclari karsilayabiliyor
 	
