@@ -2024,7 +2024,7 @@ Multithreading, aynı uygulama içinde birden çok iş parçacığına sahip old
 
 Yukaridaki durumlardan dolayi aslinda asagidaki ihtiyaclari karsilayabiliyor
 	
--  Tek CPU isin daha fayda saglayan bir kullanim
+-  Tek CPU icin fayda saglayan kullanim
 
 		Bir iş parçacığı ağ üzerinden gönderilen bir isteğe yanıt bekliyorsa,
 		başka bir iş parçacığı bu arada CPU'yu başka bir şey yapmak için kullanabilir
