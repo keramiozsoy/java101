@@ -3,7 +3,7 @@ package examples;
 public class StringBufferExample {
     public static void main(String[] args) {
 
-        // it reserves empty content which is 16 characters
+        // it reserves empty space which is 16 characters
         StringBuffer sb = new StringBuffer();
         System.out.println("capacity " +  sb.capacity());
 
