@@ -1367,12 +1367,12 @@ String in primitive tipi nedir ?
 		
 		- String aslinda,  
 
-		- char tipindeki verilerin bir listeye/diziye atilip gosterildigi hal oldugundan 
+		- char tipindeki verilerin bir listeye/diziye atilip gosterildigi tip oldugundan 
 		
 		- en kucuk yapi tasi 
 
 				java 8 ve oncesi char tipinde,
-				java 11 de byte seklinde tutuluyor.
+				java 9 ve sonrasi daha hafiza acisindan daha verimli olacak sekilde byte tipinde de tutuldugunu gorebiliriz.
 
 ```
 
