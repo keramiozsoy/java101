@@ -1691,7 +1691,23 @@ Bir sinifin ornekleri/elimizdeki kaliptan bir kopya olusturmanin farkli yollari 
 
 
 
-String icin bir string havuzu kavrami var bunu arastirabilirsiniz .
+- String icin bir string havuzu kavrami var bunu arastirabilirsiniz .
+
+		String user1 = "admin";
+		String user2 = "admin";
+		String user3 = new String("admin");  // Not in the pool
+		
+		System.out.println(user1 == user2);  // true
+		System.out.println(user1 == user3);  // false
+
+		---
+  
+		String user1 = "admin";
+		String user2 = "admin";
+		String user3 = new String("admin").intern();  // Now added to the pool
+		
+		System.out.println(user1 == user2);  // true
+		System.out.println(user1 == user3);  // true
 
 
 
