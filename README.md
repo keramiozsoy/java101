@@ -1246,7 +1246,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 Ornek
 
-	1 ile 5 arasindaki rasgele secilen bir sayinin bulunmasi istenilen  programi yazmak icin while kullanabiliriz.
+	1 ile 5 arasindaki rastgele secilen bir sayinin bulunmasi istenilen  programi yazmak icin while kullanabiliriz.
 
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopWhileRandomNumber.java
