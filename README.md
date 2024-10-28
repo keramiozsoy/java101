@@ -1476,7 +1476,7 @@ StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari k
 	- Uzerinde islemler yapildiktan sonra HEAP te gosterdigi alanin yeri degismiyor.
 	- Diger tipe gore daha hizlidir
 
-	- Thread(Is yapan parca) islemelrine karsi korumasi yoktur. (Not tread-safe ).
+	- Thread(Is yapan parca) islemlerina karsi korumasi yoktur. (Not tread-safe ).
  	( synchonized kod blogu icermememektedir. )
 	- Yani iki farkli Thread ayni StringBuilder degiskeni uzerinde
  	islem yaparsa birbirini ezmis olurlar.
