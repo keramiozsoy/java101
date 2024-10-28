@@ -1495,7 +1495,7 @@ StringBuilder veya  StringBuffer adlandirilan diger String olusturma siniflari k
 
 
 - Asagidaki ornekler birbirinin aynisi sadece siniflar farkli. Thread islemlerini ogrendikten sonra buraya 
-thread ile olan karsilastirayi ekleyebiliriz.
+thread ile olan karsilastirmayi ekleyebiliriz.
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringBufferExample.java
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringBuilderExample.java
