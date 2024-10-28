@@ -2015,12 +2015,7 @@ Detaylandiralim;
   		Hyper-threading ozelligi olan islemcilerde 16 adet is parcacigi (Thread) 
     		ayni cekirdekte 2 tane is parcacigi (Thread) calisacak sekilde tasaarlanmistir.
 
-Peki ama neden sayilar bu sekilde ?
-
-	Her fiziksel cekirdek en fazla ikiye bolunerek, cekirdek basina iki is parcasi ayni anda calistirma islemi yapabiliyor.
-	Yukarida bahsedilen hizli calisma beklentisi, teknolojini el verdigi olcude karsilaniyor.
-
-### * Neden Multithreading yapilara ihtiyac vardir?
+### Neden Multithreading yapilara ihtiyac vardir?
 
 Multithreading, aynı uygulama içinde birden çok yürütme iş parçacığına sahip olduğunuz anlamına geldigini soylemistik.
 	
