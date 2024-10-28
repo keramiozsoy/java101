@@ -82,7 +82,7 @@
 		- [Multitasking nedir?](#multitasking-nedir)
 			- [Concurrency](#concurrency)
 			- [Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)](#parallel-execution-paralel-calismak--ve-parallelism--paralellikdagitik)
-		- [Detaylarin ozeti](#detaylarin-ozeti)
+		- [Genel ozet](#detaylarin-ozeti)
 		- [Soru cevaplar ile devam edelim.](#soru-cevaplar-ile-devam-edelim)
 		- [Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?](#thread-nasil-olusturulur--thread-sinifi-veya-runnable-arayuzu-nasil-kullanilir-)
 		- [Lambda function kullanarak Thread olusturalim](#lambda-function-kullanarak-thread-olusturalim)
@@ -2188,7 +2188,7 @@ bellekte yer kaplasin istemez.
 
 
 
-### Detaylarin ozeti
+### Genel ozet
 
 
 - Eşzamanlılık, iki görevin çakışan zaman dilimlerinde başlatılabileceği, çalıştırılabileceği ve tamamlanabileceği zamandır. Paralellik, görevlerin tam anlamıyla aynı anda çalışmasıdır,
