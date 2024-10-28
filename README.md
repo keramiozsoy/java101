@@ -1844,13 +1844,8 @@ Nesne yonelimli programlama dili kullanma amaclarindan biri yazdigimiz kodu yeni
 
 Kodu yeniden kullanak icin iki farkli yontem var.
 	
-	- KALITIM 	   ( Inheritance ) (IS-A)
-	- KOMPOZISYON  ( Composition ) (HAS-A)
-
-
-	Kalıtım kullandığınızda derleyici ve Java sanal makinesi (JVM) sizin için çok iş yapacak olsa da,
-		( super metotlarinin otomatik cagrilmasi gibi )
-	kompozisyon kullandığınızda mirasın işlevselliğine de ulaşabilirsiniz.
+	- KALITIM 	( Inheritance ) (IS-A)
+	- KOMPOZISYON   ( Composition ) (HAS-A)
 
 
 ### KALITIM
