@@ -1983,7 +1983,7 @@ Bazi kavramlari ogrenelim.
 		Bu yapilara Single Thread olarak adlandirilir
 
 
-		Bu main Thread yardimi ile bir cok alt is parcasi (child thread) ler olusturulabilir.
+		Bu main Thread yardimi ile bir cok alt is parcasi (child thread) olusturulabilir.
 		Bu yapilara Multi Thread / Multithreading olarak adlandirilir.
 
 
