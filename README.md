@@ -1463,7 +1463,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - String manipülasyonu yapmamız gerektiğinde sonucu yeni String degiskenine atamak zorunda kaliyoruz. 
 
-- Yani aslinda String referans tipi oldugu icin HEAP te yeni bir kaplanmaya basliyor.
+- Dolayisiyla String referans tipi oldugu icin HEAP te yeni yerler kaplanmaya basliyor.
 
 
 Eger tanimladigimiz String degiskenin referansinin gosterdigi degerler uzerinde degisiklikler,guncelemeler yapmak istiyorsak
