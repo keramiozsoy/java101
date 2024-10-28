@@ -1434,7 +1434,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 ###  String Concatenation
 
-- Java da + operatoru ile iki String ifadeyi birlestirebiliriz.
+- Java da + operatoru ile iki String ifadeyi birlestirebiliriz, fakat yeni String olusturup bize donus saglanir.
 
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/StringConcatenation.java
