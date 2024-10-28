@@ -1292,7 +1292,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 Ornek 
 
-	Carpim tablosunu ekrarn yazdiran donguyu yazalim. Ic ice iki dongu kullanalim.
+	Carpim tablosunu ekrana yazdiran donguyu yazalim. Ic ice iki dongu kullanalim.
 
 https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/LoopForInFor.java
 
