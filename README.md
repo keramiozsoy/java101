@@ -2106,8 +2106,8 @@ bellekte yer kaplasin istemez.
 
 			 Ortak alani paylasarak yazma, okuma yapmiyorlar 
 			 fakat kendi aralarinda bulunan degismez objeleri ( immutable objects ) veya
-			 degisen objelerin kopyalarini birbirileri ile degistokus yaparak 
-			 iletisim kurup son hamle yapmadan once her zaman son bilgiye ulasabiliyorlar. 
+			 degisen objelerin kopyalarini birbirileri ile degis-tokus yaparak 
+			 son hamlelerini yapmadan once her zaman son bilgiye ulasabiliyorlar. 
 			 Boylece ayni yere yazma, yanlis son veriyi okuma gibi problemlerden kaciniyorlar.
 				
 
