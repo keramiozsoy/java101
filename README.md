@@ -1461,7 +1461,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 
 - String yapisi geregi olusturulup bir referansa atandiktan sonra tekrar degistirilemezler.
 
-- String manipülasyonu yapmamız gerektiğinde sonucu yeni bir String degiskenine atamak zorunada kaliyoruz. 
+- String manipülasyonu yapmamız gerektiğinde sonucu yeni String degiskenine atamak zorunda kaliyoruz. 
 
 - Yani aslinda String referans tipi oldugu icin HEAP te yeni bir kaplanmaya basliyor.
 
