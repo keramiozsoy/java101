@@ -2142,7 +2142,7 @@ bellekte yer kaplasin istemez.
 			 		A 
 
 			 	bir satir bir kolon olan tabloda elimizdeki deger 5
-			 	bir islem geldi 1 artti ve o satir guncelledin    6 
+			 	bir islem geldi 1 artti ve o satir guncellendi    6 
 			 	bir islem geldi 1 azaltti ve o satir guncellendi  5
 			 	bir satir bir kolon olan tabloda elimizdeki son deger 5
 
