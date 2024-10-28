@@ -1691,7 +1691,7 @@ Bir sinifin ornekleri/elimizdeki kaliptan bir kopya olusturmanin farkli yollari 
 
 
 
-- String icin bir string havuzu kavrami var bunu arastirabilirsiniz .
+- String degerler icin String Pool kavramini arastirabilirsiniz.
 
 		String user1 = "admin";
 		String user2 = "admin";
