@@ -3,9 +3,9 @@ package examples;
 public class MathOperationsFloatValueDivideByZero {
 
     public static void main(String[] args) {
-        // It will return  Infinity,
+        // It returns  Infinity,
         // which is not an exception.
-        // it is answer.
+        // it is an answer.
         float a = 5;
         float b = 0;
         float c = a / b;
