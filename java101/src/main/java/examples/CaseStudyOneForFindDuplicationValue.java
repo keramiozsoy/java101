@@ -10,15 +10,11 @@ public class CaseStudyOneForFindDuplicationValue {
         // bulduktan sonra dizinin devamini kontrol etmeye gerek yok
 
         for(int i = intArray.length - 1 ; i >= 0; i--){
-             System.out.println(intArray[i]);
-
-            /*
+            
             if ( intArray[i] == intArray[i-1]){
                 System.out.println(intArray[i]);
                 break;
             }
-
-             */
 
         }
 
