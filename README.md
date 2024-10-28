@@ -77,7 +77,7 @@
 		- [POLIMORFIZM](#polimorfizm)
 	- [Eşzamanlılık \( Concurrency \) ve Paralellik \( Parallelism \)](#e%C5%9Fzamanl%C4%B1l%C4%B1k--concurrency--ve-paralellik--parallelism-)
 		- [Merkezi Islem Birimi ve Cekirdek nedir, Is parcalari ile iliskisi nedir](#merkezi-islem-birimi-ve-cekirdek-nedir-is-parcalari-ile-iliskisi-nedir)
-		- [* Neden Multithreading yapilara ihtiyac vardir?](#-neden-multithreading-yapilara-ihtiyac-vardir)
+		- [Neden Multithreading yapilara ihtiyac vardir](#-neden-multithreading-yapilara-ihtiyac-vardir)
 		- [Multithreding Maaliyetleri](#multithreding-maaliyetleri)
 		- [Multitasking nedir?](#multitasking-nedir)
 			- [Concurrency](#concurrency)
@@ -2015,7 +2015,7 @@ Detaylandiralim;
   		Hyper-threading ozelligi olan islemcilerde 16 adet is parcacigi (Thread) 
     		ayni cekirdekte 2 tane is parcacigi (Thread) calisacak sekilde tasaarlanmistir.
 
-### Neden Multithreading yapilara ihtiyac vardir?
+### Neden Multithreading yapilara ihtiyac vardir
 
 Multithreading, aynı uygulama içinde birden çok iş parçacığına sahip olduğunuz anlamına geldigini soylemistik.
 	
