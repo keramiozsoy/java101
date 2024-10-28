@@ -9,7 +9,7 @@ public class CompositionMain {
         CompositionClassroom c1
                 = new CompositionClassroom("C101", "Central Building");
         CompositionClassroom c2
-                = new CompositionClassroom("C101", "Another Building");
+                = new CompositionClassroom("C102", "Another Building");
 
     List<CompositionClassroom> classroomList = new ArrayList<>();
         classroomList.add(c1);
