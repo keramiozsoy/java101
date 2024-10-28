@@ -1955,8 +1955,8 @@ Bazi durumlarda ayni anda birden fazla isi yapma istegi olusabilir.
 Ornek 
 	
 	Tarayicilari dusunelim.
-	Bir sekme bir yaziyi okumak icin tarayici size sunarken, 
-	diger sekme dinlemek istedigiz bir sarkiyi bilgisayariniza indirmenize yardimci olabilir
+	Acilan bir sekmede yazi okurken, 
+ 	diger sekmeden fon muzigi olarak dinlemek istedigiz sarkiyi acabilirsiniz.
 
 veya
 
