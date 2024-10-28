@@ -1257,7 +1257,7 @@ https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/
 ### do while dongusu
 
 
-- Do while dongusu, en 1 kez bekledigiim bir islem calissin ve ardindan kosuluma gore programim calismaya devam etsin.
+- Do while dongusu, en 1 kez bekledigim bir islem calissin ve ardindan kosuluma gore programim calismaya devam etsin.
 
 Ornek
 
