@@ -3,7 +3,7 @@ package examples;
 public class StringBuilderExample {
     public static void main(String[] args) {
 
-        // it reserve empty space which is 16 characters
+        // it reserves empty space which is 16 characters
         StringBuilder sb = new StringBuilder();
         System.out.println("capacity " +  sb.capacity());
 
