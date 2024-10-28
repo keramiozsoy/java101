@@ -2150,11 +2150,12 @@ bellekte yer kaplasin istemez.
 			 		B
 
 			 	bir satir bir kolon olan tabloda elimizde deger   5
-			 	bir satir daha atildi ve kolona +1  yazildi		  
-			 	bir satir daha atildi ve kolona -1  yazildi  
-			 	biz artik tum kolonlardaki islemleri yaptiktan sonra cevabi donuyoruz yani 5
+			 	bir satir daha eklendi ve kolona +1  yazildi		  
+			 	bir satir daha eklendi ve kolona -1  yazildi  
+			 	biz artik sonuc ne oldu ogrenemek icin tum kolonlardaki islemleri yaptiktan sonra cevabi ulasiyoruz 
+     				yani 5
 			 	istersek onceki durumlara da ulasabiliyoruz veya geri donebiliriz.
-			 	tum objelerin kendi durumlari korundu ve asenkron olarak bagimsiz islem yapildi.
+			 	bu yontemle tum objelerin kendi durumlari korundu ve asenkron olarak bagimsiz islem yapildi.
 
 			 Bazi projeler
 			- java.util.concurrent
