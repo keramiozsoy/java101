@@ -2042,8 +2042,8 @@ Yukaridaki durumlardan dolayi aslinda asagidaki ihtiyaclari karsilayabiliyor
 		Buton gorevi ağ üzerinden bir istek atma olsun.
 		Bu isteği hangi iş parçacığının gerçekleştirdiği önemlidir.
 		Ekrandaki bilgilerin guncellenmesi islemi ayni is parcacigi (Thread) icinde gerceklesirse
-		kullanici ag uzerindeki istek bitene kadar ekrandaki bilgilerin guncellenmesini
-		beklerken sayfa sanki asili kalmis gibi hisseder. (Ajax ile bir bolum degil tum sayfanin gidip gelmesi olayi !!!)
+		kullanici ag uzerindeki istek cevap verene kadar ekrandaki bilgilerin guncellenmesini
+		beklerken sayfa sanki asili kalmis gibi hisseder. 
 
 - Adil Paylasim 
 
