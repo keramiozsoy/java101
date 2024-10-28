@@ -1796,15 +1796,15 @@ Buraya kadar olan konular ile ilgili sorulari inceleyelim.
         her durum icin programin kullaniciyi uyarmasina gerek yok, calissin yeter.
 
 
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudySumOfBetweenNumbers.java
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudySwapValuesWithoutTemporaryValue.java
 
 
 		Iki tane integer sayi tanimlayiniz ve ilk degerlerini atayiniz.
 		Ucuncu bir degisken tanimlamadan, iki degiskenin degerlerini degistirip yazdiriniz.
 
 
-- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudySumOfBetweenNumbers.java
+- https://github.com/keramiozsoy/java101/blob/main/java101/src/main/java/examples/CaseStudySwapValuesWithoutTemporaryValue.java
 
         
         Tekrar eden sayiyi ekrana yazan kod parcasini ekleyiniz.
