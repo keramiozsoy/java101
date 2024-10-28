@@ -2090,8 +2090,8 @@ bellekte yer kaplasin istemez.
 		ayni dosyalara veya
 		ayni veritabanina
 		yazip okumaya calisabilmesini sagladigimiz duruma Eşzamanlılık ( Concurrency ) denir.
-		Neredeyse diyorum cunku bilgisayarimizdaki islemci bagimsiz is parcalarinin 
-		ne zaman baslayip bitecegine kendi karar veriyor.
+		Neredeyse diyorum cunku bilgisayarimizdaki islemci, bagimsiz is parcalarinin 
+		ne zaman baslayip bitecegine kendisi karar veriyor.
 		Son kullanici aslinda ayni anda calismis gibi hissediyor fakat programi yazdigimizda
 		farkli gorebiliyoruz.
 		Bu sekilde daha az surede daha hizli ciktilar uretebiliyoruz.
