@@ -82,7 +82,7 @@
 		- [Multitasking nedir?](#multitasking-nedir)
 			- [Concurrency](#concurrency)
 			- [Parallel Execution\( Paralel Calismak \) ve Parallelism \( Paralellik,Dagitik\)](#parallel-execution-paralel-calismak--ve-parallelism--paralellikdagitik)
-		- [Genel ozet](#detaylarin-ozeti)
+		- [Genel ozet](#genel-ozet)
 		- [Soru cevaplar ile devam edelim.](#soru-cevaplar-ile-devam-edelim)
 		- [Thread nasil olusturulur ? Thread sinifi veya Runnable arayuzu nasil kullanilir ?](#thread-nasil-olusturulur--thread-sinifi-veya-runnable-arayuzu-nasil-kullanilir-)
 		- [Lambda function kullanarak Thread olusturalim](#lambda-function-kullanarak-thread-olusturalim)
