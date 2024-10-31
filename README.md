@@ -2952,7 +2952,7 @@ Calistirip gorelim.
 
 Ornek 
 ~~~
-Is parclasinin kullandigi ThreadLocal objesininin tum verilerini silmeye calisalim.
+Is parcalarinin kullandigi ThreadLocal objesininin tum verilerini silmeye calisalim.
 Sadece kendi verilerinin silindigini gorelim.
 ~~~
 
